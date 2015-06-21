@@ -1,0 +1,24 @@
+{
+  "name": "vdb-site",
+  "version": "1.0.0",
+  "description": "Vou de ônibus site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voudeonibus/voudeonibus.github.io.git"
+  },
+  "keywords": [
+    "Vou",
+    "de",
+    "ônibus"
+  ],
+  "author": "Vou de ônibus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voudeonibus/voudeonibus.github.io/issues"
+  },
+  "homepage": "https://github.com/voudeonibus/voudeonibus.github.io#readme"
+}
