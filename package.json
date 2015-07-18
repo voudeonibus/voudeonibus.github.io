@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/voudeonibus/voudeonibus.github.io#readme",
   "devDependencies": {
+    "browser-sync": "^2.7.13",
     "gulp": "^3.9.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-if": "^1.2.5",
