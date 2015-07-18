@@ -44,10 +44,12 @@ gulp.task('browser-sync', function() {
   var files = [
     dir_build + 'css/app.css',
     dir_build + 'js/app.min.js',
-    dir_build + 'img/**/*.*'
+    dir_build + 'img/**/*.*',
+    './*.html'
   ];
 
   browserSync.init(files, {
+    proxy: 'localhost:8000',
     notify: false
   });
 });
