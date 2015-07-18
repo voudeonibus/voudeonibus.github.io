@@ -6,6 +6,8 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var neat = require('node-neat').includePaths;
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 var argv = require('minimist')(process.argv.slice(1));
 
@@ -15,7 +17,8 @@ var dir_build = path.join(__dirname, 'build');
 gulp.task('script', function() {
   gulp.src(path.join(dir_src, 'script/**/*.js'))
     .pipe(gif(argv.p || argv.production, uglify()))
-    .pipe(gulp.dest(path.join(dir_build, 'script')));
+    .pipe(gulp.dest(path.join(dir_build, 'script')))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('script:watch', function() {
@@ -29,14 +32,26 @@ gulp.task('style', function () {
       includePaths: neat
     }).on('error', sass.logError))
     .pipe(gif(argv.p || argv.production, cssmin()))
-    .pipe(gulp.dest(path.join(dir_build, 'css')));
+    .pipe(gulp.dest(path.join(dir_build, 'css')))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('style:watch', function () {
   gulp.watch(path.join(dir_src, 'style/**/*.scss'), ['style']);
 });
 
+gulp.task('browser-sync', function() {
+  var files = [
+    dir_build + 'css/app.css',
+    dir_build + 'js/app.min.js',
+    dir_build + 'img/**/*.*'
+  ];
+
+  browserSync.init(files, {
+    notify: false
+  });
+});
 
 gulp.task('build', ['style', 'script']);
-gulp.task('watch', ['build', 'style:watch', 'script:watch']);
+gulp.task('watch', ['build', 'style:watch', 'script:watch', 'browser-sync']);
 gulp.task('default', ['build']);
