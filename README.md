@@ -1,7 +1,7 @@
-## Vou de ônibus site
+# Vou de ônibus site
 
-# Minificar
-gulp -p
+## Minificar
+`gulp -p`
 
-#Inicar servidor 
-python -m SimpleHTTPServer 8000
+## Inicar servidor 
+`python -m SimpleHTTPServer 8000`
