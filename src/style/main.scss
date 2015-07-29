@@ -1,0 +1,24 @@
+@import 'reset';
+@import 'mixins';
+
+// var colors
+
+// primary
+$pr: #249DF7;
+
+// secundary
+$sc: #1F65F3;
+
+// third
+$th: #1EE2FB;
+
+// text
+$txt: #666;
+
+// background
+$bg: #F9F9F9;
+
+body {
+	background: $bg;
+	font-family: 'Lato', sans-serif;
+}

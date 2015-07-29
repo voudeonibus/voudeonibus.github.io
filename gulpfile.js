@@ -12,12 +12,12 @@ var reload = browserSync.reload;
 var argv = require('minimist')(process.argv.slice(1));
 
 var dir_src = path.join(__dirname, '/src');
-var dir_build = path.join(__dirname, 'build');
+var dir_build = path.join(__dirname, 'src/build');
 
 gulp.task('script', function() {
   gulp.src(path.join(dir_src, 'script/**/*.js'))
     .pipe(gif(argv.p || argv.production, uglify()))
-    .pipe(gulp.dest(path.join(dir_build, 'script')))
+    .pipe(gulp.dest(path.join(dir_build, '')))
     .pipe(reload({stream: true}));
 });
 
@@ -26,13 +26,13 @@ gulp.task('script:watch', function() {
 });
 
 gulp.task('style', function () {
-  gulp.src(path.join(dir_src, 'style/app.scss'))
+  gulp.src(path.join(dir_src, 'style/**/*.scss'))
     .pipe(sass({
       style: 'expanded',
       includePaths: neat
     }).on('error', sass.logError))
     .pipe(gif(argv.p || argv.production, cssmin()))
-    .pipe(gulp.dest(path.join(dir_build, 'css')))
+    .pipe(gulp.dest(path.join(dir_build, '')))
     .pipe(reload({stream: true}));
 });
 
@@ -56,4 +56,4 @@ gulp.task('browser-sync', function() {
 
 gulp.task('build', ['style', 'script']);
 gulp.task('watch', ['build', 'style:watch', 'script:watch', 'browser-sync']);
-gulp.task('default', ['build']);
+gulp.task('default', ['watch']);
