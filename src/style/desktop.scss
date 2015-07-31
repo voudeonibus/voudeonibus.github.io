@@ -1,0 +1,140 @@
+@import "mixins";
+@import "vars";
+@import "fullpage";
+
+
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+.section {
+	position: relative;
+}
+
+
+.nav-site {
+	position: fixed;
+	z-index: 999;
+	left: 50%;
+	margin-left: -470px;
+	border-bottom: 1px solid #fff;
+	a {
+		font-size: 14px;
+		font-weight: 500;
+		color: white;
+		text-transform: uppercase;
+		padding: 19px 0;
+		margin-left: 33px;
+		transition: $ts;
+		&:hover {
+			color: #eee;
+			transition: $ts;
+		}
+	}
+	nav {
+		float: right;
+	}
+	.logo-site {
+		margin: 13px 0;
+		cursor: pointer;
+	}
+	&.fixed {
+		border-bottom-color: #eee;
+		a {
+			color: $pr;
+			&:hover {
+				color: $th;
+			}
+		}
+		.logo-site {
+			background: url(../img/logo-site-blue@2x.png) center center no-repeat;
+			background-size: cover;	
+			transition: $ts;
+		}
+	}
+}
+
+
+
+
+.page-home {
+	background: $pr url(../img/page-home-full.jpg) center bottom;
+	background-size: cover;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 10%;
+		background: white;
+	}
+	.wrap {
+		width: 365px;
+		margin-top: 110px;
+		margin-left: 80px;
+	} 
+	img {
+		margin-bottom: 70px;
+	}
+}
+
+
+.page-oapp {
+	background: url(../img/page-oapp.jpg) center bottom repeat-x;
+	.container {
+		height: 100%;
+		position: relative;	
+	}
+	.page-oapp_iphone {
+		position: absolute;
+		right: 100px;
+		bottom: 5%;
+		height: 75%;
+		opacity: 0;
+		transition: $ts-f;
+	}
+	&.view {
+		.page-oapp_iphone {
+			right: 0;
+			opacity: 1;
+			transition: $ts-f;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+#menu {
+	position: fixed;
+	z-index: 999;
+}
+
+.mobile {
+	position: fixed;
+	left: 60%;
+	height: 80%;
+	bottom: 5%;
+	z-index: 99;
+	transition: $ts-f;
+	&.slide-2 {
+		left: 52%;
+		transition: $ts-f;
+	}
+	&.slide-3 {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+
+
+
+
+
