@@ -10,6 +10,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="src/build/main.css">
+	<link rel="stylesheet" href="src/build/desktop.css" media="screen and (min-width: 480px)">
 
 	<title>Vou de ônibus</title>
 
@@ -17,7 +18,61 @@
 
 </head>
 <body>
-<h1>Hello Jaraguá</h1>
+
+	<header class="nav-site">
+		<div class="container clearfix">
+			<h1 class="ir logo-site"><span></span></h1>
+
+			<nav>	
+				<a href="javascript:void(0);">O aplicativo</a>
+				<a href="javascript:void(0);">Vou agora</a>
+				<a href="javascript:void(0);">Apoio</a>
+				<a href="javascript:void(0);">Equipe</a>
+				<a href="javascript:void(0);">Contato</a>
+			</nav>
+		</div>
+	</header>
+
+	
+	<div id="fullpage">
+
+		<!-- home -->
+		<div class="section page-home active">
+			<div class="container">
+				<div class="wrap">
+					<img src="src/img/logo-app.png" alt="">
+					<h1>Um aplicativo para quem pensa no coletivo</h1>
+					<p>Organize sua rotina e tenha acesso as informações do transporte público a um toque de distância.Desenvolvido com carinho por quem entende do assunto.</p>
+					<div class="acttions">
+						<a href=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- o app -->
+		<div class="section page-oapp">
+			<div class="container">
+				
+				<img class="page-oapp_iphone" src="src/img/page-oapp_iphone.png" alt="">
+			</div>
+		</div>
+
+		<!-- vou agora -->
+		<div class="section">
+			<img class="mobile" src="src/img/mobile.png" alt="">
+		</div>
+
+		<!-- demais -->
+		<div class="section" id="section3">
+			<div class="foo">
+				<h1>Just the simplest demo ever</h1>
+			</div>
+		</div>
+	</div>
+
+
+
 
 
 	<script type="text/javascript">
@@ -26,7 +81,7 @@
 			console.log('mobile');
 		}
 		else {
-			document.write('<script src="src/build/content.js"><\/script>');
+			document.write('<script async src="src/build/content.js"><\/script>');
 		}
 
 	</script>
@@ -34,6 +89,14 @@
 	<script>window.jQuery || document.write('<script src="src/build/libs/jquery-2.1.4.min.js"><\/script>')</script>
 
 	<script src="src/build/main.js"></script>
+	<script type="text/javascript">
+
+		if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			console.log('mobile');
+			document.write('<script src="src/build/desktop.js"><\/script>');
+		}
+
+	</script>
 
 </body>
 </html>

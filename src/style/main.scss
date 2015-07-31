@@ -1,25 +1,65 @@
 @import 'reset';
 @import 'mixins';
+@import 'vars';
 
-// var colors
-
-// primary
-$pr: #249DF7;
-
-// secundary
-$sc: #1F65F3;
-
-// third
-$th: #1EE2FB;
-
-// text
-$txt: #666;
-
-// background
-$bg: #F9F9F9;
 
 body {
-	background: red;
+	background: $bg;
 	font-family: 'Lato', sans-serif;
 	color: $txt;
+	width: 100%;
+	height: 100%;
 }
+
+
+.ir {
+	span {
+		display: none;
+	}
+}
+
+
+
+.logo-site {
+	width: 173px;
+	height: 22px;
+	float: left;
+	background: url(../img/logo-site@2x.png) center center no-repeat;
+	background-size: cover;	
+	transition: $ts;
+}
+
+
+.page-home {
+	color: #fff;
+	h1 {
+		font-size: 27px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 300;
+	}
+	img {
+		width: 176px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
