@@ -83,8 +83,12 @@ body {
   width: 940px;
   margin: 0 auto; }
 
+#fullpage,
 .section {
-  position: relative; }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0; }
 
 .nav-site {
   position: fixed;
@@ -119,6 +123,10 @@ body {
       background-size: cover;
       transition: all 0.2s ease; }
 
+.wrap {
+  width: 365px;
+  padding-top: 110px; }
+
 .page-home {
   background: #249DF7 url(../img/page-home-full.jpg) center bottom;
   background-size: cover; }
@@ -132,8 +140,8 @@ body {
     background: white; }
   .page-home .wrap {
     width: 365px;
-    margin-top: 110px;
-    margin-left: 80px; }
+    padding-top: 110px;
+    padding-left: 80px; }
   .page-home img {
     margin-bottom: 70px; }
 
@@ -149,10 +157,94 @@ body {
     height: 75%;
     opacity: 0;
     transition: all 1s ease; }
+  .page-oapp .section-p {
+    -webkit-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+    opacity: 0; }
   .page-oapp.view .page-oapp_iphone {
-    right: 0;
+    right: -35px;
     opacity: 1;
     transition: all 1s ease; }
+  .page-oapp.view .section-p {
+    -webkit-animation: pageoAppCard 1s 0.1s ease-out forwards;
+    -moz-animation: pageoAppCard 1s 0.1s ease-out forwards;
+    animation: pageoAppCard 1s 0.1s ease-out forwards; }
+  .page-oapp.view figure img {
+    -webkit-animation: pageoAppCard 1s ease-out forwards;
+    -moz-animation: pageoAppCard 1s ease-out forwards;
+    animation: pageoAppCard 1s ease-out forwards; }
+    .page-oapp.view figure img:first-child {
+      -webkit-animation: pageoAppCard 1s ease-out forwards;
+      -moz-animation: pageoAppCard 1s ease-out forwards;
+      animation: pageoAppCard 1s ease-out forwards; }
+  .page-oapp figure img {
+    -webkit-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+    opacity: 0; }
+  .page-oapp figure img:first-child {
+    position: absolute;
+    left: -190px;
+    top: 0; }
+
+@-webkit-keyframes pageoAppCard {
+  0% {
+    -webkit-transform: translate(-70px, 0);
+    -ms-transform: translate(-70px, 0);
+    -moz-transform: translate(-70px, 0);
+    transform: translate(-70px, 0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+@-moz-keyframes pageoAppCard {
+  0% {
+    -webkit-transform: translate(-70px, 0);
+    -ms-transform: translate(-70px, 0);
+    -moz-transform: translate(-70px, 0);
+    transform: translate(-70px, 0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+@-ms-keyframes pageoAppCard {
+  0% {
+    -webkit-transform: translate(-70px, 0);
+    -ms-transform: translate(-70px, 0);
+    -moz-transform: translate(-70px, 0);
+    transform: translate(-70px, 0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+@keyframes pageoAppCard {
+  0% {
+    -webkit-transform: translate(-70px, 0);
+    -ms-transform: translate(-70px, 0);
+    -moz-transform: translate(-70px, 0);
+    transform: translate(-70px, 0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1; } }
 
 #menu {
   position: fixed;

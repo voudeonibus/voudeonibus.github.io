@@ -8,8 +8,12 @@
 	width: 940px;
 	margin: 0 auto;
 }
+#fullpage,
 .section {
+	width: 100%;
+	height: 100%;
 	position: relative;
+	top: 0;
 }
 
 
@@ -56,7 +60,10 @@
 }
 
 
-
+.wrap {
+	width: 365px;
+	padding-top: 110px;
+} 
 
 .page-home {
 	background: $pr url(../img/page-home-full.jpg) center bottom;
@@ -72,8 +79,8 @@
 	}
 	.wrap {
 		width: 365px;
-		margin-top: 110px;
-		margin-left: 80px;
+		padding-top: 110px;
+		padding-left: 80px;
 	} 
 	img {
 		margin-bottom: 70px;
@@ -95,17 +102,51 @@
 		opacity: 0;
 		transition: $ts-f;
 	}
+	.section-p{
+		@include translate(-100px, 0);
+		opacity: 0;
+	}
 	&.view {
 		.page-oapp_iphone {
-			right: 0;
+			right: -35px;
 			opacity: 1;
 			transition: $ts-f;
+		}
+		.section-p {
+			@include animation(pageoAppCard 1s .1s ease-out forwards); 
+		}
+		figure {
+			img {
+				@include animation(pageoAppCard 1s ease-out forwards); 
+				&:first-child {
+					@include animation(pageoAppCard 1s ease-out forwards); 
+				}
+			}
+		}
+	}
+	figure {
+		img {
+			@include translate(-100px, 0);
+			opacity: 0;
+		}
+		img:first-child {
+			position: absolute;
+			left: -190px;
+			top: 0;
 		}
 	}
 }
 
-
-
+@include keyframes(pageoAppCard) {
+	0% {
+		@include translate(-70px, 0);
+		opacity: 0;
+	}
+	100% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+}
 
 
 

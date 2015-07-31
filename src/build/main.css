@@ -77,7 +77,7 @@ br {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-body {
+html, body {
   background: #F9F9F9;
   font-family: 'Lato', sans-serif;
   color: #666;
@@ -95,6 +95,21 @@ body {
   background-size: cover;
   transition: all 0.2s ease; }
 
+.section-title {
+  font-size: 18px;
+  color: #249DF7;
+  font-weight: 300;
+  text-transform: uppercase; }
+  .section-title strong {
+    font-weight: 300;
+    display: block;
+    font-size: 40px; }
+
+.section-p {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: light; }
+
 .page-home {
   color: #fff; }
   .page-home h1 {
@@ -107,3 +122,7 @@ body {
     font-weight: 300; }
   .page-home img {
     width: 176px; }
+
+.page-oapp figure {
+  position: relative;
+  margin: 25px 0; }

@@ -3,7 +3,7 @@
 @import 'vars';
 
 
-body {
+html, body {
 	background: $bg;
 	font-family: 'Lato', sans-serif;
 	color: $txt;
@@ -29,6 +29,22 @@ body {
 	transition: $ts;
 }
 
+.section-title {
+	font-size: 18px;
+	color: $pr;
+	font-weight: 300;
+	text-transform: uppercase;
+	strong {
+		font-weight: 300;
+		display: block;
+		font-size: 40px;
+	}
+}
+.section-p {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: light;
+}
 
 .page-home {
 	color: #fff;
@@ -48,7 +64,12 @@ body {
 
 }
 
-
+.page-oapp {
+	figure {
+		position: relative;
+		margin: 25px 0;
+	}	
+}
 
 
 
