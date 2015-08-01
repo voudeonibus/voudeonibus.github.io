@@ -145,6 +145,65 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0); }
 
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom 0.5s ease both;
+  -moz-animation: scaleUpFrom 0.5s ease both;
+  animation: scaleUpFrom 0.5s ease both; }
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo 0.5s ease both;
+  -moz-animation: scaleUpTo 0.5s ease both;
+  animation: scaleUpTo 0.5s ease both; }
+
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1; } }
+
+@-moz-keyframes empty {
+  0% {
+    opacity: 1; } }
+
+@keyframes empty {
+  0% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .container {
   width: 940px;
   height: 100%;
@@ -429,6 +488,29 @@ body {
       background: url(../img/page-vouagora_arrow.svg) left center no-repeat;
       background-size: auto 50px;
       left: 435px; }
+  .page-vouagora .dots {
+    margin-top: 75px; }
+    .page-vouagora .dots a {
+      width: 12px;
+      height: 12px;
+      float: left;
+      margin-right: 20px;
+      transition: all 0.2s ease; }
+      .page-vouagora .dots a.active {
+        background: none !important;
+        transition: all 0.2s ease; }
+    .page-vouagora .dots .vouagora {
+      border: 6px solid #fff;
+      border-radius: 12px;
+      background: white; }
+    .page-vouagora .dots .trabalho {
+      border: 6px solid #ffd51c;
+      border-radius: 12px;
+      background: #ffd51c; }
+    .page-vouagora .dots .estudo {
+      border: 6px solid #7ed321;
+      border-radius: 12px;
+      background: #7ed321; }
 
 .mobile-sections_vouagora {
   display: block; }

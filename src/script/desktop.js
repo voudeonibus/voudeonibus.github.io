@@ -71,8 +71,13 @@ $(document).ready(function() {
 		slideSpeed : 600,
 		navigation : true,
 		pagination : false,
+		transitionStyle : "fade",
 		afterInit  : function(){
 			$slideVouagora.removeAttr('style');
+		},
+		afterAction : function() {
+			var current = this.currentItem+1;
+			$('.dots a:nth-child('+current+')').addClass('active').siblings().removeClass('active');
 		}
 
 	});
@@ -82,6 +87,15 @@ $(document).ready(function() {
 	});
 	$('.arrow.prev').on('click',function(){
 		$slideVouagora.trigger('owl.prev');
+	});
+
+	$('.dots').on('click', 'a', function(){
+		var target = $(this).index();
+
+		console.log(target)
+
+		$slideVouagora.trigger('owl.goTo', target);
+		$(this).addClass('active').siblings().removeClass('active');
 	});
 	
 	/*-----  End of slide vou agora  ------*/
