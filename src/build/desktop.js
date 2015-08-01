@@ -81,7 +81,7 @@ $(document).ready(function() {
 		},1000);
 	});
 
-	$('.logo-site').on('click', function(){
+	$('.logo-site, .download').on('click', function(){
 		$.fn.fullpage.moveTo(1);
 	});
 
