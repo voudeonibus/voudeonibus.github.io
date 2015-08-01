@@ -1,6 +1,7 @@
 @import "mixins";
 @import "vars";
 @import "fullpage";
+@import "carousel";
 
 
 
@@ -93,7 +94,7 @@
 			transition: $ts;
 			padding: 0;
 			position: relative;
-			top: 5px;
+			top: 6px;
 			width: 23px;
 			height: 23px;
 			background: url(../img/icon-facebook.svg) center center;
@@ -246,6 +247,48 @@
 }
 
 
+/**
+*
+* vou agora
+*
+**/
+.page-vouagora {
+	background: url(../img/page-vouagora_bg.jpg) center center repeat-x;
+	.section-title,
+	.section-p {
+		color: white;
+	}
+	.container {
+		position: relative;
+	}
+	.arrow {
+		width: 25px;
+		height: 50px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -8px;
+		&.next {
+			background: url(../img/page-vouagora_arrow.svg) right center no-repeat;
+			background-size: auto 50px;
+			right: 150px;
+		}
+		&.prev {
+			background: url(../img/page-vouagora_arrow.svg) left center no-repeat;
+			background-size: auto 50px;
+			left: 435px;
+		}
+	}
+}
+
+.mobile-sections_vouagora {
+	display: block;
+	img {
+		position: relative !important;
+	}
+}
+ 
+
 /*==============================
 =            mobile            =
 ==============================*/
@@ -269,18 +312,23 @@
 		transition: $ts-f;
 	}
 	&.pageApp-mobile {
-		.mobile-sections_home {
-			// top: -100% !important;
-			transition: $ts-l;
-		}
 		.mobile-sections_oapp {
 			// top: 0;
 			opacity: 1;
 			transition: $ts-l;
 		}
 	}
-	&.slide-3 {
+	&.pageVouagora {
+		margin-left: 0%;
 		position: absolute;
+		.mobile-sections_home,
+		.mobile-sections_oapp {
+			opacity: 0;
+			transition: $ts-l;
+		}
+		.mobile-sections_vouagora {
+			opacity: 1;
+		}
 	}
 }
 .mobile-sections {
@@ -319,14 +367,14 @@
 * home
 *
 **/
-.mobile-sections .mobile-sections_home {
-	.card {
-		  position: absolute;
-		  right: 6px;
-		  left: 6px;
-		  width: 95%;
-	}
-}
+// .mobile-sections .mobile-sections_home {
+// 	.card {
+// 		  position: absolute;
+// 		  right: 6px;
+// 		  left: 6px;
+// 		  width: 95%;
+// 	}
+// }
 
 /*-----  End of mobile  ------*/
 

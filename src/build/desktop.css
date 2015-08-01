@@ -79,6 +79,72 @@ body {
   margin: 0 auto;
   background: #fff; }
 
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y; }
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+.owl-carousel .owl-item {
+  float: left; }
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer; }
+
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move; }
+
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
 .container {
   width: 940px;
   height: 100%;
@@ -163,7 +229,7 @@ body {
     transition: all 0.2s ease;
     padding: 0;
     position: relative;
-    top: 5px;
+    top: 6px;
     width: 23px;
     height: 23px;
     background: url(../img/icon-facebook.svg) center center;
@@ -336,6 +402,39 @@ body {
     transform: translate(0, 0);
     opacity: 1; } }
 
+/**
+*
+* vou agora
+*
+**/
+.page-vouagora {
+  background: url(../img/page-vouagora_bg.jpg) center center repeat-x; }
+  .page-vouagora .section-title,
+  .page-vouagora .section-p {
+    color: white; }
+  .page-vouagora .container {
+    position: relative; }
+  .page-vouagora .arrow {
+    width: 25px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px; }
+    .page-vouagora .arrow.next {
+      background: url(../img/page-vouagora_arrow.svg) right center no-repeat;
+      background-size: auto 50px;
+      right: 150px; }
+    .page-vouagora .arrow.prev {
+      background: url(../img/page-vouagora_arrow.svg) left center no-repeat;
+      background-size: auto 50px;
+      left: 435px; }
+
+.mobile-sections_vouagora {
+  display: block; }
+  .mobile-sections_vouagora img {
+    position: relative !important; }
+
 /*==============================
 =            mobile            =
 ==============================*/
@@ -355,13 +454,18 @@ body {
   .mobile.pageApp-move {
     margin-left: 0%;
     transition: all 1s ease; }
-  .mobile.pageApp-mobile .mobile-sections_home {
-    transition: all 0.7s ease; }
   .mobile.pageApp-mobile .mobile-sections_oapp {
     opacity: 1;
     transition: all 0.7s ease; }
-  .mobile.slide-3 {
+  .mobile.pageVouagora {
+    margin-left: 0%;
     position: absolute; }
+    .mobile.pageVouagora .mobile-sections_home,
+    .mobile.pageVouagora .mobile-sections_oapp {
+      opacity: 0;
+      transition: all 0.7s ease; }
+    .mobile.pageVouagora .mobile-sections_vouagora {
+      opacity: 1; }
 
 .mobile-sections {
   position: absolute;
@@ -394,12 +498,6 @@ body {
 * home
 *
 **/
-.mobile-sections .mobile-sections_home .card {
-  position: absolute;
-  right: 6px;
-  left: 6px;
-  width: 95%; }
-
 /*-----  End of mobile  ------*/
 @-webkit-keyframes up {
   0% {
