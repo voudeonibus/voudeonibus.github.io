@@ -93,7 +93,7 @@ html, body {
   float: left;
   background: url(../img/logo-site@2x.png) center center no-repeat;
   background-size: cover;
-  transition: all 0.2s ease; }
+  transition: all 1s ease; }
 
 .section-title {
   font-size: 18px;

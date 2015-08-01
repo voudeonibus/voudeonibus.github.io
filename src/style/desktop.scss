@@ -6,8 +6,19 @@
 
 .container {
 	width: 940px;
+	height: 100%;
 	margin: 0 auto;
+	display: table;
 }
+.container-center {
+	display: table-cell;
+	vertical-align: middle;
+} 
+.wrap {
+	padding-top: 50px;
+	width: 365px;
+}
+
 #fullpage,
 .section {
 	width: 100%;
@@ -16,54 +27,107 @@
 	top: 0;
 }
 
-
-.nav-site {
-	position: fixed;
-	z-index: 999;
-	left: 50%;
-	margin-left: -470px;
-	border-bottom: 1px solid #fff;
-	a {
-		font-size: 14px;
-		font-weight: 500;
-		color: white;
-		text-transform: uppercase;
-		padding: 19px 0;
-		margin-left: 33px;
-		transition: $ts;
-		&:hover {
-			color: #eee;
-			transition: $ts;
-		}
-	}
-	nav {
-		float: right;
-	}
-	.logo-site {
-		margin: 13px 0;
-		cursor: pointer;
-	}
-	&.fixed {
-		border-bottom-color: #eee;
+/*============================
+=            menu            =
+============================*/
+	.nav-site {
+		position: fixed;
+		z-index: 999;
+		left: 50%;
+		margin-left: -470px;
+		border-bottom: 1px solid #fff;
 		a {
-			color: $pr;
+			font-size: 14px;
+			font-weight: 500;
+			color: white;
+			text-transform: uppercase;
+			padding: 19px 0;
+			margin-left: 33px;
+			transition: $ts;
 			&:hover {
-				color: $th;
+				opacity: .8;
+				transition: $ts;
 			}
 		}
+		nav {
+			float: right;
+		}
 		.logo-site {
-			background: url(../img/logo-site-blue@2x.png) center center no-repeat;
-			background-size: cover;	
+			margin: 13px 0;
+			cursor: pointer;
+			position: relative;
+		}
+		.download {
+			transition: $ts-f;
+			opacity: 0;
+			font-size: 14px;
+			color: white;
+			text-transform: uppercase;
+			display: block;
+			border-radius: 3px;
+			position: absolute;
+			right: -100px;
+			bottom: -1px;
+			padding: 2px 5px;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44abf8+0,1f86d2+100 */
+			background: #44abf8; /* Old browsers */
+			background: -moz-linear-gradient(top,  #44abf8 0%, #1f86d2 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#44abf8), color-stop(100%,#1f86d2)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #44abf8 0%,#1f86d2 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #44abf8 0%,#1f86d2 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #44abf8 0%,#1f86d2 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #44abf8 0%,#1f86d2 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44abf8', endColorstr='#1f86d2',GradientType=0 ); /* IE6-9 */
+		}
+		.social {
 			transition: $ts;
+			padding: 0;
+			position: relative;
+			top: 5px;
+			width: 23px;
+			height: 23px;
+			background: url(../img/icon-facebook.svg) center center;
+			background-size: cover;
+			&:hover {
+				opacity: .8;
+				transition: $ts;
+			}
+		}
+		&.fixed {
+			border-bottom-color: #eee;
+			a {
+				color: #bbb;
+				&:hover {
+					color: $txt;
+				}
+			}
+			.logo-site {
+				// background: url(../img/logo-site-blue@2x.png) center center no-repeat;
+				// background-size: cover;	
+				transition: $ts-f;
+				width: 0;
+			}
+			.social {
+				background: url(../img/icon-facebook-fixed.svg) center center;
+				background-size: cover;
+			}
+
+			.download {
+				opacity: 1;
+				transition: $ts-f;
+			}
 		}
 	}
-}
+/*-----  End of menu  ------*/
 
 
-.wrap {
-	width: 365px;
-	padding-top: 110px;
-} 
+
+
+/**
+*
+* home
+*
+**/
 
 .page-home {
 	background: $pr url(../img/page-home-full.jpg) center bottom;
@@ -78,15 +142,19 @@
 		background: white;
 	}
 	.wrap {
-		width: 365px;
-		padding-top: 110px;
 		padding-left: 80px;
+		padding-top: 0;
 	} 
 	img {
 		margin-bottom: 70px;
 	}
 }
 
+/**
+*
+* o app
+*
+**/
 
 .page-oapp {
 	background: url(../img/page-oapp.jpg) center bottom repeat-x;
@@ -102,9 +170,23 @@
 		opacity: 0;
 		transition: $ts-f;
 	}
-	.section-p{
+	.section-title {
+		padding-left: 80px;
+		background: url(../img/icon-oapp.svg) left 7px no-repeat;
+		background-size: auto 79%;
+	}
+	.section-p,
+	.alias {
 		@include translate(-100px, 0);
 		opacity: 0;
+	}
+	.alias {
+		font-size: 20px;
+		padding-left: 35px;
+		margin-top: 40px;
+		background: url(../img/icon-nowifi.svg) left 2px no-repeat;
+		background-size: 28px;
+		line-height: 30px;
 	}
 	&.view {
 		.page-oapp_iphone {
@@ -113,7 +195,10 @@
 			transition: $ts-f;
 		}
 		.section-p {
-			@include animation(pageoAppCard 1s .1s ease-out forwards); 
+			@include animation(pageoAppCard 1s .3s ease-out forwards); 
+		}
+		.alias {
+			@include animation(pageoAppCard 1s .6s ease-out forwards); 
 		}
 		figure {
 			img {
@@ -149,32 +234,102 @@
 }
 
 
-
-
-
-#menu {
-	position: fixed;
-	z-index: 999;
-}
+/*==============================
+=            mobile            =
+==============================*/
 
 .mobile {
 	position: fixed;
-	left: 60%;
-	height: 80%;
+	left: 50%;
+	margin-left: 10%;
 	bottom: 5%;
 	z-index: 99;
+	height: 80%;
 	transition: $ts-f;
-	&.slide-2 {
-		left: 52%;
+	.mobile-img {
+		width: auto;
+		height: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	&.pageApp-move {
+		margin-left: 0%;
 		transition: $ts-f;
+	}
+	&.pageApp-mobile {
+		.mobile-sections_home {
+			// top: -100% !important;
+			transition: $ts-l;
+		}
+		.mobile-sections_oapp {
+			// top: 0;
+			opacity: 1;
+			transition: $ts-l;
+		}
 	}
 	&.slide-3 {
 		position: absolute;
-		bottom: 0;
+	}
+}
+.mobile-sections {
+	position: absolute;
+	top: 43px;
+	right: 20px;
+	left: 25px;
+	bottom: 69px;
+	z-index: 1;
+	overflow: hidden;
+	background: white;
+	.mobile-sections_item {
+		position: absolute;
+		// top: 100%;
+		left: 0;
+		opacity: 0;
+		transition: $ts-l;
+		width: 100%;
+		height: 100%;
+		&:first-child {
+			top: 0;
+			opacity: 1;
+		}
+	}
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
 	}
 }
 
+/**
+*
+* home
+*
+**/
+.mobile-sections .mobile-sections_home {
+	.card {
+		  position: absolute;
+		  right: 6px;
+		  left: 6px;
+		  width: 95%;
+	}
+}
 
+/*-----  End of mobile  ------*/
+
+
+
+@include keyframes(up) {
+	0% {
+		@include translate(0, 100px);
+		opacity: 0;
+	}
+	100% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+}
 
 
 

@@ -17,13 +17,22 @@ $(document).ready(function() {
 		css3: false,
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
-			if (nextIndex == 1) {
-				$mobile.removeClass('slide-2');
-				$nav.removeClass('fixed');
-			};
 			if (nextIndex > 1) {
 				$nav.addClass('fixed');
 			};
+
+			if (nextIndex == 1) {
+				$mobile.removeClass('pageApp-move pageApp-mobile');
+				$nav.removeClass('fixed');
+			};
+
+			if (nextIndex == 2) {
+				$mobile.addClass('pageApp-mobile');
+			};
+
+			if (nextIndex == 2) {
+				$mobile.removeClass('slide-3');
+			}
 		},
 
 		afterLoad : function(anchorLink, index){
@@ -33,14 +42,14 @@ $(document).ready(function() {
 			};
 
 			if(index == 2) {
-				$('.mobile').addClass('slide-2');
+				$mobile.addClass('pageApp-move');
 				$pageApp.addClass('view');
 			} else {
 			}
 			if(index == 3) {
-				$('.mobile').addClass('slide-3');
+				$mobile.addClass('slide-3');
 			} else if (index < 3) {
-				$('.mobile').removeClass('slide-3');
+				$mobile.removeClass('slide-3');
 			}
 			if(index == 4) {
 				$.fn.fullpage.setAutoScrolling(false);
