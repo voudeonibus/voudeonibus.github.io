@@ -10,6 +10,7 @@ $(document).ready(function() {
 	$mobile = $('.mobile'),
 	$pageHome = $('.page-home'),
 	$pageApp = $('.page-oapp'),
+	$pageVouagora = $('.page-vouagora'),
 	$nav = $('.nav-site'),
 	$slideVouagora = $('.mobile-sections_vouagora');
 
@@ -20,7 +21,7 @@ $(document).ready(function() {
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
-				$nav.addClass('fixed');
+				$nav.addClass('fixed oapp');
 			};
 
 			if (nextIndex == 1) {
@@ -30,26 +31,30 @@ $(document).ready(function() {
 
 			if (nextIndex == 2) {
 				$mobile.addClass('pageApp-mobile');
+				$mobile.removeClass('pageVouagora');
+				$nav.removeClass('gray');
 			};
 
-			if (nextIndex == 2) {
-				$mobile.removeClass('pageVouagora');
+			if (nextIndex == 3) {
+				$nav.addClass('gray');
 			}
 		},
 
 		afterLoad : function(anchorLink, index){
 
 			if (index == 1) {
-				$pageApp.removeClass('view');
+				$('.view').removeClass('view');
 			};
 
 			if(index == 2) {
 				$mobile.addClass('pageApp-move');
 				$pageApp.addClass('view');
-			} else {
+				$nav.addClass('white');
 			}
+
 			if(index == 3) {
 				$mobile.addClass('pageVouagora');
+				$pageVouagora.addClass('view');
 			} else if (index < 3) {
 				$mobile.removeClass('pageVouagora');
 			}
@@ -71,7 +76,6 @@ $(document).ready(function() {
 		slideSpeed : 600,
 		navigation : true,
 		pagination : false,
-		transitionStyle : "fade",
 		afterInit  : function(){
 			$slideVouagora.removeAttr('style');
 		},

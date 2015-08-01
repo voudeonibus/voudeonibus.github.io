@@ -10,6 +10,7 @@ $(document).ready(function() {
 	$mobile = $('.mobile'),
 	$pageHome = $('.page-home'),
 	$pageApp = $('.page-oapp'),
+	$pageVouagora = $('.page-vouagora'),
 	$nav = $('.nav-site'),
 	$slideVouagora = $('.mobile-sections_vouagora');
 
@@ -40,7 +41,6 @@ $(document).ready(function() {
 		afterLoad : function(anchorLink, index){
 
 			if (index == 1) {
-				$pageApp.removeClass('view');
 			};
 
 			if(index == 2) {
@@ -50,6 +50,7 @@ $(document).ready(function() {
 			}
 			if(index == 3) {
 				$mobile.addClass('pageVouagora');
+				$pageVouagora.addClass('view');
 			} else if (index < 3) {
 				$mobile.removeClass('pageVouagora');
 			}
@@ -71,7 +72,6 @@ $(document).ready(function() {
 		slideSpeed : 600,
 		navigation : true,
 		pagination : false,
-		transitionStyle : "fade",
 		afterInit  : function(){
 			$slideVouagora.removeAttr('style');
 		},

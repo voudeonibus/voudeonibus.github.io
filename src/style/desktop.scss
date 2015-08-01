@@ -34,11 +34,13 @@
 	.nav-site {
 		position: fixed;
 		z-index: 999;
-		left: 50%;
-		margin-left: -470px;
-		border-bottom: 1px solid #fff;
+		width: 100%;
+		// transition: $ts-f;
+		// left: 50%;
+		// margin-left: -470px;
 		.container {
 			overflow: hidden;
+			border-bottom: 1px solid #fff;
 		}
 
 		a {
@@ -105,7 +107,17 @@
 			}
 		}
 		&.fixed {
-			border-bottom-color: #eee;
+			&.white {
+				background: white;
+				transition: $ts-f;
+			}
+			&.gray {
+				transition: $ts-f;
+				background: $bg;
+			}
+			.container {
+				border-bottom-color: #eee;
+			}
 			a {
 				color: #bbb;
 				&:hover {
@@ -208,16 +220,16 @@
 			transition: $ts-f;
 		}
 		.section-p {
-			@include animation(pageoAppCard 1s .3s ease-out forwards); 
+			@include animation(fadeLeft 1s .3s ease-out forwards); 
 		}
 		.alias {
-			@include animation(pageoAppCard 1s .6s ease-out forwards); 
+			@include animation(fadeLeft 1s .6s ease-out forwards); 
 		}
 		figure {
 			img {
-				@include animation(pageoAppCard 1s ease-out forwards); 
+				@include animation(fadeLeft 1s ease-out forwards); 
 				&:first-child {
-					@include animation(pageoAppCard 1s ease-out forwards); 
+					@include animation(fadeLeft 1s ease-out forwards); 
 				}
 			}
 		}
@@ -235,17 +247,6 @@
 	}
 }
 
-@include keyframes(pageoAppCard) {
-	0% {
-		@include translate(-70px, 0);
-		opacity: 0;
-	}
-	100% {
-		@include translate(0, 0);
-		opacity: 1;
-	}
-}
-
 
 /**
 *
@@ -255,8 +256,11 @@
 .page-vouagora {
 	background: url(../img/page-vouagora_bg.jpg) center center repeat-x;
 	.section-title,
-	.section-p {
+	.section-p,
+	.dots {
 		color: white;
+		@include translate(-100px, 0);
+		opacity: 0;
 	}
 	.container {
 		position: relative;
@@ -306,6 +310,17 @@
 			border: 6px solid #7ed321;
 			border-radius: 12px;
 			background: #7ed321;
+		}
+	}
+	&.view {
+		.section-title {
+			@include animation(fadeLeft 1s ease-out forwards); 
+		}
+		.section-p {
+			@include animation(fadeLeft 1s .3s ease-out forwards); 
+		}
+		.dots {
+			@include animation(fadeLeft 1s .6s ease-out forwards); 
 		}
 	}
 }
@@ -362,10 +377,10 @@
 }
 .mobile-sections {
 	position: absolute;
-	top: 43px;
-	right: 20px;
-	left: 25px;
-	bottom: 69px;
+	top: 8%;
+	right: 7%;
+	left: 9%;
+	bottom: 13%;
 	z-index: 1;
 	overflow: hidden;
 	background: white;
@@ -419,6 +434,18 @@
 		opacity: 1;
 	}
 }
+
+@include keyframes(fadeLeft) {
+	0% {
+		@include translate(-70px, 0);
+		opacity: 0;
+	}
+	100% {
+		@include translate(0, 0);
+		opacity: 1;
+	}
+}
+
 
 
 
