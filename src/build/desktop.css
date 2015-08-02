@@ -599,25 +599,22 @@ body {
 *
 **/
 .page-footer {
-  padding-top: 70px;
+  padding-top: 20px;
   text-align: center; }
 
 .page-footer-main {
   text-align: left;
-  margin-top: 70px;
+  margin-top: 20px;
   border-top: 1px solid #eee; }
-  .page-footer-main .logo-site {
-    margin-top: 15px;
-    background: url(../img/logo-site-blue@2x.png) center center no-repeat;
-    background-size: cover;
-    margin-right: 25px; }
-  .page-footer-main a {
+  .page-footer-main a, .page-footer-main p {
     font-size: 14px;
     text-transform: uppercase;
-    padding: 20px 30px;
+    padding: 20px 0;
+    margin-right: 30px;
     color: #bbb;
-    transition: all 0.2s ease; }
-    .page-footer-main a:hover {
+    transition: all 0.2s ease;
+    display: inline-block; }
+    .page-footer-main a:hover, .page-footer-main p:hover {
       color: #666;
       transition: all 0.2s ease; }
 
