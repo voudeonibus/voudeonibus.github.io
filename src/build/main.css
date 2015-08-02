@@ -87,6 +87,16 @@ html, body {
 .ir span {
   display: none; }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
 .logo-site {
   width: 173px;
   height: 22px;
@@ -110,6 +120,15 @@ html, body {
   line-height: 23px;
   font-weight: light; }
 
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #249DF7;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-top: 30px; }
+
 .page-home {
   color: #fff; }
   .page-home h1 {
@@ -126,3 +145,6 @@ html, body {
 .page-oapp figure {
   position: relative;
   margin: 25px 0; }
+
+.page-apoio {
+  background: white; }

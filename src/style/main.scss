@@ -18,6 +18,10 @@ html, body {
 	}
 }
 
+.clearfix {
+	@include clearfix();
+}
+
 
 
 .logo-site {
@@ -46,6 +50,16 @@ html, body {
 	font-weight: light;
 }
 
+.section-subtitle {
+	font-size: 20px;
+	font-weight: 300;
+	color: $pr;
+	border-bottom: 1px solid #ddd;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin-top: 30px;
+}
+
 .page-home {
 	color: #fff;
 	h1 {
@@ -71,7 +85,9 @@ html, body {
 	}	
 }
 
-
+.page-apoio {
+	background: white;
+}
 
 
 

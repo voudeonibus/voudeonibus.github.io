@@ -12,9 +12,8 @@ $(document).ready(function() {
 	$pageApp = $('.page-oapp'),
 	$pageVouagora = $('.page-vouagora'),
 	$nav = $('.nav-site'),
-	$slideVouagora = $('.mobile-sections_vouagora');
-
-
+	$slideVouagora = $('.mobile-sections_vouagora'),
+	$pageFree = $('.page-free .fp-tableCell');
 
 	$fullPage.fullpage({
 		css3: false,
@@ -35,31 +34,42 @@ $(document).ready(function() {
 				$nav.removeClass('gray');
 			};
 
-			if (nextIndex == 3) {
+			if (nextIndex >= 3) {
 				$nav.addClass('gray');
 			}
+
+			if(index == 4) {
+				$mobile.addClass('pageVouagora');
+				$pageVouagora.addClass('view');
+				$.fn.fullpage.setAutoScrolling(true);
+			} 
 		},
 
 		afterLoad : function(anchorLink, index){
 
 			if (index == 1) {
 				$('.view').removeClass('view');
+				$.fn.fullpage.setAutoScrolling(true);
 			};
 
-			if(index == 2) {
+			if(index >= 2) {
 				$mobile.addClass('pageApp-move');
 				$pageApp.addClass('view');
 				$nav.addClass('white');
+				$.fn.fullpage.setAutoScrolling(true);
 			}
 
-			if(index == 3) {
+			if(index >= 3) {
 				$mobile.addClass('pageVouagora');
 				$pageVouagora.addClass('view');
+				$.fn.fullpage.setAutoScrolling(true);
 			} else if (index < 3) {
 				$mobile.removeClass('pageVouagora');
 			}
+
 			if(index == 4) {
 				$.fn.fullpage.setAutoScrolling(false);
+				scrollPageFree();
 			}
 		}
 	});
@@ -107,15 +117,33 @@ $(document).ready(function() {
 
 	
 
+	/*=================================
+	=            page free            =
+	=================================*/
 
-	// return fullpage
-	$('#section3 .fp-tableCell').scroll(function(){
-		console.log($(this).scrollTop());
-		if($(this).scrollTop() == 0) {
-			$.fn.fullpage.setAutoScrolling(true);
-			console.log($(this).scrollTop());
-		}
-	});
+	function scrollPageFree() {
+		var pageScroll = $('.page-free .fp-tableCell');
+
+		setTimeout(function(){
+			if(pageScroll.scrollTop() == 0) {
+				pageScroll.animate({scrollTop:1}, '100');
+			}
+		}, 500)
+
+		// return to scroll
+		pageScroll.scroll(function(){
+			if($(this).scrollTop() == 0) {
+				$.fn.fullpage.setAutoScrolling(true);
+				console.log($(this).scrollTop());
+			}
+		});
+	}
+
+	
+	
+	/*-----  End of page free  ------*/
+	
+	
 
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * fullPage 2.6.6
  * https://github.com/alvarotrigo/fullPage.js
@@ -68,16 +69,6 @@ html.fp-enabled,
 
 body {
   overflow: hidden !important; }
-
-#section3 .fp-tableCell {
-  overflow: auto;
-  display: block; }
-
-.foo {
-  height: 2000px;
-  width: 90%;
-  margin: 0 auto;
-  background: #fff; }
 
 /* 
  * 	Core Owl Carousel CSS File
@@ -369,21 +360,6 @@ body {
     opacity: 0; }
   .page-vouagora .container {
     position: relative; }
-  .page-vouagora .arrow {
-    width: 25px;
-    height: 50px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -8px; }
-    .page-vouagora .arrow.next {
-      background: url(../img/page-vouagora_arrow.svg) right center no-repeat;
-      background-size: auto 50px;
-      right: 150px; }
-    .page-vouagora .arrow.prev {
-      background: url(../img/page-vouagora_arrow.svg) left center no-repeat;
-      background-size: auto 50px;
-      left: 435px; }
   .page-vouagora .dots {
     margin-top: 75px; }
     .page-vouagora .dots a {
@@ -454,8 +430,26 @@ body {
     .mobile.pageVouagora .mobile-sections_oapp {
       opacity: 0;
       transition: all 0.7s ease; }
-    .mobile.pageVouagora .mobile-sections_vouagora {
-      opacity: 1; }
+    .mobile.pageVouagora .mobile-sections_vouagora, .mobile.pageVouagora .arrow {
+      opacity: 1;
+      transition: all 1s ease; }
+  .mobile .arrow {
+    width: 25px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    opacity: 0;
+    transition: all 0.2s ease; }
+    .mobile .arrow.next {
+      background: url(../img/page-vouagora_arrow.svg) right center no-repeat;
+      background-size: auto 50px;
+      right: -35px; }
+    .mobile .arrow.prev {
+      background: url(../img/page-vouagora_arrow.svg) left center no-repeat;
+      background-size: auto 50px;
+      left: -35px; }
 
 .mobile-sections {
   position: absolute;
@@ -483,12 +477,150 @@ body {
     width: 100%;
     height: auto; }
 
+/*-----  End of mobile  ------*/
 /**
 *
-* home
+* page free
 *
 **/
-/*-----  End of mobile  ------*/
+.page-free .fp-tableCell {
+  overflow: auto;
+  display: block; }
+
+/**
+*
+* for user
+*
+**/
+.page-foruser {
+  margin-top: 100px; }
+  .page-foruser .page-foruser_img {
+    float: left; }
+  .page-foruser .wrap {
+    float: right;
+    width: 465px;
+    padding: 0; }
+  .page-foruser .section-title {
+    margin: 30px 0; }
+    .page-foruser .section-title strong {
+      font-size: 39px; }
+
+.page-testimony_item {
+  float: left;
+  width: 273px;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 115px;
+  position: relative; }
+  .page-testimony_item.first {
+    margin-left: 0; }
+  .page-testimony_item p:first-child {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    padding-right: 30px; }
+    .page-testimony_item p:first-child:before {
+      content: "”";
+      display: block;
+      font-size: 50px;
+      font-weight: bold;
+      font-style: normal;
+      color: #249DF7;
+      font-family: serif;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .page-testimony_item .name {
+    font-weight: 300;
+    font-size: 16px;
+    display: block;
+    font-style: normal;
+    border-top: 1px solid #249DF7;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-right: 0; }
+    .page-testimony_item .name strong {
+      font-weight: normal; }
+
+/**
+*
+* page apoio
+*
+**/
+.page-apoio {
+  text-align: center;
+  padding: 30px 0; }
+  .page-apoio .section-subtitle {
+    text-align: left; }
+  .page-apoio a {
+    display: inline-block;
+    margin: 30px 100px; }
+  .page-apoio p {
+    text-align: left;
+    margin: 10px 0 20px; }
+
+/**
+*
+* page team
+*
+**/
+.page-team {
+  background: url(../img/page-team.jpg) center top fixed;
+  background-size: cover;
+  padding-bottom: 70px;
+  padding-top: 40px; }
+  .page-team .section-subtitle {
+    color: white;
+    border-bottom-color: white; }
+  .page-team .team-item {
+    width: 440px;
+    padding: 10px;
+    background: white;
+    border-radius: 2px;
+    margin-top: 80px;
+    float: left;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+    .page-team .team-item.first {
+      margin-right: 20px; }
+  .page-team .head {
+    margin-top: -50px;
+    margin-bottom: 10px; }
+    .page-team .head img, .page-team .head .social, .page-team .head h2 {
+      float: left; }
+    .page-team .head h2, .page-team .head .social {
+      margin-left: 15px;
+      color: white;
+      display: block;
+      width: 345px; }
+
+/**
+*
+* page footer
+*
+**/
+.page-footer {
+  padding-top: 70px;
+  text-align: center; }
+
+.page-footer-main {
+  text-align: left;
+  margin-top: 70px;
+  border-top: 1px solid #eee; }
+  .page-footer-main .logo-site {
+    margin-top: 15px;
+    background: url(../img/logo-site-blue@2x.png) center center no-repeat;
+    background-size: cover;
+    margin-right: 25px; }
+  .page-footer-main a {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    color: #bbb;
+    transition: all 0.2s ease; }
+    .page-footer-main a:hover {
+      color: #666;
+      transition: all 0.2s ease; }
+
 @-webkit-keyframes up {
   0% {
     -webkit-transform: translate(0, 100px);
