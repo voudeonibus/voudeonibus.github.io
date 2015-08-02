@@ -487,6 +487,9 @@ body {
   overflow: auto;
   display: block; }
 
+.page-free .relative {
+  position: relative; }
+
 /**
 *
 * for user

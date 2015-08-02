@@ -124,17 +124,14 @@ $(document).ready(function() {
 	function scrollPageFree() {
 		var pageScroll = $('.page-free .fp-tableCell');
 
-		setTimeout(function(){
-			if(pageScroll.scrollTop() == 0) {
-				pageScroll.animate({scrollTop:1}, '100');
-			}
-		}, 500)
+		if(pageScroll.scrollTop() == 0) {
+			pageScroll.animate({scrollTop:1}, '1');
+		}
 
 		// return to scroll
 		pageScroll.scroll(function(){
 			if($(this).scrollTop() == 0) {
 				$.fn.fullpage.setAutoScrolling(true);
-				console.log($(this).scrollTop());
 			}
 		});
 	}
@@ -144,8 +141,6 @@ $(document).ready(function() {
 	/*-----  End of page free  ------*/
 	
 	
-
-
 
 	/*============================
 	=            menu            =
@@ -158,16 +153,23 @@ $(document).ready(function() {
 
 		$nav.on('click', 'a', function(){
 			var target = $(this).index()+2;
-			$.fn.fullpage.moveTo(target);
+
+			// free page
+			if (target > 3) {
+				$.fn.fullpage.moveTo(4);
+
+				var section = $(this).data('target');
+				console.log($(section).position().top - 20);
+
+				$('.page-free .fp-tableCell').animate({
+					scrollTop: $(section).position().top - 20
+				}, '500');			
+			} else {
+				// normal
+				$.fn.fullpage.moveTo(target);
+			}
 		});
 	
-		// ultimo slide
-		// $('.quarto').on('click', function(){
-		// 	$.fn.fullpage.moveTo(4);
-		// 	setTimeout(function(){
-		// 		$('#section3 .fp-tableCell').animate({scrollTop:500}, '500');
-		// 	},1000);
-		// });
 	
 	/*-----  End of menu  ------*/
 	
