@@ -79,6 +79,13 @@
 			width: 0;
 			margin: 0;
 			padding: 0;
+
+			opacity: 1;
+			padding: 2px 5px;
+			width: 85px;
+			margin-left: 33px;
+			transition: $ts-f;
+
 			// position: absolute;
 			// right: -98px;
 			// bottom: -1px;
@@ -138,11 +145,7 @@
 			}
 
 			.download {
-				opacity: 1;
-				padding: 2px 5px;
-				width: 85px;
-				margin-left: 33px;
-				transition: $ts-f;
+
 			}
 		}
 	}
@@ -324,7 +327,8 @@
 
 .mobile {
 	position: fixed;
-	left: 50%;
+	left: 100%;
+	-webkit-transform: translate(-200%, 0);
 	margin-left: 10%;
 	bottom: 5%;
 	z-index: 99;
@@ -336,10 +340,10 @@
 		z-index: 10;
 		position: relative;
 	}
-	// &.pageApp-move {
-	// 	margin-left: 0%;
-	// 	transition: $ts-f;
-	// }
+	&.pageApp-move {
+		// margin-left: 0%;
+		transition: $ts-f;
+	}
 	&.pageApp-mobile {
 		.mobile-sections_oapp {
 			// top: 0;
@@ -348,7 +352,7 @@
 		}
 	}
 	&.pageVouagora {
-		margin-left: 0%;
+		// margin-left: 0%;
 		position: absolute;
 		.mobile-sections_home,
 		.mobile-sections_oapp {
