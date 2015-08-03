@@ -420,11 +420,13 @@ body {
     z-index: 10;
     position: relative; }
   .mobile.pageApp-move {
+    margin-left: 0%;
     transition: all 1s ease; }
   .mobile.pageApp-mobile .mobile-sections_oapp {
     opacity: 1;
     transition: all 0.7s ease; }
   .mobile.pageVouagora {
+    margin-left: 0%;
     position: absolute; }
     .mobile.pageVouagora .mobile-sections_home,
     .mobile.pageVouagora .mobile-sections_oapp {
