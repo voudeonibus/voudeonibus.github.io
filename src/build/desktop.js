@@ -16,7 +16,8 @@ $(document).ready(function() {
 	$pageFree = $('.page-free .fp-tableCell');
 
 	$fullPage.fullpage({
-		css3: false,
+		// css3: false,
+		scrollBar : true,
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
@@ -68,7 +69,6 @@ $(document).ready(function() {
 			}
 
 			if(index == 4) {
-				$.fn.fullpage.setAutoScrolling(false);
 				scrollPageFree();
 			}
 		}
@@ -124,6 +124,7 @@ $(document).ready(function() {
 	function scrollPageFree() {
 		var pageScroll = $('.page-free .fp-tableCell');
 
+		$.fn.fullpage.setAutoScrolling(false);
 		if(pageScroll.scrollTop() == 0) {
 			pageScroll.animate({scrollTop:1}, '1');
 		}
@@ -155,7 +156,7 @@ $(document).ready(function() {
 			var target = $(this).index()+2;
 
 			// free page
-			if (target > 3) {
+			if (target > 3 && target < 7) {
 				$.fn.fullpage.moveTo(4);
 
 				var section = $(this).data('target');
