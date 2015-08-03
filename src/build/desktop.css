@@ -163,8 +163,7 @@ body {
 .nav-site {
   position: fixed;
   z-index: 999;
-  width: 100%;
-  -webkit-transform: translate3d(0, 0, 0); }
+  width: 100%; }
   .nav-site .container {
     overflow: hidden;
     border-bottom: 1px solid #fff; }
@@ -175,8 +174,7 @@ body {
     text-transform: uppercase;
     padding: 19px 0;
     margin-left: 33px;
-    transition: all 0.2s ease;
-    -webkit-transform: translate3d(0, 0, 0); }
+    transition: all 0.2s ease; }
     .nav-site a:hover {
       opacity: .8;
       transition: all 0.2s ease; }
