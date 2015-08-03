@@ -23,12 +23,14 @@ html.fp-enabled,
 
     /* IE 11 on Windows Phone 8.1*/
     touch-action: none;
+    
 }
 .fp-section {
     position: relative;
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
+    // -webkit-transform: translate3d(0,0,0);
 }
 .fp-slide {
     float: left;

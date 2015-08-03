@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$pageFree = $('.page-free .fp-tableCell');
 
 	$fullPage.fullpage({
-		// css3: false,
+		css3: true,
 		scrollBar : true,
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
