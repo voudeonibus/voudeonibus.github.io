@@ -198,11 +198,6 @@ body {
     width: 0;
     margin: 0;
     padding: 0;
-    opacity: 1;
-    padding: 2px 5px;
-    width: 85px;
-    margin-left: 33px;
-    transition: all 1s ease;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44abf8+0,1f86d2+100 */
     background: #44abf8;
     /* Old browsers */
@@ -253,6 +248,12 @@ body {
   .nav-site.fixed .social {
     background: url(../img/icon-facebook-fixed.svg) center center;
     background-size: cover; }
+  .nav-site.fixed .download {
+    opacity: 1;
+    padding: 2px 5px;
+    width: 85px;
+    margin-left: 33px;
+    transition: all 1s ease; }
 
 /*-----  End of menu  ------*/
 /**
@@ -407,8 +408,7 @@ body {
 ==============================*/
 .mobile {
   position: fixed;
-  left: 100%;
-  -webkit-transform: translate(-200%, 0);
+  left: 50%;
   margin-left: 10%;
   bottom: 5%;
   z-index: 99;
@@ -420,11 +420,13 @@ body {
     z-index: 10;
     position: relative; }
   .mobile.pageApp-move {
+    margin-left: 0%;
     transition: all 1s ease; }
   .mobile.pageApp-mobile .mobile-sections_oapp {
     opacity: 1;
     transition: all 0.7s ease; }
   .mobile.pageVouagora {
+    margin-left: 0%;
     position: absolute; }
     .mobile.pageVouagora .mobile-sections_home,
     .mobile.pageVouagora .mobile-sections_oapp {
