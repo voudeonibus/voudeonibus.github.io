@@ -57,7 +57,7 @@ $(document).ready(function() {
 				$mobile.addClass('pageApp-move');
 				$pageApp.addClass('view');
 				$nav.addClass('white');
-				$.fn.fullpage.setAutoScrolling(true);
+				// $.fn.fullpage.setAutoScrolling(true);
 			}
 
 			if(index >= 3) {

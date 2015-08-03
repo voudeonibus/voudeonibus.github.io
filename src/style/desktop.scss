@@ -323,7 +323,6 @@
 ==============================*/
 
 .mobile {
-	-webkit-transform: translate3d(0,0,0);
 	position: fixed;
 	left: 50%;
 	margin-left: 10%;
@@ -337,10 +336,10 @@
 		z-index: 10;
 		position: relative;
 	}
-	&.pageApp-move {
-		margin-left: 0%;
-		transition: $ts-f;
-	}
+	// &.pageApp-move {
+	// 	margin-left: 0%;
+	// 	transition: $ts-f;
+	// }
 	&.pageApp-mobile {
 		.mobile-sections_oapp {
 			// top: 0;
