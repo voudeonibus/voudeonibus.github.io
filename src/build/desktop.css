@@ -353,6 +353,12 @@ body {
     left: -190px;
     top: 0; }
 
+@media screen and (min-height: 800px) {
+  .page-oapp .page-oapp_iphone {
+    right: 0px; }
+  .page-oapp.view .page-oapp_iphone {
+    right: -100px; } }
+
 /**
 *
 * vou agora
