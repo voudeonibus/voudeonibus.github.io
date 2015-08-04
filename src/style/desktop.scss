@@ -201,6 +201,7 @@
 *
 **/
 
+
 .page-oapp {
 	background: url(../img/page-oapp.jpg) center bottom repeat-x;
 	.container {
@@ -287,6 +288,8 @@
 * vou agora
 *
 **/
+
+
 .page-vouagora {
 	background: url(../img/page-vouagora_bg.jpg) center center repeat-x;
 	.section-title,
@@ -348,6 +351,27 @@
 	}
 }
  
+
+
+.lt-ie9 {
+	.page-oapp {
+		.section-p,
+		.alias {
+			@include translate(0, 0);
+			opacity: 1;
+		}
+	}
+	.page-vouagora {
+		.section-title,
+		.section-p,
+		.dots {
+			color: white;
+			@include translate(0px, 0);
+			opacity: 1;
+		}
+	}
+}
+
 
 /*==============================
 =            mobile            =

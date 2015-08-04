@@ -418,6 +418,24 @@ body {
   .mobile-sections_vouagora img {
     position: relative !important; }
 
+.lt-ie9 .page-oapp .section-p,
+.lt-ie9 .page-oapp .alias {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1; }
+
+.lt-ie9 .page-vouagora .section-title,
+.lt-ie9 .page-vouagora .section-p,
+.lt-ie9 .page-vouagora .dots {
+  color: white;
+  -webkit-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+  opacity: 1; }
+
 /*==============================
 =            mobile            =
 ==============================*/
