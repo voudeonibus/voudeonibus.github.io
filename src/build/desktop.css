@@ -434,7 +434,8 @@ body {
     z-index: 10;
     position: relative; }
   .mobile.pageApp-move {
-    -webkit-transform: translate(-30%, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    margin-left: 0%;
     transition: all 1s ease; }
   .mobile.pageApp-mobile .mobile-sections_oapp {
     opacity: 1;

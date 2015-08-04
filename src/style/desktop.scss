@@ -354,8 +354,8 @@
 		position: relative;
 	}
 	&.pageApp-move {
-		-webkit-transform: translate(-30%, 0);
-		// margin-left: 0%;
+		-webkit-transform: translate3d(0, 0, 0);
+		margin-left: 0%;
 		transition: $ts-f;
 	}
 	&.pageApp-mobile {
