@@ -261,7 +261,8 @@ body {
 **/
 .page-home {
   background: #249DF7 url(../img/page-home-full.jpg) center bottom;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-transform: translate3d(0, 0, 0); }
   .page-home:before {
     content: "";
     position: absolute;
