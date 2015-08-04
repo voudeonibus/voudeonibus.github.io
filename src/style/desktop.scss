@@ -166,6 +166,25 @@
 		height: 10%;
 		background: white;
 	}
+	.load-btn {
+		content: "";
+		display: block;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+
+		bottom: 3%;
+		left: 50%;
+		margin-left: -8px;
+
+		background: url(../img/loader.gif) center center no-repeat;
+		transition: $ts;
+	}
+	&.load .load-btn {
+		transition: $ts;
+		background: url(../img/page-home_down.gif) center center no-repeat;
+		cursor: pointer;
+	}
 	.wrap {
 		padding-left: 80px;
 		padding-top: 0;
@@ -334,7 +353,8 @@
 		position: relative;
 	}
 	&.pageApp-move {
-		margin-left: 0%;
+		-webkit-transform: translate(-30%, 0);
+		// margin-left: 0%;
 		transition: $ts-f;
 	}
 	&.pageApp-mobile {
@@ -565,11 +585,11 @@
 .page-footer {
 	padding: 40px 0;
 	.fb-page {
-		float: left;
+		float: right;
 		width: 460px;
 	}
 	.page-footer-main {
-		float: right;
+		float: left;
 		width: 460px;
 		h1  {
 			text-transform: uppercase;

@@ -270,6 +270,21 @@ body {
     right: 0;
     height: 10%;
     background: white; }
+  .page-home .load-btn {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -8px;
+    background: url(../img/loader.gif) center center no-repeat;
+    transition: all 0.2s ease; }
+  .page-home.load .load-btn {
+    transition: all 0.2s ease;
+    background: url(../img/page-home_down.gif) center center no-repeat;
+    cursor: pointer; }
   .page-home .wrap {
     padding-left: 80px;
     padding-top: 0; }
@@ -418,7 +433,7 @@ body {
     z-index: 10;
     position: relative; }
   .mobile.pageApp-move {
-    margin-left: 0%;
+    -webkit-transform: translate(-30%, 0);
     transition: all 1s ease; }
   .mobile.pageApp-mobile .mobile-sections_oapp {
     opacity: 1;
@@ -604,10 +619,10 @@ body {
 .page-footer {
   padding: 40px 0; }
   .page-footer .fb-page {
-    float: left;
+    float: right;
     width: 460px; }
   .page-footer .page-footer-main {
-    float: right;
+    float: left;
     width: 460px; }
     .page-footer .page-footer-main h1 {
       text-transform: uppercase;

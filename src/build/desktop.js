@@ -5,6 +5,8 @@
 
 $(document).ready(function() {
 
+
+
 	// para variar 
 	$fullPage = $('#fullpage'),
 	$mobile = $('.mobile'),
@@ -15,9 +17,15 @@ $(document).ready(function() {
 	$slideVouagora = $('.mobile-sections_vouagora'),
 	$pageFree = $('.page-free .fp-tableCell');
 
+	$pageHome.addClass('load');
+	$('.load-btn').on('click', function(){
+		$.fn.fullpage.moveTo(2)
+	});
+
 	$fullPage.fullpage({
 		css3: true,
 		scrollBar : true,
+		scrollingSpeed: 1300,
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
