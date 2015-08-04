@@ -305,8 +305,7 @@ body {
     transition: all 1s ease; }
   .page-oapp .section-title {
     padding-left: 80px;
-    background: url(../img/icon-oapp.gif) left 7px no-repeat;
-    background-size: auto 79%; }
+    background: url(../img/icon-oapp.gif) left 7px no-repeat; }
   .page-oapp .section-p,
   .page-oapp .alias {
     -webkit-transform: translate(-100px, 0);
@@ -319,7 +318,6 @@ body {
     padding-left: 35px;
     margin-top: 40px;
     background: url(../img/icon-nowifi.gif) left 2px no-repeat;
-    background-size: 28px;
     line-height: 30px; }
   .page-oapp.view .page-oapp_iphone {
     right: -35px;
