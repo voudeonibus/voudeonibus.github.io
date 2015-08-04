@@ -107,14 +107,14 @@
 			}
 		}
 		&.fixed {
-			&.white {
-				background: white;
-				transition: $ts-f;
-			}
-			&.gray {
-				transition: $ts-f;
-				background: $bg;
-			}
+			// &.white {
+			// 	background: white;
+			// 	transition: $ts-f;
+			// }
+			// &.gray {
+			// 	transition: $ts-f;
+			// 	background: $bg;
+			// }
 			.container {
 				border-bottom-color: #eee;
 			}

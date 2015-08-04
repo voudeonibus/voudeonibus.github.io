@@ -29,7 +29,7 @@ $(document).ready(function() {
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
-				// $nav.addClass('fixed oapp');
+				$nav.addClass('fixed oapp');
 			};
 
 			if (nextIndex == 1) {

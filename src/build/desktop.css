@@ -227,12 +227,6 @@ body {
     .nav-site .social:hover {
       opacity: .8;
       transition: all 0.2s ease; }
-  .nav-site.fixed.white {
-    background: white;
-    transition: all 1s ease; }
-  .nav-site.fixed.gray {
-    transition: all 1s ease;
-    background: #F9F9F9; }
   .nav-site.fixed .container {
     border-bottom-color: #eee; }
   .nav-site.fixed a {
