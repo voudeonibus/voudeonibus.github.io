@@ -234,6 +234,17 @@
 		// background-size: 28px;
 		line-height: 30px;
 	}
+	figure {
+		img {
+			@include translate(-100px, 0);
+			opacity: 0;
+		}
+		img:first-child {
+			position: absolute;
+			left: -190px;
+			top: 0;
+		}
+	}
 	&.view {
 		.page-oapp_iphone {
 			right: -35px;
@@ -255,17 +266,7 @@
 			}
 		}
 	}
-	figure {
-		img {
-			@include translate(-100px, 0);
-			opacity: 0;
-		}
-		img:first-child {
-			position: absolute;
-			left: -190px;
-			top: 0;
-		}
-	}
+
 }
 
 
@@ -355,6 +356,7 @@
 
 .lt-ie9 {
 	.page-oapp {
+		figure img,
 		.section-p,
 		.alias {
 			@include translate(0, 0);

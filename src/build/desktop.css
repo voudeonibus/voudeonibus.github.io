@@ -322,6 +322,16 @@ body {
     margin-top: 40px;
     background: url(../img/icon-nowifi.gif) left 5px no-repeat;
     line-height: 30px; }
+  .page-oapp figure img {
+    -webkit-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+    opacity: 0; }
+  .page-oapp figure img:first-child {
+    position: absolute;
+    left: -190px;
+    top: 0; }
   .page-oapp.view .page-oapp_iphone {
     right: -35px;
     opacity: 1;
@@ -342,16 +352,6 @@ body {
       -webkit-animation: fadeLeft 1s ease-out forwards;
       -moz-animation: fadeLeft 1s ease-out forwards;
       animation: fadeLeft 1s ease-out forwards; }
-  .page-oapp figure img {
-    -webkit-transform: translate(-100px, 0);
-    -ms-transform: translate(-100px, 0);
-    -moz-transform: translate(-100px, 0);
-    transform: translate(-100px, 0);
-    opacity: 0; }
-  .page-oapp figure img:first-child {
-    position: absolute;
-    left: -190px;
-    top: 0; }
 
 @media screen and (min-height: 800px) {
   .page-oapp .page-oapp_iphone {
@@ -418,6 +418,7 @@ body {
   .mobile-sections_vouagora img {
     position: relative !important; }
 
+.lt-ie9 .page-oapp figure img,
 .lt-ie9 .page-oapp .section-p,
 .lt-ie9 .page-oapp .alias {
   -webkit-transform: translate(0, 0);
