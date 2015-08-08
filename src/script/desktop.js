@@ -6,18 +6,23 @@
 $(document).ready(function() {
 
 	// para variar 
-	$fullPage = $('#fullpage'),
+	$fullPage = $('#fullpage--vbd'),
 	$mobile = $('.mobile'),
 	$pageHome = $('.page-home'),
 	$pageApp = $('.page-oapp'),
 	$pageVouagora = $('.page-vouagora'),
 	$nav = $('.nav-site'),
-	$slideVouagora = $('.mobile-sections_vouagora');
+	$slideVouagora = $('.mobile-sections_vouagora'),
+	$nextPage = $('.next-page');
 
-	$pageHome.addClass('load');
+	$nextPage.addClass('load');
+	$nextPage.click(function(){
+		$.fn.fullpage.moveSectionDown();
+	});
 
 	$fullPage.fullpage({
-		css3: false,
+		css3: true,
+		scrollBar : true,
 		onLeave: function(index, nextIndex, direction){
 			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
@@ -42,6 +47,7 @@ $(document).ready(function() {
 		afterLoad : function(anchorLink, index){
 
 			if (index == 1) {
+				$('.view').removeClass('view');
 			};
 
 			if(index == 2) {
@@ -57,7 +63,10 @@ $(document).ready(function() {
 			}
 			if(index == 4) {
 				$nav.addClass('gray');
+				$nextPage.addClass('none');
+				$.fn.fullpage.setAutoScrolling(false);
 			} else {
+				$nextPage.removeClass('none');
 				$nav.removeClass('gray');
 			}
 		}
@@ -110,7 +119,6 @@ $(document).ready(function() {
 	// return fullpage
 	$('.page-free .fp-tableCell').scroll(function(){
 		if($(this).scrollTop() > 0) {
-			$.fn.fullpage.setAutoScrolling(false);
 		}
 		if($(this).scrollTop() == 0) {
 			$.fn.fullpage.setAutoScrolling(true);

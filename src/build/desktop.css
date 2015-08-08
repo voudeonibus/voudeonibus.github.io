@@ -150,7 +150,7 @@ body {
   padding-top: 50px;
   width: 365px; }
 
-#fullpage,
+#fullpage-vbd,
 .section {
   width: 100%;
   height: 100%;
@@ -250,6 +250,28 @@ body {
     transition: all 1s ease; }
 
 /*-----  End of menu  ------*/
+.next-page {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  margin-left: -25px;
+  background: url(../img/loader.gif) center center no-repeat;
+  transition: all 0.2s ease;
+  z-index: 99;
+  box-shadow: 0 0px 0px transparent; }
+  .next-page.load {
+    transition: all 0.2s ease;
+    background: white url(../img/page-home_down.gif) center center no-repeat;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+  .next-page.none {
+    transition: all 0.2s ease;
+    opacity: 0; }
+
 /**
 *
 * home
@@ -267,21 +289,6 @@ body {
     right: 0;
     height: 10%;
     background: white; }
-  .page-home .load-btn {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    margin-left: -8px;
-    background: url(../img/loader.gif) center center no-repeat;
-    transition: all 0.2s ease; }
-  .page-home.load .load-btn {
-    transition: all 0.2s ease;
-    background: url(../img/page-home_down.gif) center center no-repeat;
-    cursor: pointer; }
   .page-home .wrap {
     padding-left: 80px;
     padding-top: 0; }
