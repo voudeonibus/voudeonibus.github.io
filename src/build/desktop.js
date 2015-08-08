@@ -59,16 +59,19 @@ $(document).ready(function() {
 
 			if (index == 1) {
 				$('.view').removeClass('view');
+				$.fn.fullpage.setAutoScrolling(true);
 			};
 
-			if(index == 2) {
+			if(index >= 2) {
 				$mobile.addClass('pageApp-move');
 				$pageApp.addClass('view');
+				$.fn.fullpage.setAutoScrolling(true);
 			} else {
 			}
-			if(index == 3) {
+			if(index >= 3) {
 				$mobile.addClass('pageVouagora');
 				$pageVouagora.addClass('view');
+				$.fn.fullpage.setAutoScrolling(true);
 			} else if (index < 3) {
 				$mobile.removeClass('pageVouagora');
 			}
@@ -76,6 +79,9 @@ $(document).ready(function() {
 				$nav.addClass('gray');
 				$nextPage.addClass('none');
 				$.fn.fullpage.setAutoScrolling(false);
+				$('.page-free .fp-tableCell').animate({
+					scrollTop: 1
+				}, '100');	
 			} else {
 				$nextPage.removeClass('none');
 				$nav.removeClass('gray');
@@ -134,13 +140,11 @@ $(document).ready(function() {
 	var fullpageReturn = (function() {
 		'use strict';
 
-		var timeWindow = 500; // time in ms
+		var timeWindow = 200; // time in ms
 		var timeout;
 
 		var fullpageReturn = function() {
-			if($('.page-free .fp-tableCell').scrollTop() > 0) {
-				$.fn.fullpage.setAutoScrolling(false);
-			}
+
 			if($('.page-free .fp-tableCell').scrollTop() == 0) {
 				$.fn.fullpage.setAutoScrolling(true);
 			}
@@ -163,6 +167,7 @@ $(document).ready(function() {
 
 
 
+
 	/*============================
 	=            menu            =
 	============================*/
@@ -174,7 +179,21 @@ $(document).ready(function() {
 
 		$nav.on('click', 'a', function(){
 			var target = $(this).index()+2;
-			$.fn.fullpage.moveTo(target);
+
+			// free page
+			if (target > 3 && target < 7) {
+				$.fn.fullpage.moveTo(4);
+
+				var section = $(this).data('target');
+				console.log($(section).position().top - 20);
+
+				$('.page-free .fp-tableCell').animate({
+					scrollTop: $(section).position().top - 20
+				}, '500');			
+			} else {
+				// normal
+				$.fn.fullpage.moveTo(target);
+			}
 		});
 	
 	

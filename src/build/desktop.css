@@ -471,8 +471,7 @@ body {
     transition: all 0.7s ease; }
   .mobile.pageVouagora {
     margin-left: 0%;
-    position: absolute;
-    right: 27.5%; }
+    position: absolute; }
     .mobile.pageVouagora .mobile-sections_home,
     .mobile.pageVouagora .mobile-sections_oapp {
       opacity: 0;
@@ -667,8 +666,7 @@ body {
       font-size: 20px;
       margin-bottom: 10px; }
     .page-footer .page-footer-main .links {
-      margin-top: 30px;
-      text-transform: uppercase; }
+      margin-top: 30px; }
     .page-footer .page-footer-main a {
       font-size: 146x;
       display: block;
