@@ -142,6 +142,108 @@ html, body {
   .page-home img {
     width: 176px; }
 
+.page-home_action {
+  margin: 30px 0 0;
+  position: relative;
+  height: 56px;
+  width: 100%; }
+  .page-home_action .btn-active {
+    background: white;
+    padding: 12px 16px 8px;
+    border-radius: 5px;
+    box-shadow: 0 0px 0px transparent;
+    transition: all 0.2s ease; }
+    .page-home_action .btn-active:hover {
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+  .page-home_action .google-play img {
+    width: 140px;
+    height: auto; }
+  .page-home_action img {
+    margin: 0 !important;
+    width: auto; }
+
+.avise-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 54px;
+  width: 172px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+  overflow: hidden; }
+  .avise-me .icon {
+    position: absolute;
+    transition: all 0.2s ease;
+    top: 13px;
+    left: 13px; }
+  .avise-me input {
+    height: 40px;
+    margin: 8px;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #249DF7;
+    opacity: 0;
+    transition: all 0.2s ease;
+    width: 10px; }
+  .avise-me .action-item {
+    display: block;
+    transition: all 0.4s;
+    border-radius: 3px;
+    background: transparent;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 8px; }
+  .avise-me .submit {
+    opacity: 0;
+    top: 45px; }
+  .avise-me .back {
+    opacity: 0; }
+  .avise-me:hover .submit {
+    top: 9px;
+    opacity: 1; }
+  .avise-me:hover .placeholder {
+    opacity: 0;
+    top: -45px; }
+
+.form-active .google-play {
+  opacity: 0;
+  transition: all 0.2s ease; }
+
+.form-active .avise-me {
+  transition: all 0.4s;
+  width: 365px; }
+  .form-active .avise-me input {
+    transition: all 0.4s;
+    opacity: 1;
+    width: 209px; }
+  .form-active .avise-me .submit {
+    transition: all 0.4s;
+    background: #249DF7; }
+
+.form-active .icon {
+  opacity: 0;
+  left: -30px; }
+
+.form-active .submit {
+  top: 9px;
+  opacity: 1; }
+
+.form-active .placeholder {
+  opacity: 0;
+  top: -45px; }
+
 .page-oapp figure {
   position: relative;
   margin: 25px 0; }

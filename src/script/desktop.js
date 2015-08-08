@@ -14,7 +14,7 @@ $(document).ready(function() {
 	$nav = $('.nav-site'),
 	$slideVouagora = $('.mobile-sections_vouagora');
 
-
+	$pageHome.addClass('load');
 
 	$fullPage.fullpage({
 		css3: false,
@@ -22,6 +22,7 @@ $(document).ready(function() {
 			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
 				$nav.addClass('fixed');
+				$('.page-home_action').removeClass('form-active');
 			};
 
 			if (nextIndex == 1) {

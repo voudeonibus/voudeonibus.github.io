@@ -76,7 +76,129 @@ html, body {
 	img {
 		width: 176px;
 	}
+}
 
+.page-home_action {
+	margin: 30px 0 0;
+	position: relative;
+	height: 56px;
+	width: 100%;
+
+	.btn-active {
+		background: white;
+		padding: 12px 16px 8px;
+		border-radius: 5px;
+		box-shadow: 0 0px 0px rgba(0,0,0,0);
+		transition: $ts;
+		&:hover {
+			transition: $ts;
+			box-shadow: 0 2px 6px rgba(0,0,0,.4);
+		}
+	}
+	.google-play {
+		img {
+			width: 140px;
+			height: auto;
+		}
+	}
+	img { 
+		margin:0 !important;
+		width: auto;
+	}
+}
+.avise-me {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 54px;
+	width: 172px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: rgba(white, .2);
+	transition: $ts;
+	overflow: hidden;
+	.icon {
+		position: absolute;
+		transition: $ts;
+		top: 13px;
+		left: 13px;
+	}
+	input {
+		height: 40px;
+		margin: 8px;
+		border-radius: 3px;
+		padding: 0 10px;
+		font-size: 20px;
+		color: $pr;
+		opacity: 0;
+		transition: $ts;
+		width: 10px;
+	}
+	.action-item {
+		display: block;
+		transition: $ts-s;
+		border-radius: 3px;
+		background: transparent;
+		color: white;
+		height: 40px;
+		line-height: 40px;
+		font-size: 18px;
+		text-transform: uppercase;
+		padding: 0 10px;
+		font-weight: bold;
+		position: absolute;
+		top: 8px;
+		right: 8px;
+	}
+	.submit {
+		opacity: 0;
+		top: 45px;
+	}
+	.back {
+		opacity: 0;
+	}
+	&:hover {
+		.submit {
+			top: 9px;
+			opacity: 1;
+		}
+		.placeholder {
+			opacity: 0;
+			top: -45px;
+		}
+	}
+}
+.form-active {
+	.google-play {
+		opacity: 0;
+		transition: $ts;
+	}
+	.avise-me  {
+		transition: $ts-s;
+		width: 365px;
+		input {
+			transition: $ts-s;
+			opacity: 1;
+			width: 209px;
+		}
+		.submit {
+			transition: $ts-s;
+			background: $pr;
+		}
+	}
+	.icon {
+		opacity: 0;
+		left: -30px;
+	}
+	.submit {
+		top: 9px;
+		opacity: 1;
+	}
+	.placeholder {
+		opacity: 0;
+		top: -45px;
+	}
 }
 
 .page-oapp {
