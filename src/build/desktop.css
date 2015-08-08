@@ -228,7 +228,6 @@ body {
       opacity: .8;
       transition: all 0.2s ease; }
   .nav-site.fixed.gray {
-    transition: all 1s ease;
     background: #F9F9F9; }
   .nav-site.fixed .container {
     border-bottom-color: #eee; }
@@ -619,9 +618,12 @@ body {
     border-radius: 2px;
     margin-top: 80px;
     float: left;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translate3d(0, 0, 0); }
     .page-team .team-item.first {
       margin-right: 20px; }
+    .page-team .team-item p {
+      -webkit-transform: translate3d(0, 0, 0); }
   .page-team .head {
     margin-top: -50px;
     margin-bottom: 10px; }

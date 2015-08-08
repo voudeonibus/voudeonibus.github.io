@@ -112,7 +112,6 @@
 			// 	transition: $ts-f;
 			// }
 			&.gray {
-				transition: $ts-f;
 				background: $bg;
 			}
 			.container {
@@ -587,6 +586,7 @@
 	background-size: cover;
 	padding-bottom: 70px;
 	padding-top: 40px;
+	// -webkit-transform: translate3d(0,0,0);
 	.section-subtitle {
 		color: white;
 		border-bottom-color: white;
@@ -599,8 +599,12 @@
 		margin-top: 80px;
 		float: left;
 		box-shadow: 0 1px 1px rgba(0,0,0,.3);
+		-webkit-transform: translate3d(0,0,0);
 		&.first {
 			margin-right: 20px;
+		}
+		p {
+			-webkit-transform: translate3d(0,0,0);
 		}
 	}
 	.head {

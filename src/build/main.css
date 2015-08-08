@@ -179,7 +179,7 @@ html, body {
     position: absolute;
     transition: all 0.2s ease;
     top: 13px;
-    left: 13px; }
+    left: 18px; }
   .avise-me input {
     height: 40px;
     margin: 8px;
@@ -204,7 +204,7 @@ html, body {
     font-weight: bold;
     position: absolute;
     top: 8px;
-    right: 8px; }
+    right: 10px; }
   .avise-me .submit {
     opacity: 0;
     top: 45px; }

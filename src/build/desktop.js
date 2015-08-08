@@ -56,7 +56,9 @@ $(document).ready(function() {
 				$mobile.removeClass('pageVouagora');
 			}
 			if(index == 4) {
-				$.fn.fullpage.setAutoScrolling(false);
+				$nav.addClass('gray');
+			} else {
+				$nav.removeClass('gray');
 			}
 		}
 	});
@@ -106,11 +108,12 @@ $(document).ready(function() {
 
 
 	// return fullpage
-	$('#section3 .fp-tableCell').scroll(function(){
-		console.log($(this).scrollTop());
+	$('.page-free .fp-tableCell').scroll(function(){
+		if($(this).scrollTop() > 0) {
+			$.fn.fullpage.setAutoScrolling(false);
+		}
 		if($(this).scrollTop() == 0) {
 			$.fn.fullpage.setAutoScrolling(true);
-			console.log($(this).scrollTop());
 		}
 	});
 
@@ -130,13 +133,6 @@ $(document).ready(function() {
 			$.fn.fullpage.moveTo(target);
 		});
 	
-		// ultimo slide
-		// $('.quarto').on('click', function(){
-		// 	$.fn.fullpage.moveTo(4);
-		// 	setTimeout(function(){
-		// 		$('#section3 .fp-tableCell').animate({scrollTop:500}, '500');
-		// 	},1000);
-		// });
 	
 	/*-----  End of menu  ------*/
 	
