@@ -131,13 +131,35 @@ $(document).ready(function() {
 
 
 	// return fullpage
-	$('.page-free .fp-tableCell').scroll(function(){
-		if($(this).scrollTop() > 0) {
-		}
-		if($(this).scrollTop() == 0) {
-			$.fn.fullpage.setAutoScrolling(true);
-		}
-	});
+	var fullpageReturn = (function() {
+		'use strict';
+
+		var timeWindow = 500; // time in ms
+		var timeout;
+
+		var fullpageReturn = function() {
+			if($('.page-free .fp-tableCell').scrollTop() > 0) {
+				$.fn.fullpage.setAutoScrolling(false);
+			}
+			if($('.page-free .fp-tableCell').scrollTop() == 0) {
+				$.fn.fullpage.setAutoScrolling(true);
+			}
+
+		};
+
+		return function() {
+			var context = this;
+			var args = arguments;
+			clearTimeout(timeout);
+			timeout = setTimeout(function() {
+				fullpageReturn.apply(context, args);
+			}, timeWindow);
+		};
+	}());
+
+	$('.page-free .fp-tableCell').on('scroll',fullpageReturn);
+
+
 
 
 
