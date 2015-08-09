@@ -1,12 +1,1 @@
-$(document).ready(function(){
-
-	var $avisme = $('.avise-me'),
-		$pageHomeAction = $('.page-home_action');
-
-	$avisme.find('button').click(function(){
-		$pageHomeAction.addClass('form-active');
-
-		return false;
-	});
-
-});
+$(document).ready(function(){var n=$(".avise-me"),a=$(".page-home_action");n.find("button").click(function(){return a.addClass("form-active"),!1})});
