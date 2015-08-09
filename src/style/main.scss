@@ -85,20 +85,17 @@ html, body {
 	width: 100%;
 
 	.btn-active {
-		background: white;
-		padding: 12px 16px 8px;
+		// background: white;
+		// padding: 12px 16px 8px;
 		border-radius: 5px;
 		box-shadow: 0 0px 0px rgba(0,0,0,0);
 		transition: $ts;
+		img {
+			display: block;
+		}
 		&:hover {
 			transition: $ts;
 			box-shadow: 0 2px 6px rgba(0,0,0,.4);
-		}
-	}
-	.google-play {
-		img {
-			width: 140px;
-			height: auto;
 		}
 	}
 	img { 
@@ -111,7 +108,7 @@ html, body {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	height: 54px;
+	height: 58px;
 	width: 172px;
 	border-radius: 5px;
 	border: 1px solid white;
@@ -121,7 +118,7 @@ html, body {
 	.icon {
 		position: absolute;
 		transition: $ts;
-		top: 13px;
+		top: 14px;
 		left: 18px;
 	}
 	input {
@@ -148,7 +145,7 @@ html, body {
 		padding: 0 10px;
 		font-weight: bold;
 		position: absolute;
-		top: 8px;
+		top: 10px;
 		right: 10px;
 	}
 	.submit {
@@ -160,7 +157,7 @@ html, body {
 	}
 	&:hover {
 		.submit {
-			top: 9px;
+			top: 10px;
 			opacity: 1;
 		}
 		.placeholder {
