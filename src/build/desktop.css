@@ -261,7 +261,7 @@ body {
   margin-left: -25px;
   background: url(../img/loader.gif) center center no-repeat;
   transition: all 0.2s ease;
-  z-index: 99;
+  z-index: 9999;
   box-shadow: 0 0px 0px transparent; }
   .next-page.load {
     transition: all 0.2s ease;

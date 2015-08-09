@@ -26,11 +26,16 @@ $(document).ready(function() {
 	$slideVouagora = $('.mobile-sections_vouagora'),
 	$nextPage = $('.next-page');
 
+	// width mobile, prevent bug
+	$mobile.width($mobile.width()).height($mobile.height());
+
+	// btn next page
 	$nextPage.addClass('load');
 	$nextPage.click(function(){
 		$.fn.fullpage.moveSectionDown();
 	});
 
+	// full page
 	$fullPage.fullpage({
 		css3: true,
 		scrollBar : true,
@@ -48,14 +53,17 @@ $(document).ready(function() {
 
 			if (nextIndex == 2) {
 				$mobile.addClass('pageApp-mobile');
-			};
-
-			if (nextIndex == 2) {
 				$mobile.removeClass('pageVouagora');
-			}
+			};
 
 			if (nextIndex > 3) {
 				$mobile.addClass('pageVouagora');
+			}
+
+			if (nextIndex == 4) {
+				$('.page-free .fp-tableCell').animate({
+					scrollTop: 5
+				}, '400');
 			}
 		},
 
@@ -84,11 +92,9 @@ $(document).ready(function() {
 				$nextPage.addClass('none');
 				$.fn.fullpage.setAutoScrolling(false);
 
-				if($('.page-free .fp-tableCell').scrollTop() == 0) {
-					$('.page-free .fp-tableCell').animate({
-						scrollTop: 1
-					}, '100');
-				}
+				// if($('.page-free .fp-tableCell').scrollTop() == 0) {
+
+				// }
 			} else {
 				$nextPage.removeClass('none');
 				$nav.removeClass('gray');

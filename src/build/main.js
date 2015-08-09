@@ -9,5 +9,8 @@ $(document).ready(function(){
 		return false;
 	});
 
+});
 
+$(window).load(function(){
+	$.getScript('src/build/social.js', function() {});
 });
