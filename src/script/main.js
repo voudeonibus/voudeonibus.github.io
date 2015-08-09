@@ -10,7 +10,3 @@ $(document).ready(function(){
 	});
 
 });
-
-$(window).load(function(){
-	$.getScript('src/build/social.js', function() {});
-});

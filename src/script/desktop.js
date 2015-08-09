@@ -91,10 +91,7 @@ $(document).ready(function() {
 				$nav.addClass('gray');
 				$nextPage.addClass('none');
 				$.fn.fullpage.setAutoScrolling(false);
-
-				// if($('.page-free .fp-tableCell').scrollTop() == 0) {
-
-				// }
+				$.getScript('src/build/social.js');
 			} else {
 				$nextPage.removeClass('none');
 				$nav.removeClass('gray');
