@@ -177,7 +177,7 @@ html, body {
     left: 18px; }
   .avise-me input {
     height: 40px;
-    margin: 8px;
+    margin: 10px;
     border-radius: 3px;
     padding: 0 10px;
     font-size: 20px;
@@ -206,7 +206,7 @@ html, body {
   .avise-me .back {
     opacity: 0; }
   .avise-me:hover .submit {
-    top: 9px;
+    top: 10px;
     opacity: 1; }
   .avise-me:hover .placeholder {
     opacity: 0;
@@ -232,7 +232,7 @@ html, body {
   left: -30px; }
 
 .form-active .submit {
-  top: 8px;
+  top: 10px;
   opacity: 1; }
 
 .form-active .placeholder {
@@ -551,7 +551,7 @@ html, body {
     color: white;
     text-transform: uppercase;
     padding: 19px 0;
-    margin-left: 33px;
+    margin-left: 24px;
     transition: all 0.2s ease; }
     .nav-site a:hover {
       opacity: .8;
