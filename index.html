@@ -14,7 +14,7 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="src/build/main.css">
+	<link rel="stylesheet" href="src/build/main.css" media="screen and (max-width: 480px)">
 	<link rel="stylesheet" href="src/build/desktop.css" media="screen and (min-width: 480px)">
 
 	<title>Vou de ônibus - Horários de ônibus de Jaraguá do Sul e região.</title>
@@ -226,19 +226,18 @@
 
 			<footer class="page-footer">
 				<div class="container clearfix">
-					<div id="fb-root"></div>
-
-
-					<div class="fb-page" data-href="https://www.facebook.com/voudeonibusapp" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/voudeonibusapp"><a href="https://www.facebook.com/voudeonibusapp">Vou de ônibus</a></blockquote></div></div>
-
-					<div class="page-footer-main container">
-						<h1>Vou de ônibus 2015</h1>
-						<p><small>Jaraguá do Sul - SC, Brasil</small></p>
+					<div class="page-footer-main	">
+						<h1>Vou de ônibus</h1>
+						<p><small>Agosto, 2015. Jaraguá do Sul - SC, Brasil</small></p>
 						<a href="mailto:voudeonibusapp@gmail.com">voudeonibusapp@gmail.com</a>
 						<p class="links">Links importantes</p>
 						<a href="/condicoes-de-uso">Condições de uso</a>
 						<a href="/condicoes-de-uso">Perguntas frequentes</a>
 					</div>
+
+					<div id="fb-root"></div>
+					<div class="fb-page" data-href="https://www.facebook.com/voudeonibusapp" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/voudeonibusapp"><a href="https://www.facebook.com/voudeonibusapp">Vou de ônibus</a></blockquote></div></div>
+
 				</div>
 
 			</footer>
@@ -253,23 +252,20 @@
 
 
 	<script type="text/javascript">
-
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-			console.log('mobile');
-		}
-		else {
+		if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			document.write('<script async src="src/build/content.js"><\/script>');
 		}
-
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="src/build/libs/jquery-2.1.4.min.js"><\/script>')</script>
-
 	<script src="src/build/main.js"></script>
 	<script type="text/javascript">
 
-		if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-			console.log('mobile');
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			$(window).load(function() {
+				$.getScript('src/build/social.js');
+			});
+		} else {
 			document.write('<script src="src/build/desktop.js"><\/script>');
 		}
 

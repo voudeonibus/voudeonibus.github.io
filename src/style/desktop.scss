@@ -1,9 +1,13 @@
 @import "mixins";
 @import "vars";
+@import "reset";
+@import "base";
 @import "fullpage";
 @import "carousel";
 
-
+html, body {
+	min-width: 960px;
+}
 
 .container {
 	width: 940px;
@@ -31,6 +35,18 @@
 /*============================
 =            menu            =
 ============================*/
+
+	
+	.logo-site {
+		width: 173px;
+		height: 22px;
+		float: left;
+		background: url(../img/logo-site@2x.png) center center no-repeat;
+		background-size: cover;	
+		transition: $ts-f;
+	}
+
+	
 	.nav-site {
 		position: fixed;
 		z-index: 999;
@@ -524,47 +540,11 @@
 		}
 	}
 }
-.page-testimony_item {
+.page-testimony_item  {
 	float: left;
 	width: 273px;
 	margin-left: 60px;
-	margin-top: 30px;
 	margin-bottom: 115px;
-	position: relative;
-	&.first {
-		margin-left: 0;
-	}
-	p:first-child {
-		font-size: 16px;
-		font-style: italic;
-		font-weight: 300;
-		padding-right: 30px;
-		&:before {
-			content: "”";
-			display: block;
-			font-size: 50px;
-			font-weight: bold;
-			font-style: normal;
-			color: $pr;
-			font-family: serif;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-	}
-	.name {
-		font-weight: 300;
-		font-size: 16px;
-		display: block;
-		font-style: normal;
-		border-top: 1px solid $pr;
-		margin-top: 15px;
-		padding-top: 15px;
-		padding-right: 0;
-		strong {
-			font-weight: normal;
-		}
-	}
 }
 
 /**
@@ -574,11 +554,7 @@
 **/
 
 .page-apoio {
-	text-align: center;
-	padding: 30px 0;
-	.section-subtitle {
-		text-align: left;
-	}
+
 	a {
 		display: inline-block; 
 		margin: 30px 100px;
@@ -599,41 +575,9 @@
 .page-team {
 	background: url(../img/page-team.jpg) center top fixed;
 	background-size: cover;
-	padding-bottom: 70px;
-	padding-top: 40px;
-	// -webkit-transform: translate3d(0,0,0);
-	.section-subtitle {
-		color: white;
-		border-bottom-color: white;
-	}
 	.team-item {
 		width: 440px;
-		padding: 10px;
-		background: white;
-		border-radius: 2px;
-		margin-top: 80px;
 		float: left;
-		box-shadow: 0 1px 1px rgba(0,0,0,.3);
-		-webkit-transform: translate3d(0,0,0);
-		&.first {
-			margin-right: 20px;
-		}
-		p {
-			-webkit-transform: translate3d(0,0,0);
-		}
-	}
-	.head {
-		margin-top: -50px;
-		margin-bottom: 10px;
-		img, .social, h2 {
-			float: left;
-		}
-		h2, .social {
-			margin-left: 15px;
-			color: white;
-			display: block;
-			width: 345px;
-		}
 	}
 }
 
@@ -643,7 +587,6 @@
 *
 **/
 .page-footer {
-	padding: 40px 0;
 	.fb-page {
 		float: right;
 		width: 460px;
@@ -651,31 +594,6 @@
 	.page-footer-main {
 		float: left;
 		width: 460px;
-		h1  {
-			text-transform: uppercase;
-			font-size: 24px;
-		}
-		p {
-			font-weight: 300;
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
-		.links {
-			margin-top: 30px;
-		}
-		a {
-			font-size: 146x;
-			display: block;
-			width: 100%;
-			padding: 10px 0;
-			color: $pr;
-			transition: $ts;
-			display: inline-block;
-			&:hover {
-				color: darken($pr, 15%);
-				transition: $ts;
-			}
-		}
 	}
 }
 
