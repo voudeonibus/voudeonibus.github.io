@@ -554,7 +554,7 @@ html, body {
     margin-left: 24px;
     transition: all 0.2s ease; }
     .nav-site a:hover {
-      opacity: .8;
+      opacity: .5;
       transition: all 0.2s ease; }
   .nav-site nav {
     float: right; }
