@@ -84,6 +84,7 @@ $(document).ready(function() {
 				$mobile.addClass('pageVouagora');
 				$pageVouagora.addClass('view');
 				$.fn.fullpage.setAutoScrolling(true);
+				$.getScript('src/build/social.js');
 			} else if (index < 3) {
 				$mobile.removeClass('pageVouagora');
 			}
@@ -91,7 +92,6 @@ $(document).ready(function() {
 				$nav.addClass('gray');
 				$nextPage.addClass('none');
 				$.fn.fullpage.setAutoScrolling(false);
-				$.getScript('src/build/social.js');
 			} else {
 				$nextPage.removeClass('none');
 				$nav.removeClass('gray');

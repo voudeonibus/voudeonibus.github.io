@@ -325,8 +325,10 @@ html, body {
     -webkit-transform: translate3d(0, 0, 0); }
     .page-team .team-item.first {
       margin-right: 20px; }
-    .page-team .team-item p {
-      -webkit-transform: translate3d(0, 0, 0); }
+    .page-team .team-item > p {
+      -webkit-transform: translate3d(0, 0, 0);
+      line-height: 1.5;
+      height: 140px; }
   .page-team .head {
     margin-top: -50px;
     margin-bottom: 10px; }
@@ -336,7 +338,7 @@ html, body {
       margin-left: 15px;
       color: white;
       display: block;
-      width: 60%; }
+      width: 68%; }
 
 /**
 *

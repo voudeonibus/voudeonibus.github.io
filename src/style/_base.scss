@@ -307,8 +307,10 @@ html, body {
 		&.first {
 			margin-right: 20px;
 		}
-		p {
+		> p {
 			-webkit-transform: translate3d(0,0,0);
+			line-height: 1.5;
+			height: 140px;
 		}
 	}
 	.head {
@@ -321,7 +323,7 @@ html, body {
 			margin-left: 15px;
 			color: white;
 			display: block;
-			width: 60%;
+			width: 68%;
 		}
 	}
 }
