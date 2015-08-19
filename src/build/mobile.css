@@ -427,6 +427,53 @@ html, body {
       color: #0775c7;
       transition: all 0.2s ease; }
 
+.condicoes-de-uso {
+  overflow: auto !important; }
+  .condicoes-de-uso .logo-site a {
+    width: 100%;
+    height: 100%; }
+  .condicoes-de-uso .nav-site {
+    position: static; }
+  .condicoes-de-uso nav {
+    padding: 10px 0 15px; }
+
+/**
+*
+* free-text
+*
+**/
+.free-text {
+  color: #000; }
+  .free-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px; }
+  .free-text strong {
+    font-weight: bold; }
+  .free-text ul {
+    padding: 0 0 0 20px; }
+  .free-text li {
+    line-height: 1.5;
+    list-style: disc; }
+  .free-text h1 {
+    font-size: 26px;
+    margin: 20px 0 30px; }
+  .free-text h2 {
+    text-transform: uppercase;
+    font-weight: 300px;
+    color: #249DF7;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  .free-text h3 {
+    margin: 30px 0 10px;
+    font-weight: bold; }
+  .free-text a {
+    color: #249DF7;
+    font-weight: normal; }
+    .free-text a:hover {
+      text-decoration: underline; }
+
 .container {
   padding: 0 15px; }
 
