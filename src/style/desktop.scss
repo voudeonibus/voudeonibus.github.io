@@ -559,6 +559,11 @@ html, body {
 	a {
 		display: inline-block; 
 		margin: 30px 100px;
+		transition: $ts;
+		&:hover {
+			opacity: .7;
+			transition: $ts;
+		}
 	}
 	p {
 		text-align: left;

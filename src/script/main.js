@@ -4,12 +4,16 @@ $(document).ready(function(){
 		$pageHomeAction = $('.page-home_action'),
 		$form = $avisme.find('form');
 
-	$avisme.find('button').click(function(){
 
+	$avisme.find('button').click(function(){
 		if (!$pageHomeAction.hasClass('form-active')) {
 			$pageHomeAction.addClass('form-active');
 			return false;
 		}
+	});
+
+	$avisme.find('.close').click(function(){
+		$pageHomeAction.removeClass('form-active');
 	});
 
 

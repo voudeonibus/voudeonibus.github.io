@@ -120,17 +120,18 @@ html, body {
 		transition: $ts;
 		top: 14px;
 		left: 18px;
+		z-index: 99;
 	}
 	input {
 		height: 40px;
+		width: 0px;
 		margin: 10px;
 		border-radius: 3px;
-		padding: 0 10px;
+		padding: 0;
 		font-size: 20px;
 		color: $pr;
 		opacity: 0;
 		transition: $ts;
-		width: 10px;
 	}
 	.action-item {
 		display: block;
@@ -147,6 +148,7 @@ html, body {
 		position: absolute;
 		top: 10px;
 		right: 10px;
+		cursor: pointer;
 	}
 	.submit {
 		opacity: 0;
@@ -165,6 +167,21 @@ html, body {
 			top: -45px;
 		}
 	}
+	.close {
+		color: $txt;
+		transition: $ts-s;
+		position: absolute;
+		font-size: 14px;
+		width: 22px;
+		height: 22px;
+		display: block;
+		line-height: 22px;
+		text-align: center;
+		opacity: 0;
+		cursor: pointer;
+		top: 20px;
+		left: -10px;
+	}
 }
 .form-active {
 	.google-play {
@@ -177,7 +194,8 @@ html, body {
 		input {
 			transition: $ts-s;
 			opacity: 1;
-			width: 209px;
+			width: 189px;
+			padding: 0 30px 0 10px;;
 		}
 		.submit {
 			transition: $ts-s;
@@ -195,6 +213,19 @@ html, body {
 	.placeholder {
 		opacity: 0;
 		top: -45px;
+	}
+	.close {
+		opacity: 1;
+		top: 20px;
+		left: 210px;
+		background: white;
+		transition: $ts-s;
+		&:hover {
+			transition: $ts-s;
+			color: white;
+			background: $pr;
+			border-radius: 3px;
+		}
 	}
 }
 
@@ -326,6 +357,48 @@ html, body {
 			width: 68%;
 		}
 	}
+	.social {
+		margin-top: 25px;
+		a {
+			width: 22px;
+			height: 22px;
+			margin-right: 13px;
+			float: left;
+			background-image: url(../img/page-team_social.gif);
+			background-repeat: no-repeat;
+			opacity: .2;
+			transition: $ts;
+			&:hover {
+				opacity: 1;
+				transition: $ts;
+			}
+		}
+	}
+	.blog {
+		background-position: 0 0;
+	}
+	.dribbble {
+		background-position: 0 -39px;
+	}
+	.email  {
+		background-position: 0 -77px;
+	}
+	.facebook {
+		background-position: 0 -116px;
+	}
+	.github {
+		background-position: 0 -155px;
+	}
+	.linkedin {
+		background-position: 0 -194px;
+	}
+	.twitter {
+		background-position: 0 -232px;
+	}
+	.behance {
+		background-position: 0 -271px;
+	}
+
 }
 
 /**
