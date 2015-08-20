@@ -48,7 +48,7 @@
 		</div>
 	</header>
 
-	<div class="next-page"></div>
+	<div onClick="return ga('send', 'event', 'next-page');" class="next-page"></div>
 
 	
 	<div id="fullpage-vbd">
@@ -66,7 +66,7 @@
 							<!-- <a href="" class="google-play btn-active">
 								<img width="140" src="src/img/icon-googleplay.png" alt="">
 							</a> -->
-							<a class="google-play btn-active" href="https://play.google.com/store/apps/details?id=voudeonibus">
+							<a onClick="return ga('send', 'event', 'download', 'android');" class="google-play btn-active" href="https://play.google.com/store/apps/details?id=voudeonibus">
 							  <img alt="Android app on Google Play"
 							       src="https://developer.android.com/images/brand/pt-br_app_rgb_wo_60.png" />
 							</a>
@@ -115,9 +115,9 @@
 						<p class="section-p">O Vou agora ajuda a organizar as linhas e horários que você utiliza no dia a dia. Basta configurar as categorias de trabalho e/ou estudo ou personalizar de acordo com a sua própria rotina. <br><br>Além disso, te avisamos quando tiver alguma alteração nos horários, preço ou trajeto da linha que você selecionou.</p>
 
 						<p class="dots">
-							<a class="vouagora" href="javascript:void(0)"></a>
-							<a class="trabalho" href="javascript:void(0)"></a>
-							<a class="estudo" href="javascript:void(0)"></a>
+							<a onClick="return ga('send', 'event', 'page-vouagora', 'dots', 'vouagora');"  class="vouagora" href="javascript:void(0)"></a>
+							<a onClick="return ga('send', 'event', 'page-vouagora', 'dots', 'trabalho');"  class="trabalho" href="javascript:void(0)"></a>
+							<a onClick="return ga('send', 'event', 'page-vouagora', 'dots', 'estudo');"  class="estudo" href="javascript:void(0)"></a>
 						</p>
 					</div>
 				</div>
@@ -125,8 +125,8 @@
 
 			<div class="mobile">
 				<img class="mobile-img" src="src/img/mobile.png" alt="">
-				<a class="arrow next ir" href="javascript:void(0);"><span>Próximo</span></a>
-				<a class="arrow prev ir" href="javascript:void(0);"><span>Anterior</span></a>
+				<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'next');" class="arrow next ir" href="javascript:void(0);"><span>Próximo</span></a>
+				<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'prev');" class="arrow prev ir" href="javascript:void(0);"><span>Anterior</span></a>
 				<div class="mobile-sections">
 					<div class="mobile-sections_item mobile-sections_home">
 						<img class="" src="src/img/page-home_mobile1.jpg" alt="">
@@ -181,8 +181,8 @@
 			<section class="page-apoio">
 				<div class="container">
 					<h1 class="section-subtitle">Apoio</h1>
-					<a href="http://www.canarinho.com.br"><img data-src="src/img/logo-canarinho.png" alt=""></a>
-					<a href="http://www.mobilibus.com.br/"><img data-src="src/img/logo-mobilibus.png" alt=""></a>
+					<a target="_blank" onClick="return ga('send', 'event', 'page-apoio', 'canarinho');" href="http://www.canarinho.com.br"><img data-src="src/img/logo-canarinho.png" alt=""></a>
+					<a target="_blank" onClick="return ga('send', 'event', 'page-apoio', 'mobilibus');" href="http://www.mobilibus.com.br/"><img data-src="src/img/logo-mobilibus.png" alt=""></a>
 					<h1 class="section-subtitle">Agradecimento</h1>
 					<p class="section-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex harum voluptate ut, ratione molestias eos, laboriosam cumque quia! Dolore modi tempora cumque, itaque sequi ea quos deleniti exercitationem adipisci incidunt?</p>
 				</div>
@@ -200,10 +200,10 @@
 							<img data-src="src/img/team-item_img.png" alt="">
 							<h2>Carla Priscila Demarchi</h2>
 							<p class="social clearfix">
-								<a href="emailto:talkcarla@gmail.com" class="ir email"><span>Twitter Carla</span></a>
-								<a href="https://br.linkedin.com/in/carlademarchi" class="ir linkedin"><span>Linkedin Carla</span></a>
-								<a href="https://www.facebook.com/DemarchiCarla" class="ir facebook"><span>Facebook Carla</span></a>
-								<a href="https://twitter.com/DemarchiCarla" class="ir twitter"><span>E-mail Carla</span></a>
+								<a target="_blank" href="emailto:talkcarla@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Carla', 'social', 'email');"><span>Twitter Carla</span></a>
+								<a target="_blank" href="https://br.linkedin.com/in/carlademarchi" class="ir linkedin" onClick="return ga('send', 'event', 'Carla', 'social', 'linkedin');"><span>Linkedin Carla</span></a>
+								<a target="_blank" href="https://www.facebook.com/DemarchiCarla" class="ir facebook"  onClick="return ga('send', 'event', 'Carla', 'social', 'facebook');"><span>Facebook Carla</span></a>
+								<a target="_blank" href="https://twitter.com/DemarchiCarla" class="ir twitter"  onClick="return ga('send', 'event', 'Carla', 'social', 'twitter');"><span>E-mail Carla</span></a>
 							</p>
 						</div>
 						<p>UX designer</p>
@@ -214,11 +214,11 @@
 							<img data-src="src/img/team-item_img.png" alt="">
 							<h2>Carlos Alexandre Fuechter</h2>
 							<p class="social clearfix">
-								<a href="emailto:alexandref93@gmail.com" class="ir email"><span>Twitter Carlos</span></a>
-								<a href="https://br.linkedin.com/in/fuechter" class="ir linkedin"><span>Linkedin Carlos</span></a>
-								<a href="https://www.facebook.com/fuechter" class="ir facebook"><span>Facebook Carlos</span></a>
-								<a href="https://twitter.com/alexandref93" class="ir twitter"><span>E-mail Carlos</span></a>
-								<a href="https://github.com/alexandref93" class="ir github"><span>Github Carlos</span></a>
+								<a target="_blank" href="emailto:alexandref93@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Carlos', 'social', 'email');"><span>Twitter Carlos</span></a>
+								<a target="_blank" href="https://br.linkedin.com/in/fuechter" class="ir linkedin" onClick="return ga('send', 'event', 'Carlos', 'social', 'linkedin');"><span>Linkedin Carlos</span></a>
+								<a target="_blank" href="https://www.facebook.com/fuechter" class="ir facebook"  onClick="return ga('send', 'event', 'Carlos', 'social', 'facebook');"><span>Facebook Carlos</span></a>
+								<a target="_blank" href="https://twitter.com/alexandref93" class="ir twitter"  onClick="return ga('send', 'event', 'Carlos', 'social', 'twitter');"><span>E-mail Carlos</span></a>
+								<a target="_blank" href="https://github.com/alexandref93" class="ir github"  onClick="return ga('send', 'event', 'Carlos', 'social', 'github');"><span>Github Carlos</span></a>
 							</p>
 						</div>
 						<p>Desenvolvedor Full-Stack, 22 anos e formado em Tecnologia e Análise de Desenvolvimento de Sistema. Sempre em busca da melhor maneira de resolver os problemas..., Uso diariamente a linha Rau.</p>
@@ -229,13 +229,13 @@
 							<img data-src="src/img/team-item_img.png" alt="">
 							<h2>Danilo Woznica</h2>
 							<p class="social clearfix">
-								<a href="emailto:danilowoz@gmail.com" class="ir email"><span>Twitter Danilo</span></a>
-								<a href="https://br.linkedin.com/in/danilow" class="ir linkedin"><span>Linkedin Danilo</span></a>
-								<a href="https://www.facebook.com/danilowoz" class="ir facebook"><span>Facebook Danilo</span></a>
-								<a href="https://www.behance.net/danilowzn" class="ir behance"><span>Behance Danilo</span></a>
-								<a href="https://dribbble.com/danilowzn" class="ir dribbble"><span>Dribbble Danilo</span></a>
-								<!-- <a href="https://twitter.com/DaniloWoznica" class="ir twitter"><span>Twitter Danilo</span></a> -->
-								<a href="https://github.com/danilowzn" class="ir github"><span>Github Danilo</span></a>
+								<a target="_blank" href="emailto:danilowoz@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Danilo', 'social', 'email');"><span>Twitter Danilo</span></a>
+								<a target="_blank" href="https://br.linkedin.com/in/danilow" class="ir linkedin" onClick="return ga('send', 'event', 'Danilo', 'social', 'linkedin');"><span>Linkedin Danilo</span></a>
+								<a target="_blank" href="https://www.facebook.com/danilowoz" class="ir facebook"  onClick="return ga('send', 'event', 'Danilo', 'social', 'facebook');"><span>Facebook Danilo</span></a>
+								<a target="_blank" href="https://www.behance.net/danilowzn" class="ir behance"  onClick="return ga('send', 'event', 'Danilo', 'social', 'behance');"><span>Behance Danilo</span></a>
+								<a target="_blank" href="https://dribbble.com/danilowzn" class="ir dribbble"  onClick="return ga('send', 'event', 'Danilo', 'social', 'dribbble');"><span>Dribbble Danilo</span></a>
+								<!-- <a target="_blank" href="https://twitter.com/DaniloWoznica" class="ir twitter"  onClick="return ga('send', 'event', 'Danilo', 'social', 'twitter');"><span>Twitter Danilo</span></a> -->
+								<a target="_blank" href="https://github.com/danilowzn" class="ir github"  onClick="return ga('send', 'event', 'Danilo', 'social', 'github');"><span>Github Danilo</span></a>
 							</p>
 						</div>
 						<p>UI designer e desenvolvedor front-end, 21 anos e formando em Design. Busco na interdisciplinaridade como forma de construir um design consistente e útil para as pessoas, que vá além do estético e intuitivo. Que faça sentido e resolva os problemas em questão. Uso diariamente a linha Jaraguá - Guaramirim.</p>
@@ -246,11 +246,11 @@
 							<img data-src="src/img/team-item_img.png" alt="">
 							<h2>Lucas da Silva</h2>
 							<p class="social clearfix">
-								<a href="https://lucas.ninja/" class="ir blog"><span>Blog Lucas</span></a>
-								<a href="lucas@lucas.ninja" class="ir email"><span>E-mail Lucas</span></a>
-								<a href="http://linkedin.com/in/agtlucas" class="ir linkedin"><span>Linkedin Lucas</span></a>
-								<a href="https://twitter.com/_agtlucas" class="ir twitter"><span>Twitter Lucas</span></a>
-								<a href="https://github.com/AgtLucas" class="ir github"><span>Github Lucas</span></a>
+								<a target="_blank" href="https://lucas.ninja/" class="ir blog"  onClick="return ga('send', 'event', 'Lucas', 'social', 'blog');"><span>Blog Lucas</span></a>
+								<a target="_blank" href="lucas@lucas.ninja" class="ir email"  onClick="return ga('send', 'event', 'Lucas', 'social', 'email');"><span>E-mail Lucas</span></a>
+								<a target="_blank" href="http://linkedin.com/in/agtlucas" class="ir linkedin" onClick="return ga('send', 'event', 'Lucas', 'social', 'linkedin');"><span>Linkedin Lucas</span></a>
+								<a target="_blank" href="https://twitter.com/_agtlucas" class="ir twitter"  onClick="return ga('send', 'event', 'Lucas', 'social', 'twitter');"><span>Twitter Lucas</span></a>
+								<a target="_blank" href="https://github.com/AgtLucas" class="ir github"  onClick="return ga('send', 'event', 'Lucas', 'social', 'github');"><span>Github Lucas</span></a>
 							</p>
 						</div>
 						<p>Desenvolvedor Full-Stack</p>
@@ -266,10 +266,10 @@
 					<div class="page-footer-main	">
 						<h1>Vou de ônibus</h1>
 						<p><small>Agosto, 2015. Jaraguá do Sul - SC, Brasil</small></p>
-						<a href="mailto:voudeonibusapp@gmail.com">voudeonibusapp@gmail.com</a>
+						<a onClick="return ga('send', 'event', 'page-footer', 'contato');" href="mailto:voudeonibusapp@gmail.com">voudeonibusapp@gmail.com</a>
 						<p class="links">Links importantes</p>
-						<a href="/condicoes-de-uso">Condições de uso</a>
-						<!-- <a href="/condicoes-de-uso">Perguntas frequentes</a> -->
+						<a onClick="return ga('send', 'event', 'page-footer', 'condicoes-de-uso');" href="/condicoes-de-uso">Condições de uso</a>
+						<!-- <a onClick="return ga('send', 'event', 'page-footer', 'perguntas-frequentes');" href="/condicoes-de-uso">Perguntas frequentes</a> -->
 					</div>
 
 					<div id="fb-root"></div>

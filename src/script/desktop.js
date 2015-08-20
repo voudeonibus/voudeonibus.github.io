@@ -40,7 +40,6 @@ $(document).ready(function() {
 		css3: true,
 		scrollBar : true,
 		onLeave: function(index, nextIndex, direction){
-			// console.log(index, nextIndex, direction);
 			if (nextIndex > 1) {
 				$nav.addClass('fixed');
 				$('.page-home_action').removeClass('form-active');
