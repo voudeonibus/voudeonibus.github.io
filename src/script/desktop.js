@@ -54,6 +54,11 @@ $(document).ready(function() {
 			if (nextIndex == 2) {
 				$mobile.addClass('pageApp-mobile');
 				$mobile.removeClass('pageVouagora');
+				var dobra = true;
+				if (dobra) {
+					ga('send', 'event', 'pagina', 'desceu-dobra-pagina');
+					dobra = false;
+				};
 			};
 
 			if (nextIndex > 3) {
