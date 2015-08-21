@@ -21,7 +21,14 @@ $(document).ready(function() {
 
 	// o app
 	var card2 = "<img width='178' height='201' data-src='src/img/page-oapp_card2.png' alt='Card de horário'>";
-	var iphone = "<img class='page-oapp_iphone' data-src='src/img/page-oapp_iphone.png' alt='Vou de ônibus no iPhone'>"
+	var iphone = "<img class='page-oapp_iphone' src='src/img/page-oapp_iphone.png' alt='Vou de ônibus no iPhone'>"
+
+	// vou agora
+	var vouAgoraDots = 	'<p class="dots">\
+							<a onClick="return ga(\'send\', \'event\', \'page-vouagora\', \'dots\', \'vouagora\');"  class="vouagora" href="javascript:void(0)"></a>\
+							<a onClick="return ga(\'send\', \'event\', \'page-vouagora\', \'dots\', \'trabalho\');"  class="trabalho" href="javascript:void(0)"></a>\
+							<a onClick="return ga(\'send\', \'event\', \'page-vouagora\', \'dots\', \'estudo\');"  class="estudo" href="javascript:void(0)"></a>\
+						</p>';
 
 	// mobile
 	var screenMobile = "<div class='mobile-sections_item mobile-sections_home'>\
@@ -34,6 +41,7 @@ $(document).ready(function() {
 	// insert
 	$('.page-oapp figure img').before(card2);
 	$('.page-oapp .wrap').before(iphone);
+	$('.page-vouagora .section-p').after(vouAgoraDots);
 	// $('.mobile-sections_vouagora').before(screenMobile);
 
 
@@ -144,6 +152,8 @@ $(document).ready(function() {
 	var sh = $('.mobile-sections').height();
 	$('.mobile-sections_item').width(sw).height(sh);
 
+	var owl = $slideVouagora.data('owlCarousel');
+	
 	$slideVouagora.owlCarousel({
 		singleItem : true,
 		slideSpeed : 600,
@@ -158,12 +168,11 @@ $(document).ready(function() {
 		}
 	});
 
-	// arrows
 	$('.arrow.next').on('click',function(){
-		$slideVouagora.trigger('next.owl.carousel');
+		$slideVouagora.trigger('owl.next');
 	});
 	$('.arrow.prev').on('click',function(){
-		$slideVouagora.trigger('prev.owl.carousel');
+		$slideVouagora.trigger('owl.prev');
 	});
 	
 	/*-----  End of slide vou agora  ------*/

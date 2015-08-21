@@ -2,6 +2,7 @@
 @import "vars";
 @import "reset";
 @import "base";
+@import 'carousel-desktop';
 @import "fullpage";
 
 html, body {
@@ -321,14 +322,35 @@ html, body {
 		position: relative;
 	}
 	.dots {
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
 		margin-top: 75px;
 		a {
+			width: 12px;
+			height: 12px;
+			margin-right: 20px;
+			transition: $ts;
 			float: left;
+			&.active {
+				background: none !important;
+				transition: $ts;
+			}
 		}
 		.vouagora {
 			border: 6px solid #fff;
 			border-radius: 12px;
 			background: white;
+		}
+		.trabalho {
+			border: 6px solid #ffd51c;
+			border-radius: 12px;
+			background: #ffd51c;
+		}
+		.estudo {
+			border: 6px solid #7ed321;
+			border-radius: 12px;
+			background: #7ed321;
 		}
 	}
 	&.view {

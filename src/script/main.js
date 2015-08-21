@@ -36,7 +36,7 @@ $(document).ready(function(){
 	* load images mobile
 	*
 	**/
-	if(mobile) {
+	if(isMobile) {
 		// lazy load
 		$('[data-src]').each(function(){
 			var img = $(this).data('src');
@@ -51,9 +51,8 @@ $(document).ready(function(){
 	* page vou agora
 	*
 	**/
-	if (mobile) {
+	if (isMobile) {
 		$slideVouagora.owlCarousel({
-			singleItem : true,
 			stagePadding: 50,
 			items: 1,
 			afterAction : function() {
@@ -64,6 +63,7 @@ $(document).ready(function(){
 	};
 
 	$('.dots').on('click', 'a', function(){
+		console.log('cu');
 		var target = $(this).index();
 		$slideVouagora.trigger('owl.goTo', target);
 		$(this).addClass('active').siblings().removeClass('active');

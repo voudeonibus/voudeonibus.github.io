@@ -263,36 +263,7 @@ html, body {
 *
 **/
 .page-vouagora {
-	.dots {
-		margin-top: 20px;
-		text-align: center;
-		width: 100%;
-		a {
-			width: 12px;
-			height: 12px;
-			margin-right: 20px;
-			transition: $ts;
-			&.active {
-				background: none !important;
-				transition: $ts;
-			}
-		}
-		.vouagora {
-			border: 6px solid  #ddd;
-			border-radius: 12px;
-			background: #ddd;
-		}
-		.trabalho {
-			border: 6px solid #ffd51c;
-			border-radius: 12px;
-			background: #ffd51c;
-		}
-		.estudo {
-			border: 6px solid #7ed321;
-			border-radius: 12px;
-			background: #7ed321;
-		}
-	}
+
 }
 
 
