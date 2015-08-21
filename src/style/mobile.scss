@@ -3,6 +3,7 @@
 @import 'vars';
 @import 'base';
 
+
 .container {
 	padding: 0 15px;
 }
@@ -11,6 +12,10 @@
 	strong {
 		font-size: 30px;
 	}
+}
+
+.mobile-hide {
+	display: none;
 }
 
 
@@ -46,7 +51,7 @@
 	}
 	h1 {
 		text-align: left;
-		font-size: 22px;
+		font-size: 20px;
 	}
 	p {
 		text-align: left;
@@ -91,12 +96,10 @@
 
 .page-oapp {
 	padding: 30px 0;
-	img {
-		width: 80%;
-		height: auto;
-		&:first-child {
-			display: none;
-		}
+	text-align: center;
+	.alias {
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ddd;
 	}
 }
 
@@ -131,6 +134,17 @@
 }
 .page-foruser_img {
 	width: 100%;
+}
+
+
+
+/**
+*
+* page vou agora
+*
+**/
+.page-vouagora {
+	text-align: center;
 }
 
 

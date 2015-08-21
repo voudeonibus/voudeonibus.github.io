@@ -3,7 +3,6 @@
 @import "reset";
 @import "base";
 @import "fullpage";
-@import "carousel";
 
 html, body {
 	min-width: 960px;
@@ -251,14 +250,7 @@ html, body {
 		@include translate(-100px, 0);
 		opacity: 0;
 	}
-	.alias {
-		font-size: 20px;
-		padding-left: 35px;
-		margin-top: 40px;
-		background: url(../img/icon-nowifi.gif) left 5px no-repeat;
-		// background-size: 28px;
-		line-height: 30px;
-	}
+
 	figure {
 		img {
 			@include translate(-100px, 0);
@@ -331,30 +323,12 @@ html, body {
 	.dots {
 		margin-top: 75px;
 		a {
-			width: 12px;
-			height: 12px;
 			float: left;
-			margin-right: 20px;
-			transition: $ts;
-			&.active {
-				background: none !important;
-				transition: $ts;
-			}
 		}
 		.vouagora {
 			border: 6px solid #fff;
 			border-radius: 12px;
 			background: white;
-		}
-		.trabalho {
-			border: 6px solid #ffd51c;
-			border-radius: 12px;
-			background: #ffd51c;
-		}
-		.estudo {
-			border: 6px solid #7ed321;
-			border-radius: 12px;
-			background: #7ed321;
 		}
 	}
 	&.view {

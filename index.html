@@ -63,10 +63,7 @@
 						<h1>Horários de ônibus de Jaraguá do Sul e região.</h1>
 						<p>Organize sua rotina e tenha acesso às informações do transporte público a um toque de distância. Desenvolvido com carinho por quem entende do assunto.</p>
 						<div class="page-home_action">
-							<!-- <a href="" class="google-play btn-active">
-								<img width="140" src="src/img/icon-googleplay.png" alt="">
-							</a> -->
-							<a onClick="return ga('send', 'event', 'download', 'android');" class="google-play btn-active" href="https://play.google.com/store/apps/details?id=voudeonibus">
+							<a target="_blank" onClick="return ga('send', 'event', 'download', 'android');" class="google-play btn-active" href="https://play.google.com/store/apps/details?id=voudeonibus">
 							  <img alt="Android app on Google Play"
 							       src="https://developer.android.com/images/brand/pt-br_app_rgb_wo_60.png" />
 							</a>
@@ -77,7 +74,6 @@
 									<input placeholder="E-mail" type="email" id="mce-EMAIL"  name="EMAIL"  required="required">
 									<span class="action-item placeholder">Em breve</span>
 									<button class="action-item submit" type="submit">Me avise</button>
-
 								</form>
 							</div>
 	
@@ -94,13 +90,11 @@
 					<div class="wrap">
 						<h1 class="section-title">Chega de esquecer <strong>o horário</strong></h1>
 						<figure>
-							<img width="178" height="201" data-src="src/img/page-oapp_card2.png" alt="">
-							<img width="257" height="201" data-src="src/img/page-oapp_card1.png" alt="">
+							<img width="257" height="201" data-src="src/img/page-oapp_card1.png" alt="Card de horário">
 						</figure>
 						<p class="section-p">O Vou de ônibus apresenta de maneira simples os horários e linhas do transporte público de Jaraguá do Sul, Guaramirim e Schroeder. Saiba ainda o preço, locais de passagens e variações das linhas.</p>
 						<p class="alias">Não depende de internet.</p>
 					</div>
-					<img class="page-oapp_iphone" src="src/img/page-oapp_iphone.png" alt="">
 				</div>
 			</div>
 		</section>
@@ -129,10 +123,10 @@
 				<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'prev');" class="arrow prev ir" href="javascript:void(0);"><span>Anterior</span></a>
 				<div class="mobile-sections">
 					<div class="mobile-sections_item mobile-sections_home">
-						<img class="" src="src/img/page-home_mobile1.jpg" alt="">
+						<img class="mobile-hide" src="src/img/page-home_mobile1.jpg" alt="">
 					</div>
 					<div class="mobile-sections_item mobile-sections_oapp">
-						<img class="" data-src="src/img/page-oapp_mobile.jpg" alt="">
+						<img class="mobile-hide" data-src="src/img/page-oapp_mobile.jpg" alt="">
 					</div>
 					<div class="mobile-sections_item mobile-sections_vouagora">
 						<img class="" data-src="src/img/page-home_mobile1.jpg" alt="">
@@ -158,22 +152,6 @@
 						<p class="section-p">Nós utilizamos o ônibus como meio de transporte para ir ao trabalho, faculdade e voltar para casa. Já perdemos o ônibus e esquecemos os horários algumas vezes. Construímos esse aplicativo para você e para nós também, porque acreditamos que pequenos detalhes podem resultar em uma experiência melhor.</p>
 					</div>
 				</div>
-
-				<!--<div class="page-testimony clearfix">
-					<h2 class="section-subtitle">Quem usa recomenda</h2>
-					<blockquote class="page-testimony_item first">
-						<p>Nós utilizamos o ônibus como meio de transporte para ir ao trabalho, faculdade e voltar para casa. Já perdemos o ônibus e </p>
-						<p class="name">Por <strong>José Alves</strong></p>
-					</blockquote>
-					<blockquote class="page-testimony_item">
-						<p>Nós utilizamos o ônibus como meio de transporte para ir ao trabalho, faculdade e voltar para casa. Já perdemos o ônibus e </p>
-						<p class="name">Por <strong>José Alves</strong></p>
-					</blockquote>
-					<blockquote class="page-testimony_item">
-						<p>Nós utilizamos o ônibus como meio de transporte para ir ao trabalho, faculdade e voltar para casa. Já perdemos o ônibus e </p>
-						<p class="name">Por <strong>José Alves</strong></p>
-					</blockquote>
-				</div> -->
 			</section>
 			<!-- / make for user -->
 
@@ -285,20 +263,13 @@
 	</div>
 
 
-
-
-
-	<script type="text/javascript">
-		if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-			document.write('<script async src="src/build/content.js"><\/script>');
-		}
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="src/build/libs/jquery-2.1.4.min.js"><\/script>')</script>
 	<script src="src/build/main.js"></script>
 	<script type="text/javascript">
+		var mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		if (mobile) {
 			$(window).load(function() {
 				$.getScript('src/build/social.js');
 			});
