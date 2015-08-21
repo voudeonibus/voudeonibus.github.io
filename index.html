@@ -265,9 +265,20 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="src/build/libs/jquery-2.1.4.min.js"><\/script>')</script>
-	<script src="src/build/main.js"></script>
+
 	<script type="text/javascript">
 		var mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+		if (mobile) {
+			$.getScript('src/build/libs/carousel-mobile.js');
+		} else {
+			$.getScript('src/build/libs/carousel-desktop.js');
+		}
+
+	</script>
+
+	<script src="src/build/main.js"></script>
+	<script type="text/javascript">
 
 		if (mobile) {
 			$(window).load(function() {

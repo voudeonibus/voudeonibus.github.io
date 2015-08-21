@@ -145,7 +145,7 @@ $(document).ready(function() {
 	$('.mobile-sections_item').width(sw).height(sh);
 
 	$slideVouagora.owlCarousel({
-		items		: 1,
+		singleItem : true,
 		slideSpeed : 600,
 		navigation : true,
 		pagination : false,
