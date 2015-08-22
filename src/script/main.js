@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$slideVouagora = $('.mobile-sections_vouagora'),
 		$menuBurguer = $('.double-mac_with-bacon'),
 		$navSite = $('.nav-site nav'),
-		$logoSite = $('.logo-site'),
+		$logoSite = $('.logo-site, .download'),
 		$pageOapp = $('.page-oapp');
 
 
