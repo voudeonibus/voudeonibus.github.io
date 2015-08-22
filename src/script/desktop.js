@@ -42,7 +42,7 @@ $(document).ready(function() {
 	$('.page-oapp figure img').before(card2);
 	$('.page-oapp .wrap').before(iphone);
 	$('.page-vouagora .section-p').after(vouAgoraDots);
-	// $('.mobile-sections_vouagora').before(screenMobile);
+	$('.mobile-sections_vouagora').before(screenMobile);
 
 
 	/*-----  End of content  ------*/

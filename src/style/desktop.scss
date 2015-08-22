@@ -46,11 +46,17 @@ html, body {
 		transition: $ts-f;
 	}
 
+	.double-mac_with-bacon,
+	.double-mac_with-bacon + div {
+		display: none;
+	}
+
 	
 	.nav-site {
 		position: fixed;
 		z-index: 999;
 		width: 100%;
+		-webkit-transform: translate3d(0,0,0);
 		// transition: $ts-f;
 		// left: 50%;
 		// margin-left: -470px;
@@ -197,10 +203,9 @@ html, body {
 **/
 
 .page-home {
-	// background: $pr;
 	background: $pr url(../img/page-home-full.jpg) center bottom;
 	background-size: cover;
-	// -webkit-transform: translate3d(0,0,0);
+	color: #fff;
 	&:before {
 		content: "";
 		position: absolute;
@@ -551,6 +556,7 @@ html, body {
 			font-size: 39px;
 		}
 	}
+
 }
 .page-testimony_item  {
 	float: left;
