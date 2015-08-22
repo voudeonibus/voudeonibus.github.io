@@ -524,6 +524,21 @@ html, body {
 	margin-bottom: 100px;
 	.page-foruser_img {
 		float: left;
+		width: 430px;
+		height: 378px;
+		background: url(../img/page-foruser.jpg) center center no-repeat;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			border: 30px solid transparent;
+			border-right: 30px solid $bg;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: 9;
+			margin-top: -30px;
+		}
 	}
 	.wrap {
 		float: right;
@@ -577,9 +592,36 @@ html, body {
 .page-team {
 	background: url(../img/page-team.jpg) center top fixed;
 	background-size: cover;
+	padding-bottom: 70px;
+	padding-top: 40px;
+
 	.team-item {
-		width: 440px;
+		width: 430px;
 		float: left;
+		margin-top: 80px;
+		padding: 15px;
+		&.first {
+			margin-right: 20px;
+		}
+		> p {
+			height: 140px;
+		}
+	}
+	.head {
+		margin-top: -50px;
+		margin-bottom: 10px;
+		img, .social, h2 {
+			float: left;
+		}
+		h2, .social {
+			margin-left: 15px;
+			color: white;
+			display: block;
+			width: 68%;
+		}
+	}
+	.social {
+		margin-top: 25px;
 	}
 }
 

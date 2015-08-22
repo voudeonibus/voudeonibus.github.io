@@ -246,16 +246,14 @@ html, body {
 		font-size: 20px;
 		padding-left: 35px;
 		margin-top: 40px;
-		background: url(../img/icon-nowifi.gif) left 5px no-repeat;
+		background: url(../img/icon-nowifi.gif) left 4px no-repeat;
 		// background-size: 28px;
 		line-height: 30px;
 		display: inline-block;
 	}	
 }
 
-.page-apoio {
-	background: white;
-}
+
 
 /**
 *
@@ -322,6 +320,7 @@ html, body {
 .page-apoio {
 	text-align: center;
 	padding: 30px 0;
+	background: white;
 	.section-subtitle,
 	.section-p {
 		text-align: left;
@@ -341,9 +340,6 @@ html, body {
 
 .page-team {
 	background: $pr;
-	padding-bottom: 70px;
-	padding-top: 40px;
-	// -webkit-transform: translate3d(0,0,0);
 	.section-subtitle {
 		color: white;
 		border-bottom-color: white;
@@ -352,33 +348,17 @@ html, body {
 		padding: 10px;
 		background: white;
 		border-radius: 2px;
-		margin-top: 80px;
+		margin-top: 20px;
 		box-shadow: 0 1px 1px rgba(0,0,0,.3);
 		-webkit-transform: translate3d(0,0,0);
-		&.first {
-			margin-right: 20px;
-		}
+
 		> p {
 			-webkit-transform: translate3d(0,0,0);
 			line-height: 1.5;
-			height: 140px;
 		}
 	}
-	.head {
-		margin-top: -50px;
-		margin-bottom: 10px;
-		img, .social, h2 {
-			float: left;
-		}
-		h2, .social {
-			margin-left: 15px;
-			color: white;
-			display: block;
-			width: 68%;
-		}
-	}
+
 	.social {
-		margin-top: 25px;
 		a {
 			width: 22px;
 			height: 22px;

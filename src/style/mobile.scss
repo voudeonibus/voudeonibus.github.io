@@ -51,11 +51,11 @@
 		padding-bottom: 30px;
 	}
 	h1 {
-		text-align: left;
+		// text-align: left;
 		font-size: 20px;
 	}
 	p {
-		text-align: left;
+		// text-align: left;
 		font-size: 18px;
 		line-height: 22px;
 	}
@@ -118,22 +118,6 @@
 
 
 
-/**
-*
-* page for user
-*
-**/
-
-.page-foruser {
-	.section-title {
-		margin: 15px 0;
-	}
-}
-.page-foruser_img {
-	width: 100%;
-}
-
-
 
 /**
 *
@@ -141,17 +125,17 @@
 *
 **/
 .page-vouagora {
-	padding: 30px 0;
+	padding: 30px 0 20px;
 	background: $pr;
 	text-align: center;
-	color: white;
+	color: white;	
 	.section-title {
 		color: white;
 	}
 }
 .mobile-sections_vouagora {
 	margin-top: 50px;	
-	margin-bottom: 50px;	
+	// margin-bottom: 50px;	
 }
 .owl-item {	
     padding: 0 10px;
@@ -170,7 +154,7 @@
 	.owl-dot {
 		width: 12px;
 		height: 12px;
-		margin-right: 20px;
+		margin: 0 10px;
 		transition: $ts;
 		display: inline-block;
 		&.active {
@@ -195,6 +179,123 @@
 	}
 }
 
+
+
+/**
+*
+* page for user
+*
+**/
+
+.page-foruser {
+	padding: 0 0 30px 0;
+	text-align: center;
+	.section-title {
+		margin: 15px 0;
+		strong {
+			font-size: 18px;
+		}
+		span {
+			display: block;
+			font-size: 30px;
+		}
+	}
+	.page-foruser_img {
+		width: 100%;
+		height: 200px;
+		background: url(../img/page-foruser.jpg) center center no-repeat;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+	}
+	.wrap {
+		z-index: 99;
+		position: relative;
+		margin-top: -62px;
+		padding: 0 15px;
+	}
+}
+
+
+
+/**
+*
+* Page apoio
+*
+**/
+.page-apoio {
+	.section-subtitle {
+		margin: 0 0 10px;
+	}
+	a {
+		margin: 10px 0 30px;
+		width: 40%;
+		display: inline-block;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.canarinho {
+		float: left;
+	}
+	.mobilibus {
+		float: right;
+	}
+}
+
+
+
+/**
+*
+* page team 
+*
+**/
+.page-team {
+	padding: 30px 0;
+	.section-subtitle {
+		margin-top: 0;
+	}
+	.team-item {
+		margin-top: 70px;
+	}
+	.head {
+		margin-bottom: 10px;
+		margin-top: -50px;
+		text-align: center;
+		.social, h2 {
+		}
+		img {
+		}
+		h2, .social {
+			// color: white;
+			display: block;
+		}
+	}
+	.social a {
+		margin: 10px 5px;
+		float: none;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+
+
+/**
+*
+* page footer
+*
+**/
+.page-footer {
+	.page-footer-main {
+		margin-bottom: 50px;	
+		p {
+			margin-bottom: 0;
+		}
+	}
+	
+}
 
 
 
