@@ -278,7 +278,9 @@
 		margin-top: -62px;
 		padding: 0 15px;
 	}
-
+	.logo img {
+		width: 126px;
+	}
 }
 
 
@@ -306,6 +308,8 @@
 	}
 	.mobilibus {
 		float: right;
+		position: relative;
+		top: 4px;
 	}
 }
 

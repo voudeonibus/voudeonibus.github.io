@@ -14,8 +14,8 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="src/build/mobile.css" media="screen and (max-width: 480px)">
-	<link rel="stylesheet" href="src/build/desktop.css" media="screen and (min-width: 480px)">
+	<link rel="stylesheet" href="src/build/mobile.css" media="screen and (max-width: 960px)">
+	<link rel="stylesheet" href="src/build/desktop.css" media="screen and (min-width: 960px)">
 
 	<title>Vou de ônibus - Horários de ônibus de Jaraguá do Sul e região.</title>
 
@@ -119,6 +119,12 @@
 				<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'next');" class="arrow next ir" href="javascript:void(0);"><span>Próximo</span></a>
 				<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'prev');" class="arrow prev ir" href="javascript:void(0);"><span>Anterior</span></a>
 				<div class="mobile-sections">
+					<div class='mobile-sections_item mobile-sections_home'>
+						<img src='src/img/page-home_mobile1.jpg' alt=''>
+					</div>
+					<div class='mobile-sections_item mobile-sections_oapp'>
+						<img src='src/img/page-oapp_mobile.jpg' alt=''>
+					</div>
 					<div class="mobile-sections_item mobile-sections_vouagora">
 						<img class="" data-src="src/img/page-home_mobile1.jpg" alt="">
 						<img class="" data-src="src/img/page-vouagora_mobile2.jpg" alt="">
@@ -258,7 +264,12 @@
 	<script>window.jQuery || document.write('<script src="src/build/libs/jquery-2.1.4.min.js"><\/script>')</script>
 
 	<script type="text/javascript">
-		var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+		if(window.innerWidth < 960) {
+			var isMobile = true;
+		} else {
+			var isMobile = false;
+		}
 
 		if (isMobile) {
 			document.write('<script src="src/build/libs/carousel-mobile.js"><\/script>');
