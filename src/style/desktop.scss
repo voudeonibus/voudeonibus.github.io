@@ -75,6 +75,7 @@ html, body {
 			transition: $ts;
 			&:hover {
 				opacity: .5;
+				filter: alpha(opacity=50);
 				transition: $ts;
 			}
 		}
@@ -89,6 +90,7 @@ html, body {
 		.download {
 			transition: $ts-f;
 			opacity: 0;
+			filter: alpha(opacity=0);
 			font-size: 14px;
 			color: white;
 			text-transform: uppercase;
@@ -112,6 +114,7 @@ html, body {
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44abf8', endColorstr='#1f86d2',GradientType=0 ); /* IE6-9 */
 			&:hover {
 				opacity: 0;
+				filter: alpha(opacity=0);
 			}
 		}
 		.social {
@@ -125,6 +128,7 @@ html, body {
 			background-size: cover;
 			&:hover {
 				opacity: .8;
+				filter: alpha(opacity=80);
 				transition: $ts;
 			}
 		}
@@ -157,6 +161,7 @@ html, body {
 
 			.download {
 				opacity: 1;
+				filter: alpha(opacity=100);
 				padding: 2px 5px;
 				width: 85px;
 				margin-left: 33px;
@@ -192,6 +197,7 @@ html, body {
 	&.none {
 		transition: $ts;
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 }
 
@@ -244,6 +250,7 @@ html, body {
 		bottom: 5%;
 		height: 75%;
 		opacity: 0;
+		filter: alpha(opacity=0);
 		transition: $ts-f;
 	}
 	.section-title {
@@ -255,12 +262,14 @@ html, body {
 	.alias {
 		@include translate(-100px, 0);
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 
 	figure {
 		img {
 			@include translate(-100px, 0);
 			opacity: 0;
+			filter: alpha(opacity=0);
 		}
 		img:first-child {
 			position: absolute;
@@ -272,6 +281,7 @@ html, body {
 		.page-oapp_iphone {
 			right: -35px;
 			opacity: 1;
+			filter: alpha(opacity=100);
 			transition: $ts-f;
 		}
 		.section-p {
@@ -322,6 +332,7 @@ html, body {
 		color: white;
 		@include translate(-100px, 0);
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 	.container {
 		position: relative;
@@ -384,26 +395,6 @@ html, body {
  
 
 
-.lt-ie9 {
-	.page-oapp {
-		figure img,
-		.section-p,
-		.alias {
-			@include translate(0, 0);
-			opacity: 1;
-		}
-	}
-	.page-vouagora {
-		.section-title,
-		.section-p,
-		.dots {
-			color: white;
-			@include translate(0px, 0);
-			opacity: 1;
-		}
-	}
-}
-
 
 /*==============================
 =            mobile            =
@@ -432,6 +423,7 @@ html, body {
 		.mobile-sections_oapp {
 			// top: 0;
 			opacity: 1;
+			filter: alpha(opacity=100);
 			transition: $ts-l;
 		}
 	}
@@ -442,10 +434,12 @@ html, body {
 		.mobile-sections_home,
 		.mobile-sections_oapp {
 			opacity: 0;
+			filter: alpha(opacity=0);
 			transition: $ts-l;
 		}
 		.mobile-sections_vouagora, .arrow {
 			opacity: 1;
+			filter: alpha(opacity=100);
 			transition: $ts-f;
 		}
 	}
@@ -457,6 +451,7 @@ html, body {
 		top: 50%;
 		margin-top: -17px;
 		opacity: 0;
+		filter: alpha(opacity=0);
 		transition: $ts;
 		&.next {
 			background: url(../img/page-vouagora_arrow.svg) right center no-repeat;
@@ -484,12 +479,14 @@ html, body {
 		// top: 100%;
 		left: 0;
 		opacity: 0;
+		filter: alpha(opacity=0);
 		transition: $ts-l;
 		width: 100%;
 		height: 100%;
 		&:first-child {
 			top: 0;
 			opacity: 1;
+			filter: alpha(opacity=100);
 		}
 	}
 	img {
@@ -582,6 +579,7 @@ html, body {
 		transition: $ts;
 		&:hover {
 			opacity: .7;
+			filter: alpha(opacity=70);
 			transition: $ts;
 		}
 	}
@@ -590,6 +588,7 @@ html, body {
 		margin: 10px 0 20px;
 	}
 }
+
 
 
 /**

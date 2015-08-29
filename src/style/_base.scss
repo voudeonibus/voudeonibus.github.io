@@ -132,6 +132,7 @@ html, body {
 		font-size: 20px;
 		color: $pr;
 		opacity: 0;
+		filter: alpha(opacity=0);
 		transition: $ts;
 	}
 	.action-item {
@@ -153,18 +154,22 @@ html, body {
 	}
 	.submit {
 		opacity: 0;
+		filter: alpha(opacity=0);
 		top: 45px;
 	}
 	.back {
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 	&:hover {
 		.submit {
 			top: 10px;
 			opacity: 1;
+			filter: alpha(opacity=100);
 		}
 		.placeholder {
 			opacity: 0;
+			filter: alpha(opacity=0);
 			top: -45px;
 		}
 	}
@@ -179,6 +184,7 @@ html, body {
 		line-height: 22px;
 		text-align: center;
 		opacity: 0;
+		filter: alpha(opacity=0);
 		cursor: pointer;
 		top: 20px;
 		left: -10px;
@@ -187,6 +193,7 @@ html, body {
 .form-active {
 	.google-play {
 		opacity: 0;
+		filter: alpha(opacity=0);
 		transition: $ts;
 	}
 	.avise-me  {
@@ -195,6 +202,7 @@ html, body {
 		input {
 			transition: $ts-s;
 			opacity: 1;
+			filter: alpha(opacity=100);
 			width: 189px;
 			padding: 0 30px 0 10px;;
 		}
@@ -205,18 +213,22 @@ html, body {
 	}
 	.icon {
 		opacity: 0;
+		filter: alpha(opacity=0);
 		left: -30px;
 	}
 	.submit {
 		top: 10px;
 		opacity: 1;
+		filter: alpha(opacity=100);
 	}
 	.placeholder {
 		opacity: 0;
+		filter: alpha(opacity=0);
 		top: -45px;
 	}
 	.close {
 		opacity: 1;
+		filter: alpha(opacity=100);
 		top: 20px;
 		left: 210px;
 		background: white;
@@ -367,9 +379,11 @@ html, body {
 			background-image: url(../img/page-team_social.gif);
 			background-repeat: no-repeat;
 			opacity: .2;
+			filter: alpha(opacity=20);
 			transition: $ts;
 			&:hover {
 				opacity: 1;
+				filter: alpha(opacity=100);
 				transition: $ts;
 			}
 		}
