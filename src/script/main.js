@@ -52,7 +52,7 @@ $(document).ready(function(){
 			}
 		});
 
-		
+
 	};
 
 	/**
@@ -60,7 +60,7 @@ $(document).ready(function(){
 	* avise me
 	*
 	**/
-	
+
 	$avisme.find('button').click(function(){
 		if (!$pageHomeAction.hasClass('form-active')) {
 			$pageHomeAction.addClass('form-active');
@@ -85,7 +85,7 @@ $(document).ready(function(){
 		// lazy load
 		$('[data-src]').each(function(){
 			var img = $(this).data('src');
-			$(this).attr('src', img);	
+			$(this).attr('src', img);
 		});
 	}
 
@@ -113,7 +113,7 @@ $(document).ready(function(){
 		$slideVouagora.trigger('owl.goTo', target);
 		$(this).addClass('active').siblings().removeClass('active');
 	});
-	
-	
+
+
 
 });
