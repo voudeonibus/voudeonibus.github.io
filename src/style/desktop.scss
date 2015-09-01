@@ -9,6 +9,10 @@ html, body {
 	min-width: 960px;
 }
 
+body {
+	-webkit-backface-visibility: hidden;
+}
+
 .container {
 	width: 940px;
 	height: 100%;
