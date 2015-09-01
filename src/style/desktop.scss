@@ -30,6 +30,7 @@ html, body {
 	height: 100%;
 	position: relative;
 	top: 0;
+
 }
 
 /*============================
@@ -44,6 +45,8 @@ html, body {
 		background: url(../img/logo-site@2x.png) center center no-repeat;
 		background-size: cover;	
 		transition: $ts-f;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: scale(1);
 	}
 
 	.double-mac_with-bacon,
@@ -56,7 +59,8 @@ html, body {
 		position: fixed;
 		z-index: 999;
 		width: 100%;
-		-webkit-transform: translate3d(0,0,0);
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: scale(1);
 		// transition: $ts-f;
 		// left: 50%;
 		// margin-left: -470px;
@@ -112,6 +116,8 @@ html, body {
 			background: -ms-linear-gradient(top,  #44abf8 0%,#1f86d2 100%); /* IE10+ */
 			background: linear-gradient(to bottom,  #44abf8 0%,#1f86d2 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44abf8', endColorstr='#1f86d2',GradientType=0 ); /* IE6-9 */
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: scale(1);
 			&:hover {
 				opacity: 0;
 				filter: alpha(opacity=0);
@@ -212,6 +218,8 @@ html, body {
 	background: $pr url(../img/page-home-full.jpg) center bottom;
 	background-size: cover;
 	color: #fff;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 	&:before {
 		content: "";
 		position: absolute;
@@ -240,6 +248,8 @@ html, body {
 
 .page-oapp {
 	background: url(../img/page-oapp.jpg) center bottom repeat-x;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 	.container {
 		height: 100%;
 		position: relative;	
@@ -267,6 +277,7 @@ html, body {
 
 	figure {
 		img {
+			-webkit-backface-visibility: hidden;
 			@include translate(-100px, 0);
 			opacity: 0;
 			filter: alpha(opacity=0);
@@ -308,11 +319,11 @@ html, body {
 @media screen and (min-height: 800px) {
 	.page-oapp {
 		.page-oapp_iphone {
-			right: 0px;
+			right: -140px;
 		}
 		&.view {
 			.page-oapp_iphone {
-				right: -150px;
+				right: -230px;
 			}
 		}
 	}
@@ -328,6 +339,7 @@ html, body {
 
 .page-vouagora {
 	background: url(../img/page-vouagora_bg.jpg) center center repeat-x;
+	-webkit-backface-visibility: hidden;
 	.section-title,
 	.section-p,
 	.dots {
@@ -389,6 +401,8 @@ html, body {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 	img {
 		float: left;
 		position: relative !important;
@@ -429,6 +443,8 @@ html, body {
 	z-index: 99;
 	height: 80%;
 	transition: $ts-f;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 	.mobile-img {
 		width: auto;
 		height: 100%;
@@ -495,6 +511,8 @@ html, body {
 	z-index: 1;
 	overflow: hidden;
 	background: $pr url(../img/page-home_mobile1.jpg);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 	.mobile-sections_item {
 		position: absolute;
 		// top: 100%;
