@@ -303,6 +303,8 @@ html, body {
 }
 
 
+
+
 @media screen and (min-height: 800px) {
 	.page-oapp {
 		.page-oapp_iphone {
@@ -393,7 +395,26 @@ html, body {
 	}
 }
  
-
+.lt-ie9 {
+	.page-oapp {
+		&.view {
+			figure img,
+			.section-p,
+			.alias {
+				opacity: 1;
+			}
+		}
+	}
+	.page-vouagora {
+		&.view {
+			.section-title,
+			.section-p,
+			.dots {
+				opacity: 1;
+			}
+		}
+	}
+}
 
 
 /*==============================
