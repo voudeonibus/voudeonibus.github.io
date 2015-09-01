@@ -3,5 +3,5 @@
 ## Minificar
 `gulp -p`
 
-## Inicar servidor 
+## Iniciar servidor 
 `python -m SimpleHTTPServer 8000`

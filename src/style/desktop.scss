@@ -7,6 +7,8 @@
 
 html, body {
 	min-width: 960px;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 }
 
 .container {
@@ -30,6 +32,8 @@ html, body {
 	height: 100%;
 	position: relative;
 	top: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: scale(1);
 
 }
 
@@ -42,7 +46,7 @@ html, body {
 		width: 173px;
 		height: 22px;
 		float: left;
-		background: url(../img/logo-site@2x.png) center center no-repeat;
+		// background: url(../img/logo-site@2x.png) center center no-repeat;
 		background-size: cover;	
 		transition: $ts-f;
 		-webkit-backface-visibility: hidden;
@@ -215,7 +219,7 @@ html, body {
 **/
 
 .page-home {
-	background: $pr url(../img/page-home-full.jpg) center bottom;
+	// background: $pr url(../img/page-home-full.jpg) center bottom;
 	background-size: cover;
 	color: #fff;
 	-webkit-backface-visibility: hidden;
