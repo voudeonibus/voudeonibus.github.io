@@ -337,9 +337,16 @@ html, body {
 	.section-p {
 		text-align: left;
 	}
-	a {
+	.canarinho, .mobilubus {
 		display: inline-block; 
 		margin: 30px 0;
+	}
+	a {
+		color: inherit;
+		font-weight: bold;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
