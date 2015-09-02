@@ -311,6 +311,11 @@
 		position: relative;
 		top: 4px;
 	}
+	.section-p  {	
+		a {
+			display: inline;
+		}
+	}
 }
 
 
@@ -360,7 +365,7 @@
 	.page-footer-main {
 		margin-bottom: 50px;	
 		p {
-			margin-bottom: 0;
+			margin-bottom: 15px;
 		}
 	}
 	
