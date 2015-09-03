@@ -63,15 +63,21 @@ $(document).ready(function(){
 
 	$avisme.find('button').click(function(){
 		if (!$pageHomeAction.hasClass('form-active')) {
-			$pageHomeAction.addClass('form-active');
 
-			ga('send', 'event', 'download', 'ios-avise-me', 'avise-me');
+			if($(this).parents('.avise-me').hasClass('android')) {
+				$pageHomeAction.addClass('form-active_android');
+				ga('send', 'event', 'download', 'android-avise-me', 'avise-me');
+			} else if ($(this).parents('.avise-me').hasClass('ios')) {
+				$pageHomeAction.addClass('form-active_ios');
+				ga('send', 'event', 'download', 'ios-avise-me', 'avise-me');
+			}
+
 			return false;
 		}
 	});
 
 	$avisme.find('.close').click(function(){
-		$pageHomeAction.removeClass('form-active');
+		$pageHomeAction.removeClass('form-active_ios').removeClass('form-active_android');
 		ga('send', 'event', 'download', 'ios-avise-me', 'close');
 	});
 
