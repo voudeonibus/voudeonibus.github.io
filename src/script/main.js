@@ -118,7 +118,6 @@ $(document).ready(function(){
 	};
 
 	$('.dots').on('click', 'a', function(){
-		console.log('cu');
 		var target = $(this).index();
 		$slideVouagora.trigger('owl.goTo', target);
 		$(this).addClass('active').siblings().removeClass('active');

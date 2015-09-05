@@ -165,6 +165,13 @@ $(document).ready(function() {
 		$slideVouagora.trigger('owl.prev');
 	});
 
+	$('.dots').on('click', 'a', function(){
+		var target = $(this).index();
+		$slideVouagora.trigger('owl.goTo', target);
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+
+
 	/*-----  End of slide vou agora  ------*/
 
 
