@@ -15,12 +15,14 @@ $(document).ready(function(){
 
 
 	if (isMobile) {
+		// menu hamburguer click
 		$menuBurguer.click(function(){
 			$(this).toggleClass('active');
 			$navSite.slideToggle();
 
 		});
 
+		// scroll to section
 		$navSite.on('click', 'a', function(){
 			var target = $(this).data('target');
 
@@ -28,10 +30,11 @@ $(document).ready(function(){
 	          scrollTop: $(target).offset().top - 56
 	        }, 1000);
 
-	        $navSite.slideToggle();
-	        $menuBurguer.toggleClass('active');
+	        $navSite.slideUp();
+	        $menuBurguer.removeClass('active');
 		});
 
+		// scroll to top
 		$logoSite.click(function(){
 			$('html,body').animate({
 	          scrollTop: 0
@@ -41,6 +44,7 @@ $(document).ready(function(){
 	        $menuBurguer.removeClass('active');
 		});
 
+		// show menu
 		$(window).scroll(function(){
 			var ws = $(window).scrollTop(),
 				of = $pageOapp.offset().top;
@@ -122,6 +126,18 @@ $(document).ready(function(){
 
 
 
+});
+
+/**
+*
+* link equipe
+*
+*/
+$(window).load(function(){
+	var hash = window.location.hash;
+	if(hash == "#equipe") {
+		$('.nav-site a:nth-child(5)').click();
+	}
 });
 
 

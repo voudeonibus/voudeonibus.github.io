@@ -200,7 +200,6 @@ $(document).ready(function() {
 				$.fn.fullpage.moveTo(4);
 
 				var section = $(this).data('target');
-				console.log($(section).position().top - 20);
 
 				$('.page-free .fp-tableCell').animate({
 					scrollTop: $(section).position().top - 20
