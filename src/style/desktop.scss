@@ -201,12 +201,27 @@ body {
 		background: white url(../img/page-home_down.gif) center center no-repeat;
 		cursor: pointer;
 		box-shadow: 0 2px 6px rgba(0,0,0,.4);
+		&.animate {
+			@include animation(1.2s nextPageLoad ease-in-out infinite);
+		}
 	}
 
 	&.none {
 		transition: $ts;
 		opacity: 0;
 		filter: alpha(opacity=0);
+	}
+}
+
+@include keyframes(nextPageLoad) {
+	0% {
+		background-position: 50% 40%;
+	}
+	50% {
+		background-position: 50% 60%;
+	}
+	100% {
+		background-position: 50% 40%;
 	}
 }
 
@@ -510,7 +525,7 @@ body {
 	top: 8%;
 	right: 7%;
 	left: 9%;
-	bottom: 13%;
+	bottom: 12.5%;
 	z-index: 1;
 	overflow: hidden;
 	background: $pr url(../img/page-home_mobile1.jpg);

@@ -106,12 +106,14 @@ $(document).ready(function() {
 				if (index == 1) {
 					$('.view').removeClass('view');
 					$.fn.fullpage.setAutoScrolling(true);
+					$nextPage.addClass('animate');
 				};
 
 				if(index >= 2) {
 					$mobile.addClass('pageApp-move');
 					$pageApp.addClass('view');
 					$.fn.fullpage.setAutoScrolling(true);
+					$nextPage.removeClass('animate');
 				} else {
 				}
 				if(index >= 3) {
