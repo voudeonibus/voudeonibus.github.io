@@ -19,7 +19,7 @@ $(document).ready(function() {
 	===============================*/
 
 	// o app
-	var card2 = "<img width='178' height='201' data-src='src/img/page-oapp_card2.png' alt='Card de horário'>";
+	var card2 = "<img width='178' height='201' src='src/img/page-oapp_card2.png' alt='Card de horário'>";
 	var iphone = "<img class='page-oapp_iphone' src='src/img/page-oapp_iphone.png' alt='Vou de ônibus no iPhone'>"
 
 	// vou agora
