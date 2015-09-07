@@ -61,7 +61,7 @@ html, body {
 
 .page-home {
 	color: #fff;
-	background: url(../img/page-home.jpg) center center no-repeat;
+	background: $pr url(../img/page-home.jpg) center center no-repeat;
 	background-size: cover;
 	h1 {
 		font-size: 27px;
