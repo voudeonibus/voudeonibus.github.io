@@ -66,7 +66,8 @@ $(document).ready(function(){
 	**/
 
 	$avisme.find('button').click(function(){
-		if (!$pageHomeAction.hasClass('form-active')) {
+
+		if (!$pageHomeAction.hasClass('form-active_ios') && !$pageHomeAction.hasClass('form-active_android')) {
 
 			if($(this).parents('.avise-me').hasClass('android')) {
 				$pageHomeAction.addClass('form-active_android');
@@ -77,7 +78,9 @@ $(document).ready(function(){
 			}
 
 			return false;
+
 		}
+
 	});
 
 	$avisme.find('.close').click(function(){
