@@ -201,7 +201,9 @@ body {
 		background: white url(../img/page-home_down.gif) center center no-repeat;
 		cursor: pointer;
 		box-shadow: 0 2px 6px rgba(0,0,0,.4);
+		transition: $ts;
 		&.animate {
+			transition: $ts;
 			@include animation(1.2s nextPageLoad ease-in-out infinite);
 		}
 	}
