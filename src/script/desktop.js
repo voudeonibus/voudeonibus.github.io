@@ -49,13 +49,12 @@ $(document).ready(function() {
 	$pageVouagora = $('.page-vouagora'),
 	$nav = $('.nav-site'),
 	$nextPage = $('.next-page'),
-	$slideVouagora = $('.mobile-sections_vouagora');
+	$slideVouagora = $('.mobile-sections_vouagora'),
+	$mobildeSection = $('.mobile-sections');
 
-	// width mobile, prevent bug
-	$mobileImg.load(function(){
-		$mobile.width($mobileImg.width()).height($mobileImg.height());
-	});
-
+	// prevent bug
+	$mobildeSection.width($mobildeSection.width()).height($mobildeSection.height());
+	$mobile.width($mobileImg.width()).height($mobileImg.height());
 
 
 	// btn next page
@@ -144,16 +143,12 @@ $(document).ready(function() {
 	=            slide vou agora            =
 	=======================================*/
 
-	var sw = $('.mobile-sections').width();
-	var sh = $('.mobile-sections').height();
-	$('.mobile-sections_item').width(sw).height(sh);
-
 	var owl = $slideVouagora.data('owlCarousel');
 
 	$slideVouagora.owlCarousel({
 		singleItem : true,
 		slideSpeed : 600,
-		navigation : true,
+		navigation : false,
 		pagination : false,
 		afterInit  : function(){
 			$slideVouagora.removeAttr('style');
