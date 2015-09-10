@@ -49,7 +49,10 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8000',
+    server: {
+      baseDir: './'
+    },
+    port: 8000,
     notify: false
   });
 });
