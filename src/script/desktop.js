@@ -43,6 +43,7 @@ $(document).ready(function() {
 	// para variar
 	$fullPage = $('#fullpage-vbd'),
 	$mobile = $('.mobile'),
+	$mobileImg = $('.mobile-img'),
 	$pageHome = $('.page-home'),
 	$pageApp = $('.page-oapp'),
 	$pageVouagora = $('.page-vouagora'),
@@ -51,7 +52,10 @@ $(document).ready(function() {
 	$slideVouagora = $('.mobile-sections_vouagora');
 
 	// width mobile, prevent bug
-	$mobile.width($mobile.width()).height($mobile.height());
+	$mobileImg.load(function(){
+		$mobile.width($mobileImg.width()).height($mobileImg.height());
+	});
+
 
 
 	// btn next page
