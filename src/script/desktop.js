@@ -53,8 +53,29 @@ $(document).ready(function() {
 	$mobildeSection = $('.mobile-sections');
 
 	// prevent bug
-	$mobildeSection.width($mobildeSection.width()).height($mobildeSection.height());
-	$mobile.width($mobileImg.width()).height($mobileImg.height());
+	bugMobile = function() {
+
+		$mobile.removeAttr('style');
+		$mobildeSection.removeAttr('style');
+		$mobildeSection.children().removeAttr('style');
+
+		$mobile.css({
+			'width': $mobileImg.width(), 
+			'height' : $mobileImg.height()
+		});
+
+		$mobildeSection.css({
+			'width': $mobildeSection.width(), 
+			'height' : $mobildeSection.height()
+		}).children().css({
+			'width': $mobildeSection.width(), 
+			'height' : $mobildeSection.height()
+		});
+
+	}
+	$mobileImg.load(function(){
+		bugMobile();
+	})
 
 
 	// btn next page
@@ -76,6 +97,7 @@ $(document).ready(function() {
 				if (nextIndex > 1) {
 					$nav.addClass('fixed');
 					$('.page-home_action').removeClass('form-active');
+					bugMobile();
 				};
 
 				if (nextIndex == 1) {
