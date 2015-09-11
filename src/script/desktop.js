@@ -97,7 +97,6 @@ $(document).ready(function() {
 				if (nextIndex > 1) {
 					$nav.addClass('fixed');
 					$('.page-home_action').removeClass('form-active');
-					bugMobile();
 				};
 
 				if (nextIndex == 1) {
@@ -174,6 +173,11 @@ $(document).ready(function() {
 		pagination : false,
 		afterInit  : function(){
 			$slideVouagora.removeAttr('style');
+			var FF = !(window.mozInnerScreenX == null);
+			if(FF) {
+				bugMobile();
+			}
+
 		},
 		afterAction : function() {
 			var current = this.currentItem+1;
