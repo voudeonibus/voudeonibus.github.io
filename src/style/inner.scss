@@ -111,6 +111,12 @@
 	}
 }
 .midia-kit {
+	&.full {
+		p {
+			width: 23.5%;
+			margin: 5px;
+		}
+	}
 	p {
 		width: 45%;
 		position: relative;
