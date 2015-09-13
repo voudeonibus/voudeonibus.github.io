@@ -498,6 +498,14 @@ html, body {
 		h1  {
 			text-transform: uppercase;
 			font-size: 24px;
+			a {
+				color: inherit;
+				transition: $ts;
+				&:hover {
+					opacity: .8;
+					transition: $ts;
+				}
+			}
 		}
 		p {
 			font-weight: 300;

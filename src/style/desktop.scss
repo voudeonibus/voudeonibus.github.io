@@ -693,6 +693,9 @@ body {
 *
 **/
 .page-footer {
+	&.inner {
+		background: #eee;
+	}
 	.fb-page {
 		float: right;
 		width: 460px;
