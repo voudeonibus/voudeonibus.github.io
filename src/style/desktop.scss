@@ -334,7 +334,7 @@ body {
 
 
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 800px) and (min-width: 1290px) {
 	.page-oapp {
 		.page-oapp_iphone {
 			right: -140px;
@@ -576,7 +576,7 @@ body {
 *
 **/
 .page-foruser {
-	margin-top: 30px;
+	margin-top: 80px;
 	margin-bottom: 30px;
 	.page-foruser_img {
 		float: left;
