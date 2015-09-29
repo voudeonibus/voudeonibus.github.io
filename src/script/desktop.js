@@ -164,7 +164,7 @@ $(document).ready(function() {
 			$('.page-free .fp-tableCell').animate({
 				scrollTop: $('.page-free .fp-tableCell').scrollTop() + 300
 			}, '3000');
-		}		
+		} 
 	});
 
 
