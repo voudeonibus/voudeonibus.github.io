@@ -150,7 +150,7 @@ $(document).ready(function() {
 				}
 				if(index == 4) {
 					$nav.addClass('gray');
-					$nextPage.addClass('none');
+					$nextPage.addClass('scroll-down');
 					$.fn.fullpage.setAutoScrolling(false);
 				} else {
 					$nextPage.removeClass('none');
@@ -158,6 +158,14 @@ $(document).ready(function() {
 				}
 			}
 		});
+
+	$nextPage.click(function(){
+		if($(this).hasClass('scroll-down')) {
+			$('.page-free .fp-tableCell').animate({
+				scrollTop: $('.page-free .fp-tableCell').scrollTop() + 300
+			}, '3000');
+		}		
+	});
 
 
 	/*=======================================
