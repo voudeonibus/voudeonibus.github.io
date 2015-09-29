@@ -576,8 +576,8 @@ body {
 *
 **/
 .page-foruser {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	.page-foruser_img {
 		float: left;
 		width: 430px;
@@ -629,7 +629,7 @@ body {
 
 	.canarinho, .mobilibus {
 		display: inline-block; 
-		margin: 30px 100px;
+		margin: 20px 100px;
 		transition: $ts;
 		&:hover {
 			opacity: .7;
