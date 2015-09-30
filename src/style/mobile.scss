@@ -139,22 +139,27 @@
 	}
 }
 
-.form-active {
+.form-active_android,
+.form-active_ios {
 	.avise-me  {
-		width: 100%;
+		width: 100% !important;
 		margin: 7px 15px 15px 0;
 		input {
 			position: absolute;
 			left: 0;
-			width: 39%;
+			width: 58%;
+			display: block;
+			float: none;
+			box-sizing: border-box;
 		}
 	}
 	.google-play {
 		opacity: 1 !important;
 	}
 	.close {
-		left: 47%;
 		z-index: 999;
+		left: 53%;
+
 	}
 }
 
