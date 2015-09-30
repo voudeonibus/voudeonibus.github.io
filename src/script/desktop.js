@@ -52,7 +52,12 @@ $(document).ready(function() {
 	$slideVouagora = $('.mobile-sections_vouagora'),
 	$mobildeSection = $('.mobile-sections');
 
-	// prevent bug
+	/**
+	 *
+	 * bug mobile
+	 *
+	 */
+	
 	bugMobile = function() {
 
 		$mobile.removeAttr('style');
@@ -73,16 +78,11 @@ $(document).ready(function() {
 		});
 
 	}
+
 	$mobileImg.load(function(){
 		bugMobile();
 	})
 
-
-	// btn next page
-	$nextPage.addClass('load');
-	$nextPage.click(function(){
-		$.fn.fullpage.moveSectionDown();
-	});
 
 	/**
 	*
@@ -153,19 +153,13 @@ $(document).ready(function() {
 					$nextPage.addClass('scroll-down');
 					$.fn.fullpage.setAutoScrolling(false);
 				} else {
-					$nextPage.removeClass('none');
+					$nextPage.removeClass('scroll-down');
 					$nav.removeClass('gray');
 				}
 			}
 		});
 
-	$nextPage.click(function(){
-		if($(this).hasClass('scroll-down')) {
-			$('.page-free .fp-tableCell').animate({
-				scrollTop: $('.page-free .fp-tableCell').scrollTop() + 300
-			}, '3000');
-		} 
-	});
+
 
 
 	/*=======================================
@@ -210,9 +204,6 @@ $(document).ready(function() {
 	/*-----  End of slide vou agora  ------*/
 
 
-
-
-
 	// return fullpage
 	$('.page-free .fp-tableCell').on('scroll',function(){
 		if($('.page-free .fp-tableCell').scrollTop() == 0) {
@@ -220,6 +211,46 @@ $(document).ready(function() {
 		}
 	});
 
+
+	/*========================================
+	=            button next page            =
+	========================================*/
+	
+		// _ remove load e next page
+		$nextPage.addClass('load');
+		$nextPage.click(function(){
+			$.fn.fullpage.moveSectionDown();
+		});
+
+		//  _ free page events
+		$nextPage.click(function(){
+			if($(this).hasClass('scroll-down')) {
+				// _ scroll down
+				$('.page-free .fp-tableCell').animate({
+					scrollTop: $('.page-free .fp-tableCell').scrollTop() + 400
+				}, '3000');
+			} 
+			if($(this).hasClass('return-top')) {
+				// _ return top
+				$.fn.fullpage.moveTo(1, 0);
+				$nextPage.removeClass('return-top')			
+			}
+		});
+
+		// return to top
+		$('.page-free .fp-tableCell').scroll(function(){
+			var $pageFreeScroll = $('.page-free .fp-tableCell').scrollTop(),
+				$wh = $(window).height(),
+				$relative = $('.relative').height() + 80;
+
+			if(($pageFreeScroll+$wh) == $relative) {
+				$nextPage.addClass('return-top')			
+			} else {
+				$nextPage.removeClass('return-top')			
+			}
+		});
+
+	/*=====  End of button next page  ======*/
 
 
 

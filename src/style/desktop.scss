@@ -207,10 +207,17 @@ body {
 		}
 	}
 
-	&.none {
+	// &.none {
+	// 	transition: $ts;
+	// 	opacity: 0;
+	// 	filter: alpha(opacity=0);
+	// }
+	&.return-top {
+		background: white url(../img/page-home_up.gif) center center no-repeat;
+	}
+	&:active {
+		@include scale(0.9);
 		transition: $ts;
-		opacity: 0;
-		filter: alpha(opacity=0);
 	}
 }
 
