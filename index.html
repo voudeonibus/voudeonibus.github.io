@@ -5,330 +5,361 @@
    <![endif]-->
    <head>
 
-    <!--[if lt IE 9]><meta http-equiv="refresh" content="0; url=/ops/"><![endif]-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   	<!--[if lt IE 9]><meta http-equiv="refresh" content="0; url=/ops/"><![endif]-->
+   	<meta charset="utf-8">
+   	<meta http-equiv="x-ua-compatible" content="ie=edge">
+   	<meta name="description" content="">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="//www.facebook.com">
-    <link rel="dns-prefetch" href="//connect.facebook.net">
-    <link rel="dns-prefetch" href="//static.ak.facebook.com">
-    <link rel="dns-prefetch" href="//static.ak.fbcdn.net">
-    <link rel="dns-prefetch" href="//s-static.ak.facebook.com">
+   	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+   	<link rel="dns-prefetch" href="//www.google-analytics.com">
+   	<link rel="dns-prefetch" href="//themes.googleusercontent.com">
+   	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+   	<link rel="dns-prefetch" href="//www.facebook.com">
+   	<link rel="dns-prefetch" href="//connect.facebook.net">
+   	<link rel="dns-prefetch" href="//static.ak.facebook.com">
+   	<link rel="dns-prefetch" href="//static.ak.fbcdn.net">
+   	<link rel="dns-prefetch" href="//s-static.ak.facebook.com">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="mask-icon" href="/vdb.svg" color="#22A1EB">
+   	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+   	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+   	<link rel="mask-icon" href="/vdb.svg" color="#22A1EB">
 
-    <style>
-    @font-face{font-family:Lato;font-style:normal;font-weight:100;src:local('Lato Hairline'),local('Lato-Hairline'),url(https://fonts.gstatic.com/s/lato/v11/ifRS04pY1nJBsu8-cUFUS-vvDin1pK8aKteLpeZ5c0A.woff2) format('woff2')}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(https://fonts.gstatic.com/s/lato/v11/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2')}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(https://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2')}
-    </style>
-    <link rel="stylesheet" href="src/build/mobile.css" media="screen and (max-width: 960px)">
-    <link rel="stylesheet" href="src/build/desktop.css" media="screen and (min-width: 960px)">
+   	<style>
+   	@font-face{font-family:Lato;font-style:normal;font-weight:100;src:local('Lato Hairline'),local('Lato-Hairline'),url(https://fonts.gstatic.com/s/lato/v11/ifRS04pY1nJBsu8-cUFUS-vvDin1pK8aKteLpeZ5c0A.woff2) format('woff2')}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(https://fonts.gstatic.com/s/lato/v11/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2')}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(https://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2')}
+   	</style>
+   	<link rel="stylesheet" href="src/build/mobile.css" media="screen and (max-width: 960px)">
+   	<link rel="stylesheet" href="src/build/desktop.css" media="screen and (min-width: 960px)">
 
-    <title>Vou de ônibus: Horários de ônibus de Jaraguá do Sul e região</title>
+   	<title>Vou de ônibus: Horários de ônibus de Jaraguá do Sul e região</title>
 
-    <meta property="og:title" content="Vou de ônibus: Horários de ônibus de Jaraguá do Sul e região.">
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Vou de ônibus">
-    <meta property="og:url" content="https://voudeonibusapp.com">
-    <meta property="og:description" content="Organize sua rotina e tenha acesso às informações do transporte público de Jaraguá do Sul, Guaramirrim e Schroeder a um toque de distância. Desenvolvido com carinho por quem entende do assunto.">
-    <meta name="description" content="Organize sua rotina e tenha acesso às informações do transporte público de Jaraguá do Sul, Guaramirrim e Schroeder a um toque de distância. Desenvolvido com carinho por quem entende do assunto.">
-    <meta property="og:image" content="https://voudeonibusapp.com/src/img/share.jpg">
+   	<meta property="og:title" content="Vou de ônibus: Horários de ônibus de Jaraguá do Sul e região.">
+   	<meta property="og:type" content="website" />
+   	<meta property="og:site_name" content="Vou de ônibus">
+   	<meta property="og:url" content="https://voudeonibusapp.com">
+   	<meta property="og:description" content="Organize sua rotina e tenha acesso às informações do transporte público de Jaraguá do Sul, Guaramirrim e Schroeder a um toque de distância. Desenvolvido com carinho por quem entende do assunto.">
+   	<meta name="description" content="Organize sua rotina e tenha acesso às informações do transporte público de Jaraguá do Sul, Guaramirrim e Schroeder a um toque de distância. Desenvolvido com carinho por quem entende do assunto.">
+   	<meta property="og:image" content="https://voudeonibusapp.com/src/img/share.jpg">
 
 
    </head>
    <body>
 
-    <script type="application/ld+json">
-    { "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "Vou de ônibus",
-      "logo" : "https://voudeonibusapp.com/src/img/logo-app.png",
-      "url" : "https://voudeonibusapp.com",
-      "email" : "falecom@voudeonibusapp.com",
-      "description" : "O Vou de ônibus é um aplicativo de horários de ônibus de Jaraguá do Sul e região. Onde organiza a rotina do usuário e possibilita o acesso às informações do transporte público.",
-      "contactPoint" : [
-        { "@type" : "PostalAddress",
-          "addressLocality" : "Jaraguá do Sul",
-          "addressRegion" : "Santa Catarina",
-          "addressCountry" : "Brasil"
-        } ] }
+   	<script type="application/ld+json">
+   	{ "@context" : "http://schema.org",
+   	"@type" : "Organization",
+   	"name" : "Vou de ônibus",
+   	"logo" : "https://voudeonibusapp.com/src/img/logo-app.png",
+   	"url" : "https://voudeonibusapp.com",
+   	"email" : "falecom@voudeonibusapp.com",
+   	"description" : "O Vou de ônibus é um aplicativo de horários de ônibus de Jaraguá do Sul e região. Onde organiza a rotina do usuário e possibilita o acesso às informações do transporte público.",
+   	"contactPoint" : [
+   	{ "@type" : "PostalAddress",
+   	"addressLocality" : "Jaraguá do Sul",
+   	"addressRegion" : "Santa Catarina",
+   	"addressCountry" : "Brasil"
+   } ] }
 
-    </script>
+   </script>
 
-    <header class="nav-site">
-      <div class="container clearfix">
-        <h1  onClick="return ga('send', 'event', 'menu', 'logo');" class="ir logo-site"><span>Vou de ônibus</span> </h1>
-        <button aria-label="Menu button" class="double-mac_with-bacon" onClick="return ga('send', 'event', 'menu', 'double-mac_with-bacon');">
-          <span></span>
-        </button>
-        <div class="clearfix"></div>
-        <nav>
-          <a onClick="return ga('send', 'event', 'menu', 'o-app');" data-target=".page-oapp" href="javascript:void(0);">O aplicativo</a>
-          <a onClick="return ga('send', 'event', 'menu', 'vou-agora');" data-target=".page-vouagora" href="javascript:void(0);">Vou agora</a>
-          <a onClick="return ga('send', 'event', 'menu', 'quem-usa');" data-target=".page-foruser" href="javascript:void(0);">Quem usa</a>
-          <a onClick="return ga('send', 'event', 'menu', 'apoio');" data-target=".page-apoio" href="javascript:void(0);">Apoio</a>
-          <a onClick="return ga('send', 'event', 'menu', 'equipe');" data-target=".page-team" href="javascript:void(0);">Equipe</a>
-          <a onClick="return ga('send', 'event', 'menu', 'contato');" data-target=".page-footer" href="javascript:void(0);">Contato</a>
-          <a onClick="return ga('send', 'event', 'menu', 'facebook');" target="_blank" class="social ir" href="https://www.facebook.com/voudeonibusapp">
-            <span>Facebook Vou de ônibus</span>
-          </a>
-          <a onClick="return ga('send', 'event', 'menu', 'download');" href="javascript:void(0);" class="download">Download</a>
-        </nav>
-      </div>
-    </header>
+   <header class="nav-site">
+   	<div class="container clearfix">
+   		<h1  onClick="return ga('send', 'event', 'menu', 'logo');" class="ir logo-site"><span>Vou de ônibus</span> </h1>
+   		<button aria-label="Menu button" class="double-mac_with-bacon" onClick="return ga('send', 'event', 'menu', 'double-mac_with-bacon');">
+   			<span></span>
+   		</button>
+   		<div class="clearfix"></div>
+   		<nav>
+   			<a onClick="return ga('send', 'event', 'menu', 'o-app');" data-target=".page-oapp" href="javascript:void(0);">O aplicativo</a>
+   			<a onClick="return ga('send', 'event', 'menu', 'vou-agora');" data-target=".page-vouagora" href="javascript:void(0);">Vou agora</a>
+   			<a onClick="return ga('send', 'event', 'menu', 'quem-usa');" data-target=".page-foruser" href="javascript:void(0);">Quem usa</a>
+   			<a onClick="return ga('send', 'event', 'menu', 'apoio');" data-target=".page-apoio" href="javascript:void(0);">Apoio</a>
+   			<!-- <a onClick="return ga('send', 'event', 'menu', 'equipe');" data-target=".page-team" href="javascript:void(0);">Equipe</a> -->
+   			<a onClick="return ga('send', 'event', 'menu', 'contato');" data-target=".page-footer" href="javascript:void(0);">Contato</a>
+   			<a onClick="return ga('send', 'event', 'menu', 'facebook');" target="_blank" class="social ir" href="https://www.facebook.com/voudeonibusapp">
+   				<span>Facebook Vou de ônibus</span>
+   			</a>
+   			<a onClick="return ga('send', 'event', 'menu', 'download');" href="javascript:void(0);" class="download">Download</a>
+   		</nav>
+   	</div>
+   </header>
 
-    <div role="button" onClick="return ga('send', 'event', 'next-page');" class="next-page"></div>
-
-
-    <div id="fullpage-vbd">
-
-      <!-- home -->
-      <section class="section page-home active">
-        <div class="container">
-          <div class="container-center">
-            <div class="wrap">
-              <img src="src/img/logo-app.png" alt="Vou de ônibus" title="Vou de ônibus">
-
-              <h1>Horários de ônibus de Jaraguá do Sul e região.</h1>
-              <p>Organize sua rotina e tenha acesso às informações do transporte público a um toque de distância. Desenvolvido com carinho por quem entende do assunto.</p>
-              <div class="page-home_action">
-<!--              <a target="_blank" onClick="return ga('send', 'event', 'download', 'android');" class="google-play btn-active" href="https://play.google.com/store/apps/details?id=voudeonibus">
-        <img alt="Android app on Google Play"
-           src="https://developer.android.com/images/brand/pt-br_app_rgb_wo_60.png" />
-          </a> -->
-
-          <div class="avise-me android">
-            <img class="icon" src="src/img/icon-play.png" alt="Google Play Vou de ônibus" title="Google Play Vou de ônibus">
-            <form action="//facebook.us9.list-manage.com/subscribe/post?u=2746d73ceaabab5519e22b3bb&amp;id=66948957ea" method="post" id="mc-embedded-subscribe-form0" name="mc-embedded-subscribe-form0" class="empty" target="_blank" novalidate>
-              <span class="close">×</span>
-              <input placeholder="E-mail" type="email" id="mce-EMAIL"  name="EMAIL"  required="required">
-              <span class="action-item placeholder">Em breve</span>
-              <button class="action-item submit" type="submit">Me avise</button>
-            </form>
-          </div>
+   <div role="button" onClick="return ga('send', 'event', 'next-page');" class="next-page"></div>
 
 
-          <div class="avise-me ios">
-            <img class="icon" src="src/img/icon-apple.png" alt="Apple Store Vou de ônibus" title="Apple Store Vou de ônibus">
-            <form action="//facebook.us9.list-manage.com/subscribe/post?u=2746d73ceaabab5519e22b3bb&amp;id=39e8947135" method="post" id="mc-embedded-subscribe-form1" name="mc-embedded-subscribe-form1" class="empty" target="_blank" novalidate>
-              <span class="close">×</span>
-              <input placeholder="E-mail" type="email" id="mce-EMAIL"  name="EMAIL"  required="required">
-              <span class="action-item placeholder">Em breve</span>
-              <button class="action-item submit" type="submit">Me avise</button>
-            </form>
-          </div>
+   <div id="fullpage-vbd">
 
-        </div>
-      </div>
-    </div>
-  </div>
+   	<!-- home -->
+   	<section class="section page-home active">
+   		<div class="container">
+   			<div class="container-center">
+   				<div class="wrap">
+   					<img src="src/img/logo-app.png" class="logo-app" alt="Vou de ônibus" title="Vou de ônibus">
+
+   					<h1>Horários de ônibus de Jaraguá do Sul e região.</h1>
+   					<p>Organize sua rotina e tenha acesso às informações do transporte público a um toque de distância. </p>
+   					<div class="page-home_action">
+<!--    						<a target="_blank" onClick="return ga('send', 'event', 'download', 'android');" class="google-play btn-active" href="https://play.google.com/store/apps/details?id=voudeonibus">
+   							<img width="60" alt="Android app on Google Play" src="src/img/pt-br-play-badge.png" />
+   						</a>
+ -->
+			<div class="avise-me avise-me-download android ">
+				<a href="" target="_blank">
+					<img class="icon" src="src/img/icon-play.png" alt="Google Play Vou de ônibus" title="Google Play Vou de ônibus">
+					<span class="action-item placeholder-fixed">Baixe <small>beta</small></span>
+				</form>
+				</a>
+			</div>
+
+			<p>
+				<a href="https://github.com/voudeonibus" target="_blank" class="contribua">
+					<img src="src/img/github.png"> <span>Contribua</span>
+				</a>
+			</p>
+
+		  <!-- <div class="avise-me android">
+			<img class="icon" src="src/img/icon-play.png" alt="Google Play Vou de ônibus" title="Google Play Vou de ônibus">
+			<form action="//facebook.us9.list-manage.com/subscribe/post?u=2746d73ceaabab5519e22b3bb&amp;id=66948957ea" method="post" id="mc-embedded-subscribe-form0" name="mc-embedded-subscribe-form0" class="empty" target="_blank" novalidate>
+			  <span class="close">×</span>
+			  <input placeholder="E-mail" type="email" id="mce-EMAIL"  name="EMAIL"  required="required">
+			  <span class="action-item placeholder">Em breve</span>
+			  <button class="action-item submit" type="submit">Me avise</button>
+			</form>
+		  </div>
+		-->
+
+<!-- 		<div class="avise-me ios">
+			<img class="icon" src="src/img/icon-apple.png" alt="Apple Store Vou de ônibus" title="Apple Store Vou de ônibus">
+			<form action="//facebook.us9.list-manage.com/subscribe/post?u=2746d73ceaabab5519e22b3bb&amp;id=39e8947135" method="post" id="mc-embedded-subscribe-form1" name="mc-embedded-subscribe-form1" class="empty" target="_blank" novalidate>
+				<span class="close">×</span>
+				<input placeholder="E-mail" type="email" id="mce-EMAIL"  name="EMAIL"  required="required">
+				<span class="action-item placeholder">Em breve</span>
+				<button class="action-item submit" type="submit">Me avise</button>
+			</form>
+		</div> -->
+
+	</div>
+
+
+
+</div>
+</div>
+</div>
 </section>
 
 <!-- o app -->
 <section class="section page-oapp">
-  <div class="container">
-    <div class="container-center">
-      <div class="wrap">
-        <h1 class="section-title">Chega de esquecer <strong>o horário</strong></h1>
-        <figure>
-          <img width="257" height="201" src="" data-src="src/img/page-oapp_card1.png" alt="Card de horário">
-        </figure>
-        <p class="section-p">O Vou de ônibus apresenta de maneira simples os horários e linhas do transporte público de Jaraguá do Sul, Guaramirim e Schroeder. Saiba ainda o preço, locais de percurso e variações das linhas.</p>
-        <p class="alias">Não depende de internet.</p>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="container-center">
+			<div class="wrap">
+				<h1 class="section-title">Chega de esquecer <strong>o horário</strong></h1>
+				<figure>
+					<img width="257" height="201" src="" data-src="src/img/page-oapp_card1.png" alt="Card de horário">
+				</figure>
+				<p class="section-p">O Vou de ônibus apresenta de maneira simples os horários e linhas do transporte público de Jaraguá do Sul, Guaramirim e Schroeder. Saiba ainda o preço, locais de percurso e variações das linhas.</p>
+				<p class="alias">Não depende de internet.</p>
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- vou agora -->
 <section class="section page-vouagora">
-  <div class="container">
-    <div class="container-center">
-      <div class="wrap">
-        <h1 class="section-title">Apresentamos o <strong>Vou agora</strong></h1>
-        <br>
-        <p class="section-p">O Vou Agora ajuda a organizar as linhas e horários que você utiliza no dia a dia. Basta configurar as categorias de trabalho e estudo ou personalizar de acordo com a sua própria rotina. <br><br>Além disso, te avisamos quando tiver alguma alteração nos horários, preços ou trajetos da linha que você selecionou.</p>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="container-center">
+			<div class="wrap">
+				<h1 class="section-title">Apresentamos o <strong>Vou agora</strong></h1>
+				<br>
+				<p class="section-p">O Vou Agora ajuda a organizar as linhas e horários que você utiliza no dia a dia. Basta configurar as categorias de trabalho e estudo ou personalizar de acordo com a sua própria rotina. <br><br>Além disso, te avisamos quando tiver alguma alteração nos horários, preços ou trajetos da linha que você selecionou.</p>
+			</div>
+		</div>
+	</div>
 
-  <div class="mobile">
-    <img class="mobile-img" width="700" height="542" src="src/img/mobile.png" alt="Vou de ônbus" title="Vou de ônibus">
-    <a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'next');" class="arrow next ir" href="javascript:void(0);"><span>Próximo</span></a>
-    <a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'prev');" class="arrow prev ir" href="javascript:void(0);"><span>Anterior</span></a>
-    <div class="mobile-sections">
-      <div class='mobile-sections_item mobile-sections_home mobile-hide'>
-        <img src='src/img/page-home_mobile1.jpg' alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
-      </div>
-      <div class='mobile-sections_item mobile-sections_oapp mobile-hide'>
-        <img src='src/img/page-oapp_mobile.jpg' alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
-      </div>
-      <div class="mobile-sections_item mobile-sections_vouagora">
-        <img class="" src="" data-src="src/img/page-home_mobile1.jpg" alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
-        <img class="" src="" data-src="src/img/page-vouagora_mobile2.jpg" alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
-        <img class="" src="" data-src="src/img/page-vouagora_mobile3.jpg" alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
-      </div>
-    </div>
-  </div>
+	<div class="mobile">
+		<img class="mobile-img" width="700" height="542" src="src/img/mobile.png" alt="Vou de ônbus" title="Vou de ônibus">
+		<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'next');" class="arrow next ir" href="javascript:void(0);"><span>Próximo</span></a>
+		<a onClick="return ga('send', 'event', 'page-vouagora', 'arrow', 'prev');" class="arrow prev ir" href="javascript:void(0);"><span>Anterior</span></a>
+		<div class="mobile-sections">
+			<div class='mobile-sections_item mobile-sections_home mobile-hide'>
+				<img src='src/img/page-home_mobile1.jpg' alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
+			</div>
+			<div class='mobile-sections_item mobile-sections_oapp mobile-hide'>
+				<img src='src/img/page-oapp_mobile.jpg' alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
+			</div>
+			<div class="mobile-sections_item mobile-sections_vouagora">
+				<img class="" src="" data-src="src/img/page-home_mobile1.jpg" alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
+				<img class="" src="" data-src="src/img/page-vouagora_mobile2.jpg" alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
+				<img class="" src="" data-src="src/img/page-vouagora_mobile3.jpg" alt="Telas do vou de ônibus" title="Telas do vou de ônibus">
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- demais -->
 <div class="section page-free">
 
-  <div class="relative">
+	<div class="relative">
 
-    <!-- make for user -->
-    <section class="">
-      <div class="page-foruser clearfix container">
-        <div class="page-foruser_img"></div>
-        <div class="wrap">
-          <div class="logo"><img src="" data-src="src/img/page-foruser_app.png" alt="Criado por pessoas que andam de ônibus" title="Criado por pessoas que andam de ônibus"></div>
-          <h1 class="section-title"><strong>Criado por pessoas que <span>andam de ônibus</span></strong></h1>
-          <p class="section-p">Nós utilizamos o ônibus como meio de transporte para ir ao trabalho, faculdade e voltar para casa. Já perdemos o ônibus e esquecemos os horários algumas vezes. Construímos esse aplicativo para você e para nós também, porque acreditamos que pequenos detalhes podem resultar em uma experiência melhor.</p>
-        </div>
-      </div>
-    </section>
-    <!-- / make for user -->
+		<!-- make for user -->
+		<section class="">
+			<div class="page-foruser clearfix container">
+				<div class="page-foruser_img"></div>
+				<div class="wrap">
+					<div class="logo"><img src="" data-src="src/img/page-foruser_app.png" alt="Criado por pessoas que andam de ônibus" title="Criado por pessoas que andam de ônibus"></div>
+					<h1 class="section-title"><strong>Criado por pessoas que <span>andam de ônibus</span></strong></h1>
+					<p class="section-p">Nós utilizamos o ônibus como meio de transporte para ir ao trabalho, faculdade e voltar para casa. Já perdemos o ônibus e esquecemos os horários algumas vezes. Construímos esse aplicativo para você e para nós também, porque acreditamos que pequenos detalhes podem resultar em uma experiência melhor.</p>
+				</div>
+			</div>
+		</section>
+		<!-- / make for user -->
 
-    <!-- apoio -->
-    <section class="page-apoio">
-      <div class="container">
-        <h1 class="section-subtitle">Apoio</h1>
-        <a class="canarinho" target="_blank" onClick="return ga('send', 'event', 'page-apoio', 'canarinho');" href="http://www.canarinho.com.br"><img src="" data-src="src/img/logo-canarinho.png" alt="Canarinho" title="Canarinho"></a>
-        <a class="mobilibus" target="_blank" onClick="return ga('send', 'event', 'page-apoio', 'mobilibus');" href="http://www.mobilibus.com.br/"><img src="" data-src="src/img/logo-mobilibus.png" alt="Mobilibus" title="Mobilibus"></a>
-        <h1 class="section-subtitle">Agradecimentos</h1>
-        <p class="section-p"><a href="http://michaelarafat.com/index.php?l=pt" target="_blank"  onClick="return ga('send', 'event', 'agradecimento', 'michael');">Michael Arafat</a>, pelas fotos e ilustrações.
-        <a href="https://www.facebook.com/dudufmonte?ref=ts&fref=ts" target="_blank"  onClick="return ga('send', 'event', 'agradecimento', 'eduardo');">Eduardo Montecino</a>, por ceder fotos. <a href="http://www.catolicasc.org.br/" target="_blank" onClick="return ga('send', 'event', 'agradecimento', 'catolica');">Centro Universitário - Católica de Santa Catarina</a>, por ceder o estúdio de fotografia. <a href="https://github.com/" target="_blank" onClick="return ga('send', 'event', 'agradecimento', 'github');">GitHub</a>, pelo apoio técnico. <strong>Diego Bogo</strong> e <strong>Marco Littig</strong>, por tornar este projeto possível.</p>
-      </div>
-    </section>
-    <!-- / apoio -->
+		<!-- apoio -->
+		<section class="page-apoio">
+			<div class="container">
+				<h1 class="section-subtitle">Apoio</h1>
+				<a class="canarinho" target="_blank" onClick="return ga('send', 'event', 'page-apoio', 'canarinho');" href="http://www.canarinho.com.br"><img src="" data-src="src/img/logo-canarinho.png" alt="Canarinho" title="Canarinho"></a>
+				<a class="mobilibus" target="_blank" onClick="return ga('send', 'event', 'page-apoio', 'mobilibus');" href="http://www.mobilibus.com.br/"><img src="" data-src="src/img/logo-mobilibus.png" alt="Mobilibus" title="Mobilibus"></a>
+				<h1 class="section-subtitle">Agradecimentos</h1>
+				<p class="section-p"><a href="http://michaelarafat.com/index.php?l=pt" target="_blank"  onClick="return ga('send', 'event', 'agradecimento', 'michael');">Michael Arafat</a>, pelas fotos e ilustrações.
+					<a href="https://www.facebook.com/dudufmonte?ref=ts&fref=ts" target="_blank"  onClick="return ga('send', 'event', 'agradecimento', 'eduardo');">Eduardo Montecino</a>, por ceder fotos. <a href="http://www.catolicasc.org.br/" target="_blank" onClick="return ga('send', 'event', 'agradecimento', 'catolica');">Centro Universitário - Católica de Santa Catarina</a>, por ceder o estúdio de fotografia. <a href="https://github.com/" target="_blank" onClick="return ga('send', 'event', 'agradecimento', 'github');">GitHub</a>, pelo apoio técnico. <strong>Diego Bogo</strong> e <strong>Marco Littig</strong>, por tornar este projeto possível.</p>
+				</div>
+			</section>
+			<!-- / apoio -->
 
-    <!-- team -->
-    <section class="page-team">
-      <div class="container">
-        <h1 class="section-subtitle">Equipe</h1>
-
-
-        <div class="team-item first">
-          <div class="head clearfix">
-            <img src="" data-src="src/img/team-item_carla.png" alt="Carla Priscila Demarchi" title="Carla Priscila Demarchi">
-            <h2>Carla Priscila Demarchi</h2>
-            <p class="social clearfix">
-              <a target="_blank" href="mailto:talkcarla@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Carla', 'social', 'email');"><span>Twitter Carla</span></a>
-              <a target="_blank" href="https://br.linkedin.com/in/carlademarchi" class="ir linkedin" onClick="return ga('send', 'event', 'Carla', 'social', 'linkedin');"><span>Linkedin Carla</span></a>
-              <a target="_blank" href="https://www.facebook.com/DemarchiCarla" class="ir facebook"  onClick="return ga('send', 'event', 'Carla', 'social', 'facebook');"><span>Facebook Carla</span></a>
-              <a target="_blank" href="https://twitter.com/DemarchiCarla" class="ir twitter"  onClick="return ga('send', 'event', 'Carla', 'social', 'twitter');"><span>E-mail Carla</span></a>
-            </p>
-          </div>
-          <p><strong>UX designer</strong>, 22 anos e formada em Análise e Desenvolvimento de Sistemas. Busca compreender e melhorar a forma como as marcas e os produtos digitais, afetam a vida e o comportamento das pessoas. Usa diariamente a linha de Jaraguá do Sul - Santa Luzia (via Schroeder).</p>
-        </div>
-
-        <div class="team-item ">
-          <div class="head clearfix">
-            <img src="" data-src="src/img/team-item_carlos.png" alt="Carlos Alexandre Fuechter" title="Carlos Alexandre Fuechter">
-            <h2>Carlos Alexandre Fuechter</h2>
-            <p class="social clearfix">
-              <a target="_blank" href="mailto:alexandref93@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Carlos', 'social', 'email');"><span>Twitter Carlos</span></a>
-              <a target="_blank" href="https://br.linkedin.com/in/fuechter" class="ir linkedin" onClick="return ga('send', 'event', 'Carlos', 'social', 'linkedin');"><span>Linkedin Carlos</span></a>
-              <a target="_blank" href="https://www.facebook.com/fuechter" class="ir facebook"  onClick="return ga('send', 'event', 'Carlos', 'social', 'facebook');"><span>Facebook Carlos</span></a>
-              <a target="_blank" href="https://twitter.com/alexandref93" class="ir twitter"  onClick="return ga('send', 'event', 'Carlos', 'social', 'twitter');"><span>E-mail Carlos</span></a>
-              <a target="_blank" href="https://github.com/alexandref93" class="ir github"  onClick="return ga('send', 'event', 'Carlos', 'social', 'github');"><span>Github Carlos</span></a>
-            </p>
-          </div>
-          <p><strong>Desenvolvedor full-stack</strong>, 22 anos e formado em Tecnologia e Análise de Desenvolvimento de Sistema. Está sempre em busca da melhor solução para resolver os problemas técnicos e das novas tecnologias que surgem no mercado. Usa diariamente a linha Rau.</p>
-        </div>
-
-        <div class="team-item first">
-          <div class="head clearfix">
-            <img src="" data-src="src/img/team-item_danilo.png" alt="Danilo Woznica" title="Danilo Woznica">
-            <h2>Danilo Woznica</h2>
-            <p class="social clearfix">
-              <a target="_blank" href="mailto:danilowoz@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Danilo', 'social', 'email');"><span>Twitter Danilo</span></a>
-              <a target="_blank" href="https://br.linkedin.com/in/danilow" class="ir linkedin" onClick="return ga('send', 'event', 'Danilo', 'social', 'linkedin');"><span>Linkedin Danilo</span></a>
-              <a target="_blank" href="https://www.facebook.com/danilowoz" class="ir facebook"  onClick="return ga('send', 'event', 'Danilo', 'social', 'facebook');"><span>Facebook Danilo</span></a>
-              <a target="_blank" href="https://www.behance.net/danilowzn" class="ir behance"  onClick="return ga('send', 'event', 'Danilo', 'social', 'behance');"><span>Behance Danilo</span></a>
-              <a target="_blank" href="https://dribbble.com/danilowzn" class="ir dribbble"  onClick="return ga('send', 'event', 'Danilo', 'social', 'dribbble');"><span>Dribbble Danilo</span></a>
-              <!-- <a target="_blank" href="https://twitter.com/DaniloWoznica" class="ir twitter"  onClick="return ga('send', 'event', 'Danilo', 'social', 'twitter');"><span>Twitter Danilo</span></a> -->
-              <a target="_blank" href="https://github.com/danilowzn" class="ir github"  onClick="return ga('send', 'event', 'Danilo', 'social', 'github');"><span>Github Danilo</span></a>
-            </p>
-          </div>
-          <p><strong>Designer e desenvolvedor front-end</strong>, 22 anos e formando em Design. Busca projetar a melhor experiência para o usuário, através de soluções humanizadas e intuitivas. Além de unir desenvolvimento e design a fim de construir produtos de forma ágil e consistente. Usa diariamente a linha Jaraguá - Guaramirim.</p>
-        </div>
-
-        <div class="team-item">
-          <div class="head clearfix">
-            <img src="" data-src="src/img/team-item_lucas.png" alt="Lucas da Silva" title="Lucas da Silva">
-            <h2>Lucas da Silva</h2>
-            <p class="social clearfix">
-              <a target="_blank" href="https://lucas.ninja/" class="ir blog"  onClick="return ga('send', 'event', 'Lucas', 'social', 'blog');"><span>Blog Lucas</span></a>
-              <a target="_blank" href="mailto:lucas@lucas.ninja" class="ir email"  onClick="return ga('send', 'event', 'Lucas', 'social', 'email');"><span>E-mail Lucas</span></a>
-              <a target="_blank" href="http://linkedin.com/in/agtlucas" class="ir linkedin" onClick="return ga('send', 'event', 'Lucas', 'social', 'linkedin');"><span>Linkedin Lucas</span></a>
-              <a target="_blank" href="https://twitter.com/_agtlucas" class="ir twitter"  onClick="return ga('send', 'event', 'Lucas', 'social', 'twitter');"><span>Twitter Lucas</span></a>
-              <a target="_blank" href="https://github.com/AgtLucas" class="ir github"  onClick="return ga('send', 'event', 'Lucas', 'social', 'github');"><span>Github Lucas</span></a>
-            </p>
-          </div>
-          <p><strong>Desenvolvedor full-stack</strong>, 24 anos. Eterno aprendiz, autoditada e contribuidor em projetos Open Source espalhados pelo GitHub. Vê na tecnologia uma chave para melhorar a sociedade atual em que vivemos. Usa semanalmente várias linhas de ônibus.</p>
-        </div>
-
-        <div class="team-item">
-          <div class="head clearfix">
-            <img src="" data-src="src/img/team-item_maico.png" alt="Maico da Silva" title="Maico da Silva">
-            <h2>Maico da Silva</h2>
-            <p class="social clearfix">
-              <a target="_blank" href="mailto:maikco.cm@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Maico', 'social', 'email');"><span>E-mail Maico</span></a>
-              <a target="_blank" href="http://br.linkedin.com/in/maikco" class="ir linkedin" onClick="return ga('send', 'event', 'Maico', 'social', 'linkedin');"><span>Linkedin Maico</span></a>
-              <a target="_blank" href="https://github.com/Maikco" class="ir github"  onClick="return ga('send', 'event', 'Maico', 'social', 'github');"><span>Github Maico</span></a>
-            </p>
-          </div>
-          <p><strong>Desenvolvedor back-end</strong>, 26 anos. Cursando Tecnologia em Sistemas para Internet, pela Unisul. Programador autodidata e curioso por natureza. Busca compreender e contribuir com projetos e novas tecnologias.</p>
-        </div>
+			<!-- team -->
+			<section class="page-team">
+				<div class="container">
+					<h1 class="section-subtitle">Idealizadores</h1>
 
 
-      </div>
-    </section>
-    <!-- / team -->
+					<div class="team-item first">
+						<div class="head clearfix">
+							<img src="" data-src="src/img/team-item_carla.png" alt="Carla Priscila Demarchi" title="Carla Priscila Demarchi">
+							<h2>Carla Priscila Demarchi</h2>
+							<p class="social clearfix">
+								<a target="_blank" href="mailto:talkcarla@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Carla', 'social', 'email');"><span>Twitter Carla</span></a>
+								<a target="_blank" href="https://br.linkedin.com/in/carlademarchi" class="ir linkedin" onClick="return ga('send', 'event', 'Carla', 'social', 'linkedin');"><span>Linkedin Carla</span></a>
+								<a target="_blank" href="https://www.facebook.com/DemarchiCarla" class="ir facebook"  onClick="return ga('send', 'event', 'Carla', 'social', 'facebook');"><span>Facebook Carla</span></a>
+								<a target="_blank" href="https://twitter.com/DemarchiCarla" class="ir twitter"  onClick="return ga('send', 'event', 'Carla', 'social', 'twitter');"><span>E-mail Carla</span></a>
+							</p>
+						</div>
+						<p><strong>UX designer</strong></p>
+					</div>
 
-    <footer class="page-footer">
-      <div class="container clearfix">
-        <div class="page-footer-main  ">
-          <h1>Vou de ônibus</h1>
-          <p><small>Setembro, 2015. Jaraguá do Sul - SC, Brasil</small></p>
-          <p class="links">Links importantes</p>
-          <a onClick="return ga('send', 'event', 'page-footer', 'condicoes-de-uso');" href="/condicoes-de-uso/">Condições de uso</a>
-          <a onClick="return ga('send', 'event', 'page-footer', 'imprensa');" href="/imprensa/">Imprensa</a>
-          <a onClick="return ga('send', 'event', 'page-footer', 'contato');" href="mailto:falecom@voudeonibusapp.com">falecom@voudeonibusapp.com</a>
-          <p class="links">Colabore</p>
-          <p>Nós construímos esse aplicativo como forma de ajudar as pessoas, e o que queremos em troca é somente a certeza de que nosso trabalho trouxe resultados positivos para elas. Mas se você quiser colaborar para ajudar com os custos e garantir que o serviço continue com a mesma qualidade, você pode doar.</p>
-          <p>O pagamento é seguro e rápido.</p>
-          <!-- <a onClick="return ga('send', 'event', 'page-footer', 'perguntas-frequentes');" href="/condicoes-de-uso">Perguntas frequentes</a> -->
-          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-          <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
-            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-            <input type="hidden" name="currency" value="BRL" />
-            <input type="hidden" name="receiverEmail" value="voudeonibusapp@gmail.com" />
-            <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-          </form>
-          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-        </div>
+					<div class="team-item ">
+						<div class="head clearfix">
+							<img src="" data-src="src/img/team-item_carlos.png" alt="Carlos Alexandre Fuechter" title="Carlos Alexandre Fuechter">
+							<h2>Carlos Alexandre Fuechter</h2>
+							<p class="social clearfix">
+								<a target="_blank" href="mailto:alexandref93@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Carlos', 'social', 'email');"><span>Twitter Carlos</span></a>
+								<a target="_blank" href="https://br.linkedin.com/in/fuechter" class="ir linkedin" onClick="return ga('send', 'event', 'Carlos', 'social', 'linkedin');"><span>Linkedin Carlos</span></a>
+								<a target="_blank" href="https://www.facebook.com/fuechter" class="ir facebook"  onClick="return ga('send', 'event', 'Carlos', 'social', 'facebook');"><span>Facebook Carlos</span></a>
+								<a target="_blank" href="https://twitter.com/alexandref93" class="ir twitter"  onClick="return ga('send', 'event', 'Carlos', 'social', 'twitter');"><span>E-mail Carlos</span></a>
+								<a target="_blank" href="https://github.com/alexandref93" class="ir github"  onClick="return ga('send', 'event', 'Carlos', 'social', 'github');"><span>Github Carlos</span></a>
+							</p>
+						</div>
+						<p><strong>Desenvolvedor full-stack</strong></p>
+					</div>
 
-        <div id="fb-root"></div>
-        <div class="fb-page" data-href="https://www.facebook.com/voudeonibusapp" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/voudeonibusapp"><a href="https://www.facebook.com/voudeonibusapp">Vou de ônibus</a></blockquote></div></div>
+					<div class="team-item first">
+						<div class="head clearfix">
+							<img src="" data-src="src/img/team-item_danilo.png" alt="Danilo Woznica" title="Danilo Woznica">
+							<h2>Danilo Woznica</h2>
+							<p class="social clearfix">
+								<a target="_blank" href="mailto:danilowoz@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Danilo', 'social', 'email');"><span>Twitter Danilo</span></a>
+								<a target="_blank" href="https://br.linkedin.com/in/danilow" class="ir linkedin" onClick="return ga('send', 'event', 'Danilo', 'social', 'linkedin');"><span>Linkedin Danilo</span></a>
+								<a target="_blank" href="https://www.facebook.com/danilowoz" class="ir facebook"  onClick="return ga('send', 'event', 'Danilo', 'social', 'facebook');"><span>Facebook Danilo</span></a>
+								<a target="_blank" href="https://www.behance.net/danilowzn" class="ir behance"  onClick="return ga('send', 'event', 'Danilo', 'social', 'behance');"><span>Behance Danilo</span></a>
+								<a target="_blank" href="https://dribbble.com/danilowzn" class="ir dribbble"  onClick="return ga('send', 'event', 'Danilo', 'social', 'dribbble');"><span>Dribbble Danilo</span></a>
+								<!-- <a target="_blank" href="https://twitter.com/DaniloWoznica" class="ir twitter"  onClick="return ga('send', 'event', 'Danilo', 'social', 'twitter');"><span>Twitter Danilo</span></a> -->
+								<a target="_blank" href="https://github.com/danilowzn" class="ir github"  onClick="return ga('send', 'event', 'Danilo', 'social', 'github');"><span>Github Danilo</span></a>
+							</p>
+						</div>
+						<p><strong>Designer e desenvolvedor front-end</strong></p>
+					</div>
+
+					<div class="team-item">
+						<div class="head clearfix">
+							<img src="" data-src="src/img/team-item_lucas.png" alt="Lucas da Silva" title="Lucas da Silva">
+							<h2>Lucas da Silva</h2>
+							<p class="social clearfix">
+								<a target="_blank" href="https://lucas.ninja/" class="ir blog"  onClick="return ga('send', 'event', 'Lucas', 'social', 'blog');"><span>Blog Lucas</span></a>
+								<a target="_blank" href="mailto:lucas@lucas.ninja" class="ir email"  onClick="return ga('send', 'event', 'Lucas', 'social', 'email');"><span>E-mail Lucas</span></a>
+								<a target="_blank" href="http://linkedin.com/in/agtlucas" class="ir linkedin" onClick="return ga('send', 'event', 'Lucas', 'social', 'linkedin');"><span>Linkedin Lucas</span></a>
+								<a target="_blank" href="https://twitter.com/_agtlucas" class="ir twitter"  onClick="return ga('send', 'event', 'Lucas', 'social', 'twitter');"><span>Twitter Lucas</span></a>
+								<a target="_blank" href="https://github.com/AgtLucas" class="ir github"  onClick="return ga('send', 'event', 'Lucas', 'social', 'github');"><span>Github Lucas</span></a>
+							</p>
+						</div>
+						<p><strong>Desenvolvedor full-stack</strong></p>
+					</div>
+
+					<div class="team-item first">
+						<div class="head clearfix">
+							<img src="" data-src="src/img/team-item_maico.png" alt="Maico da Silva" title="Maico da Silva">
+							<h2>Maico da Silva</h2>
+							<p class="social clearfix">
+								<a target="_blank" href="mailto:maikco.cm@gmail.com" class="ir email"  onClick="return ga('send', 'event', 'Maico', 'social', 'email');"><span>E-mail Maico</span></a>
+								<a target="_blank" href="http://br.linkedin.com/in/maikco" class="ir linkedin" onClick="return ga('send', 'event', 'Maico', 'social', 'linkedin');"><span>Linkedin Maico</span></a>
+								<a target="_blank" href="https://github.com/Maikco" class="ir github"  onClick="return ga('send', 'event', 'Maico', 'social', 'github');"><span>Github Maico</span></a>
+							</p>
+						</div>
+						<p><strong>Desenvolvedor back-end</strong></p>
+					</div>
+
+					<div class="team-item">
+						<div class="head clearfix">
+							<img src="" data-src="src/img/team-item_github.png" alt="Github" title="Github">
+							<h2>Contribua</h2>
+							<p class="social-esp clearfix"><a href="https://github.com/voudeonibus" target="_blank">Visite nosso Github</a></p>
+						</div>
+						<p>
+							<a href="https://github.com/voudeonibus/vdb-android" target="_blank">Versão Android</a>
+							|
+							<a href="https://github.com/voudeonibus/vdb-ios" target="_blank">Versão iOS</a>
+							|
+							<a href="https://github.com/voudeonibus/vdb-android" target="_blank">Versão Web <small>React</small></a>
+						</p>
+					</div>
 
 
-      </div>
+				</div>
+			</section>
+			<!-- / team -->
 
-    </footer>
+			<footer class="page-footer">
+				<div class="container clearfix">
+					<div class="page-footer-main  ">
+						<h1>Vou de ônibus</h1>
+						<p><small>Setembro, 2015. Jaraguá do Sul - SC, Brasil</small></p>
+						<p class="links">Links importantes</p>
+						<a onClick="return ga('send', 'event', 'page-footer', 'condicoes-de-uso');" href="/condicoes-de-uso/">Condições de uso</a>
+						<a onClick="return ga('send', 'event', 'page-footer', 'imprensa');" href="/imprensa/">Imprensa</a>
+						<a onClick="return ga('send', 'event', 'page-footer', 'contato');" href="mailto:falecom@voudeonibusapp.com">falecom@voudeonibusapp.com</a>
+						<p class="links">Colabore</p>
+						<p>Nós construímos esse aplicativo como forma de ajudar as pessoas, e o que queremos em troca é somente a certeza de que nosso trabalho trouxe resultados positivos para elas. Mas se você quiser colaborar para ajudar com os custos e garantir que o serviço continue com a mesma qualidade, você pode doar.</p>
+						<p>O pagamento é seguro e rápido.</p>
+						<!-- <a onClick="return ga('send', 'event', 'page-footer', 'perguntas-frequentes');" href="/condicoes-de-uso">Perguntas frequentes</a> -->
+						<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+						<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+							<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+							<input type="hidden" name="currency" value="BRL" />
+							<input type="hidden" name="receiverEmail" value="voudeonibusapp@gmail.com" />
+							<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+						</form>
+						<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+					</div>
 
-  </div>
+					<div id="fb-root"></div>
+					<div class="fb-page" data-href="https://www.facebook.com/voudeonibusapp" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/voudeonibusapp"><a href="https://www.facebook.com/voudeonibusapp">Vou de ônibus</a></blockquote></div></div>
 
-</div>
+
+				</div>
+
+			</footer>
+
+		</div>
+
+	</div>
 </div>
 
 
@@ -338,16 +369,16 @@
 <script type="text/javascript">
 
 if (window.innerWidth < 960) {
-  var isMobile = true;
+	var isMobile = true;
 } else {
-  var isMobile = false;
+	var isMobile = false;
 }
 
 if (isMobile) {
-  document.write('<script src="src/build/libs/carousel-mobile.js"><\/script>');
+	document.write('<script src="src/build/libs/carousel-mobile.js"><\/script>');
 
 } else {
-  document.write('<script src="src/build/libs/carousel-desktop.js"><\/script>');
+	document.write('<script src="src/build/libs/carousel-desktop.js"><\/script>');
 }
 
 </script>
@@ -356,19 +387,19 @@ if (isMobile) {
 <script type="text/javascript">
 
 if (isMobile) {
-  $(window).load(function() {
-    $.getScript('src/build/social.js');
-  });
+	$(window).load(function() {
+		$.getScript('src/build/social.js');
+	});
 } else {
-  document.write('<script src="src/build/desktop.js"><\/script>');
+	document.write('<script src="src/build/desktop.js"><\/script>');
 }
 
 </script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-67426315-1', 'auto');

@@ -260,9 +260,16 @@ body {
 		padding-left: 80px;
 		padding-top: 0;
 	} 
-	img {
-		margin-bottom: 70px;
+	.logo-app {
+		margin-bottom: 30px;
 	}
+}
+
+
+.contribua {
+	position: absolute;
+	top: 13px;
+	left: 210px;
 }
 
 /**
@@ -673,16 +680,16 @@ body {
 			margin-right: 20px;
 		}
 		> p {
-			height: 140px;
+			// height: 140px;
 		}
 	}
 	.head {
 		margin-top: -50px;
 		margin-bottom: 10px;
-		img, .social, h2 {
+		img, .social, .social-esp, h2 {
 			float: left;
 		}
-		h2, .social {
+		h2, .social, .social-esp {
 			margin-left: 15px;
 			color: white;
 			display: block;
@@ -691,6 +698,13 @@ body {
 	}
 	.social {
 		margin-top: 25px;
+		&-esp {
+			margin-top: 15px;
+			a {
+				color: $txt;
+				font-weight: normal;
+			}
+		}
 	}
 }
 

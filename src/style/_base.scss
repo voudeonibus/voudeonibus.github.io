@@ -64,7 +64,7 @@ html, body {
 	background: $pr url(../img/page-home.jpg) center center no-repeat;
 	background-size: cover;
 	h1 {
-		font-size: 27px;
+		font-size: 24px;
 		text-transform: uppercase;
 		margin-bottom: 10px;
 	}
@@ -74,7 +74,7 @@ html, body {
 		font-weight: 300;
 	}
 
-	img {
+	.logo-app {
 		width: 176px;
 	}
 }
@@ -115,6 +115,7 @@ html, body {
 	background: rgba(white, .2);
 	transition: $ts;
 	overflow: hidden;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
 	&.ios {
 		right: 0;
 	}
@@ -181,6 +182,7 @@ html, body {
 			filter: alpha(opacity=0);
 			top: -45px;
 		}
+
 	}
 	.close {
 		color: $txt;
@@ -198,114 +200,130 @@ html, body {
 		top: 20px;
 		left: -10px;
 	}
-}
-.form-active_ios {
-	.google-play, .avise-me.android {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		transition: $ts;
-		display: none;
-	}
-	.avise-me  {
-		transition: $ts-s;
-		width: 365px;
-		input {
-			transition: $ts-s;
-			opacity: 1;
-			filter: alpha(opacity=100);
-			width: 189px;
-			padding: 0 30px 0 10px;;
-		}
-		.submit {
-			transition: $ts-s;
-			background: $pr;
-		}
-	}
-	.icon {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		left: -30px;
-	}
-	.submit {
-		top: 10px;
-		opacity: 1;
-		filter: alpha(opacity=100);
-	}
-	.placeholder {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		top: -45px;
-	}
-	.close {
-		opacity: 1;
-		filter: alpha(opacity=100);
-		top: 20px;
-		left: 210px;
-		background: white;
-		transition: $ts-s;
-		&:hover {
-			transition: $ts-s;
-			color: white;
-			background: $pr;
-			border-radius: 3px;
-		}
+	small {
+		position: relative;
+		top: -4px;
+		right: -5px;
+		font-size: 12px;
+		opacity: .6;
 	}
 }
+// .form-active_ios {
+// 	.google-play, .avise-me.android {
+// 		opacity: 0;
+// 		filter: alpha(opacity=0);
+// 		transition: $ts;
+// 		display: none;
+// 	}
+// 	.avise-me  {
+// 		transition: $ts-s;
+// 		width: 365px;
+// 		input {
+// 			transition: $ts-s;
+// 			opacity: 1;
+// 			filter: alpha(opacity=100);
+// 			width: 189px;
+// 			padding: 0 30px 0 10px;;
+// 		}
+// 		.submit {
+// 			transition: $ts-s;
+// 			background: $pr;
+// 		}
+// 	}
+// 	.icon {
+// 		opacity: 0;
+// 		filter: alpha(opacity=0);
+// 		left: -30px;
+// 	}
+// 	.submit {
+// 		top: 10px;
+// 		opacity: 1;
+// 		filter: alpha(opacity=100);
+// 	}
+// 	.placeholder {
+// 		opacity: 0;
+// 		filter: alpha(opacity=0);
+// 		top: -45px;
+// 	}
+// 	.close {
+// 		opacity: 1;
+// 		filter: alpha(opacity=100);
+// 		top: 20px;
+// 		left: 210px;
+// 		background: white;
+// 		transition: $ts-s;
+// 		&:hover {
+// 			transition: $ts-s;
+// 			color: white;
+// 			background: $pr;
+// 			border-radius: 3px;
+// 		}
+// 	}
+// }
 
 
-.form-active_android {
-	.google-play, .avise-me.ios {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		transition: $ts;
-		display: none;
-	}
-	.avise-me  {
-		transition: $ts-s;
-		width: 365px;
-		input {
-			transition: $ts-s;
-			opacity: 1;
-			filter: alpha(opacity=100);
-			width: 189px;
-			padding: 0 30px 0 10px;;
-		}
-		.submit {
-			transition: $ts-s;
-			background: $pr;
-		}
-	}
-	.icon {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		left: -30px;
-	}
-	.submit {
-		top: 10px;
-		opacity: 1;
-		filter: alpha(opacity=100);
-	}
-	.placeholder {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		top: -45px;
-	}
-	.close {
-		opacity: 1;
-		filter: alpha(opacity=100);
-		top: 20px;
-		left: 210px;
-		background: white;
-		transition: $ts-s;
-		&:hover {
-			transition: $ts-s;
-			color: white;
-			background: $pr;
-			border-radius: 3px;
-		}
+// .form-active_android {
+// 	.google-play, .avise-me.ios {
+// 		opacity: 0;
+// 		filter: alpha(opacity=0);
+// 		transition: $ts;
+// 		display: none;
+// 	}
+// 	.avise-me  {
+// 		transition: $ts-s;
+// 		width: 365px;
+// 		input {
+// 			transition: $ts-s;
+// 			opacity: 1;
+// 			filter: alpha(opacity=100);
+// 			width: 189px;
+// 			padding: 0 30px 0 10px;;
+// 		}
+// 		.submit {
+// 			transition: $ts-s;
+// 			background: $pr;
+// 		}
+// 	}
+// 	.icon {
+// 		opacity: 0;
+// 		filter: alpha(opacity=0);
+// 		left: -30px;
+// 	}
+// 	.submit {
+// 		top: 10px;
+// 		opacity: 1;
+// 		filter: alpha(opacity=100);
+// 	}
+// 	.placeholder {
+// 		opacity: 0;
+// 		filter: alpha(opacity=0);
+// 		top: -45px;
+// 	}
+// 	.close {
+// 		opacity: 1;
+// 		filter: alpha(opacity=100);
+// 		top: 20px;
+// 		left: 210px;
+// 		background: white;
+// 		transition: $ts-s;
+// 		&:hover {
+// 			transition: $ts-s;
+// 			color: white;
+// 			background: $pr;
+// 			border-radius: 3px;
+// 		}
+// 	}
+// }
+.contribua {
+	color: white;
+	font-weight: bold;
+	img {
+		width: 25px !important;
+		position: relative;
+		top: 5px;
+		left: -7px;
 	}
 }
-
 
 
 /**
@@ -439,6 +457,13 @@ html, body {
 			-webkit-transform: translate3d(0,0,0);
 			line-height: 1.5;
 		}
+		a {
+			color: inherit;
+			font-weight: bold;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.social {
@@ -458,6 +483,7 @@ html, body {
 				transition: $ts;
 			}
 		}
+
 	}
 	.blog {
 		background-position: 0 0;
