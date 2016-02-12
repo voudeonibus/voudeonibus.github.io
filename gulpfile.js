@@ -31,7 +31,7 @@ gulp.task('style', function () {
       style: 'expanded',
       includePaths: neat
     }).on('error', sass.logError))
-    .pipe(gif(argv.p || argv.production, cssmin()))
+    .pipe(cssmin())
     .pipe(gulp.dest(path.join(dir_build, '')))
     .pipe(reload({stream: true}));
 });
