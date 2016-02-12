@@ -169,6 +169,12 @@ html, body {
   transition: all 0.2s ease;
   overflow: hidden;
   box-shadow: 0 0 0 transparent; }
+  .avise-me:hover {
+    border-color: #b8dffc;
+    transition: all 0.2s ease; }
+    .avise-me:hover .action-item {
+      color: #b8dffc;
+      transition: all 0.2s ease; }
   .avise-me.ios {
     right: 0; }
   .avise-me.android {
@@ -216,6 +222,8 @@ html, body {
   .avise-me .back {
     opacity: 0;
     filter: alpha(opacity=0); }
+  .avise-me path {
+    transition: all 0.2s ease; }
   .avise-me:hover .submit {
     top: 10px;
     opacity: 1;
@@ -224,6 +232,9 @@ html, body {
     opacity: 0;
     filter: alpha(opacity=0);
     top: -45px; }
+  .avise-me:hover path {
+    fill: #b8dffc;
+    transition: all 0.2s ease; }
   .avise-me .close {
     color: #666;
     transition: all 0.4s;
@@ -248,12 +259,23 @@ html, body {
 
 .contribua {
   color: white;
-  font-weight: bold; }
-  .contribua img {
+  font-weight: bold;
+  line-height: 1;
+  transition: all 0.2s ease; }
+  .contribua path {
+    transition: all 0.2s ease; }
+  .contribua:hover {
+    color: #b8dffc;
+    transition: all 0.2s ease; }
+    .contribua:hover path {
+      fill: #b8dffc;
+      transition: all 0.2s ease; }
+  .contribua svg {
     width: 25px !important;
     position: relative;
-    top: 5px;
-    left: -7px; }
+    top: 7px;
+    left: -7px;
+    transition: all 0.2s ease; }
 
 /**
 *
@@ -799,7 +821,7 @@ body {
 
 .contribua {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 210px; }
 
 /**

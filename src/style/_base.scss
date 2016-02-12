@@ -116,6 +116,15 @@ html, body {
 	transition: $ts;
 	overflow: hidden;
 	box-shadow: 0 0 0 rgba(0,0,0,0);
+	&:hover {
+		border-color: lighten($pr, 30%);
+		transition: $ts;
+		.action-item {
+			color: lighten($pr, 30%);
+			transition: $ts;
+		}
+	}
+
 	&.ios {
 		right: 0;
 	}
@@ -161,6 +170,7 @@ html, body {
 		top: 10px;
 		right: 10px;
 		cursor: pointer;
+
 	}
 	.submit {
 		opacity: 0;
@@ -170,6 +180,9 @@ html, body {
 	.back {
 		opacity: 0;
 		filter: alpha(opacity=0);
+	}
+	path {
+		transition: $ts;
 	}
 	&:hover {
 		.submit {
@@ -181,6 +194,10 @@ html, body {
 			opacity: 0;
 			filter: alpha(opacity=0);
 			top: -45px;
+		}
+		path {
+			fill: lighten($pr, 30%);
+			transition: $ts;
 		}
 
 	}
@@ -317,11 +334,25 @@ html, body {
 .contribua {
 	color: white;
 	font-weight: bold;
-	img {
+	line-height: 1;
+	transition: $ts;
+	path {
+		transition: $ts;
+	}
+	&:hover  {
+		color: lighten($pr, 30%);
+		transition: $ts;
+		path {
+			fill: lighten($pr, 30%);
+			transition: $ts;
+		}
+	}
+	svg {
 		width: 25px !important;
 		position: relative;
-		top: 5px;
+		top: 7px;
 		left: -7px;
+		transition: $ts;
 	}
 }
 
