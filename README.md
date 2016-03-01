@@ -1,5 +1,5 @@
 # Vou de ônibus site
-https://voudeonibusapp.com/
+https://voudeonibus.com/
 
 ## Minificar
 `gulp -p`
