@@ -2,6 +2,14 @@
 
 $(document).ready(function(){
 
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./../sw.js').then(function(registration) {
+      console.log('O ServiceWorker foi registrado com escopo: ', registration.scope);
+    }).catch(function(err) {
+      console.log('O registro do ServiceWorker falhou com o erro: ', err);
+    });
+  }
+
 
 	// para variar
 	var $avisme = $('.avise-me'),
